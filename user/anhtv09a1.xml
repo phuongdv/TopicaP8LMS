@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCM>
+<HO_SO>
+    <MA_HOC_VIEN>2009-01-1-15-085524</MA_HOC_VIEN>
+    <QUYET_DINH>DA_CO</QUYET_DINH>
+</HO_SO>
+<HOC_PHI>
+    <DOT_HOC DOT="1">
+        <MUC_DICH MUC_DICH="1_PHAI_NOP">
+            <SO_TIEN_LAN1>2210000</SO_TIEN_LAN1>
+        </MUC_DICH>
+        <MUC_DICH MUC_DICH="2_DA_NOP">
+            <SO_TIEN_LAN1>2210000</SO_TIEN_LAN1>
+        </MUC_DICH>
+        <MUC_DICH MUC_DICH="3_CON_THIEU">
+            <SO_TIEN>0</SO_TIEN>
+        </MUC_DICH>
+    </DOT_HOC>
+    <DOT_HOC DOT="2">
+        <MUC_DICH MUC_DICH="1_PHAI_NOP">
+            <SO_TIEN_LAN1>2210000</SO_TIEN_LAN1>
+        </MUC_DICH>
+        <MUC_DICH MUC_DICH="2_DA_NOP">
+            <SO_TIEN_LAN1>2210000</SO_TIEN_LAN1>
+        </MUC_DICH>
+        <MUC_DICH MUC_DICH="3_CON_THIEU">
+            <SO_TIEN>0</SO_TIEN>
+        </MUC_DICH>
+    </DOT_HOC>
+    <DOT_HOC DOT="3">
+        <MUC_DICH MUC_DICH="1_PHAI_NOP">
+            <SO_TIEN_LAN1>2210000</SO_TIEN_LAN1>
+        </MUC_DICH>
+        <MUC_DICH MUC_DICH="2_DA_NOP">
+            <SO_TIEN_LAN1>2210000</SO_TIEN_LAN1>
+        </MUC_DICH>
+        <MUC_DICH MUC_DICH="3_CON_THIEU">
+            <SO_TIEN>0</SO_TIEN>
+        </MUC_DICH>
+    </DOT_HOC>
+</HOC_PHI>
+<BANG_DIEM>
+    <MON_HOC TEN_MON="Tiếng anh cơ bản" MA_MON="ENG101" SL_DV_HT="4">
+        <DIEM_CHUYEN_CAN>8.0</DIEM_CHUYEN_CAN>
+        <DIEM_GIUA_KY>8.2</DIEM_GIUA_KY>
+        <DIEM_CUOI_KY>5.8</DIEM_CUOI_KY>
+        <DIEM_TONG_KET>7</DIEM_TONG_KET>
+    </MON_HOC>
+    <MON_HOC TEN_MON="Phát triển kỹ năng cá nhân" MA_MON="PSD102" SL_DV_HT="3">
+        <DIEM_CHUYEN_CAN>2.0</DIEM_CHUYEN_CAN>
+        <DIEM_GIUA_KY>9.1</DIEM_GIUA_KY>
+        <DIEM_CUOI_KY>8.8</DIEM_CUOI_KY>
+        <DIEM_TONG_KET>8</DIEM_TONG_KET>
+    </MON_HOC>
+    <MON_HOC TEN_MON="Tiếng Anh 2" MA_MON="ENG 102" SL_DV_HT="4">
+        <DIEM_CHUYEN_CAN>10.0</DIEM_CHUYEN_CAN>
+        <DIEM_GIUA_KY>7.4</DIEM_GIUA_KY>
+        <DIEM_CUOI_KY>8.0</DIEM_CUOI_KY>
+        <DIEM_TONG_KET>8</DIEM_TONG_KET>
+    </MON_HOC>
+    <MON_HOC TEN_MON="Kinh tế vi mô" MA_MON="ECO101" SL_DV_HT="4">
+        <DIEM_CHUYEN_CAN>10.0</DIEM_CHUYEN_CAN>
+        <DIEM_GIUA_KY>7.8</DIEM_GIUA_KY>
+        <DIEM_CUOI_KY>4.3</DIEM_CUOI_KY>
+        <DIEM_TONG_KET>6</DIEM_TONG_KET>
+    </MON_HOC>
+    <MON_HOC TEN_MON="Phát triển kỹ năng cá nhân 1" MA_MON="PSD101" SL_DV_HT="3">
+        <DIEM_CHUYEN_CAN>8.0</DIEM_CHUYEN_CAN>
+        <DIEM_GIUA_KY>9.6</DIEM_GIUA_KY>
+        <DIEM_CUOI_KY>7.8</DIEM_CUOI_KY>
+        <DIEM_TONG_KET>9</DIEM_TONG_KET>
+    </MON_HOC>
+    <MON_HOC TEN_MON="Nhập môn Internet và E-learning" MA_MON="ICT101" SL_DV_HT="3">
+        <DIEM_CHUYEN_CAN>10.0</DIEM_CHUYEN_CAN>
+        <DIEM_GIUA_KY>8.1</DIEM_GIUA_KY>
+        <DIEM_CUOI_KY>9.0</DIEM_CUOI_KY>
+        <DIEM_TONG_KET>9</DIEM_TONG_KET>
+    </MON_HOC>
+    <MON_HOC TEN_MON="Lý thuyết Xác suất và thống kê toán" MA_MON="STA201" SL_DV_HT="4">
+        <DIEM_CHUYEN_CAN>4.0</DIEM_CHUYEN_CAN>
+        <DIEM_GIUA_KY>6.3</DIEM_GIUA_KY>
+        <DIEM_CUOI_KY>7.1</DIEM_CUOI_KY>
+        <DIEM_TONG_KET>7</DIEM_TONG_KET>
+    </MON_HOC>
+    <MON_HOC TEN_MON="Luật kinh tế" MA_MON="LAW 201" SL_DV_HT="4">
+        <DIEM_CHUYEN_CAN>4.0</DIEM_CHUYEN_CAN>
+        <DIEM_GIUA_KY>9.5</DIEM_GIUA_KY>
+        <DIEM_CUOI_KY>7.5</DIEM_CUOI_KY>
+        <DIEM_TONG_KET>8</DIEM_TONG_KET>
+    </MON_HOC>
+    <MON_HOC TEN_MON="Tiếng anh 3" MA_MON="ENG103" SL_DV_HT="4">
+        <DIEM_CHUYEN_CAN>8.0</DIEM_CHUYEN_CAN>
+        <DIEM_GIUA_KY>8.8</DIEM_GIUA_KY>
+        <DIEM_CUOI_KY>4.6</DIEM_CUOI_KY>
+        <DIEM_TONG_KET>6</DIEM_TONG_KET>
+    </MON_HOC>
+</BANG_DIEM>
+</SCM>

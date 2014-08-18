@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html<?php echo $direction ?>>
+<head>
+    <?php echo $meta ?>
+    <meta name="keywords" content="moodle, <?php echo $title ?> " />
+    <title><?php echo $title ?></title>
+    <link rel="shortcut icon" href="<?php echo $CFG->themewww .'/'. current_theme() ?>/favicon.ico" />
+    <?php include("$CFG->javascript"); ?>
+
+	<link href="<?php echo $CFG->themewww .'/'. current_theme() ?>/template_css.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo $CFG->themewww .'/'. current_theme() ?>/ja-splitmenu.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body<?php
+    echo " $bodytags";
+    if ($focus) {
+        echo " onload=\"setfocus()\"";
+    }
+    ?>>
+    
+<!-- GoStats Simple HTML Based Code --><a target="_blank" title="B? d?m Web" href="http://gostats.vn"><img alt="B? d?m Web"src="http://c4.gostats.vn/bin/count/a_326868/t_5/i_1/counter.png"style="border-width:0" /></a><!-- End GoStats Simple HTML Based Code -->
+
+<!-- GoStats JavaScript Based Code --><script type="text/javascript" src="http://gostats.vn/js/counter.js"></script><script type="text/javascript">_gos='c4.gostats.vn';_goa=326868;_got=5;_goi=1;_goz=0;_gol='B? d?m Web';_GoStatsRun();</script><noscript><a target="_blank" title="B? d?m Web"href="http://gostats.vn"><img alt="B? d?m Web"src="http://c4.gostats.vn/bin/count/a_326868/t_5/i_1/counter.png"style="border-width:0" /></a></noscript><!-- End GoStats JavaScript Based Code -->
+
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-3900661-3");
+		pageTracker._initData();
+		pageTracker._trackPageview();
+		</script>
+
+		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+		</script>
+		<script type="text/javascript">
+		_uacct = "UA-3900661-3";
+		urchinTracker();
+		</script>
+    
+<table align="center" width="980px"><tr><td>
+<div id="page">
+
+<?php //Accessibility: warning: ALT text will need editing if logo changes. 'headermain' is now H1, see theme/standard/styles_layout.css: .headermain
+      if ($home) {  // This is what gets printed on the home page only
+?>
+    <?php print_container_start(true, '', 'header-home'); ?>
+
+
+ <!-- BEGIN: header by hieupdcrc -->
+<div id="ja-wrapper">
+<a name="Top" id="Top"></a>
+
+  <div id="ja-topborderwrap">
+    <div id="ja-topborder">
+    &nbsp;
+    </div>
+  </div>
+  
+  <div id="ja-headerwrap">
+    <div id="ja-header">
+		<div id="rs-banner"><a href="http://topica.edu.vn/Dang-ky-tu-van" border="0">	<img src="http://topica.edu.vn/thongbaotuyensinh/thong-bao-tuyen-sinh-topica.gif" border="0" />	</a>	</div>
+
+		<div id="rs-support">
+            H&#7895; tr&#7907; tr&#7921;c tuy&#7871;n: 
+            <a href="ymsgr:sendim?tuvantuyensinhtopica"><img width="30" height="30" src="http://topica.edu.vn/images/yahoo.gif" alt="online support" title="online support" border="0" hspace="0" vspace="0"></a> 
+<br /> <br />Hotline: <img width="30" height="30" src="http://topica.edu.vn/images/phone.gif" alt="hotline" title="hotline" border="0" hspace="0" vspace="0"> (04) 3868-4287
+        </div>
+
+        <div id="rs-topmenu">
+      <table width="100%" border="0" cellpadding="0" cellspacing="1"><tr><td nowrap="nowrap"><a href="http://topica.edu.vn/" class="mainlevel-nav" id="active_menu-nav">Trang ch&#7911;</a><span class="mainlevel-nav"> | </span><a href="/moodle" class="mainlevel-nav" >H&#7885;c tr&#7921;c tuy&#7871;n</a><span class="mainlevel-nav"> | </span><a href="http://topica.edu.vn/lien-he/" class="mainlevel-nav" >Li&#234;n h&#7879;</a><span class="mainlevel-nav"> | </span><a href="?option=com_facileforms&amp;Itemid=1&amp;ff_form=1&amp;ff_frame=1" class="mainlevel-nav" >&#272;&#259;ng k&#253; tuy&#7875;n sinh</a><span class="mainlevel-nav"> | </span><a href="http://topica.edu.vn/So-do" class="mainlevel-nav" >S&#417; &#273;&#7891; trang web</a></td></tr></table>    </div>
+
+          
+        <div id="ja-toolwrap">
+  	 <div id="ja-tool" class="clearfif">
+  	     	   
+  	     	   <div id="ja-search">
+  	       	   </div>
+  	     	   
+  	 </div>
+  	</div>
+  	      
+    </div>
+  </div>
+  
+  <!-- BEGIN: MAINNAV -->
+
+  <div id="ja-mainnavwrap">
+
+    <div id="ja-mainnav">
+      <div id="ja-mainnav-inner" class="clearfix">
+        <!-- Begin menu -->
+<div id="ja-splitmenu" class="mainlevel">
+
+
+<!-- Initialize TransMenu \-->
+<div id="transmenu76627" style="display:none"></div>
+
+	<link rel="stylesheet" type="text/css" href="http://topica.edu.vn/modules/mod_d4j_transmenu.css" />
+
+	
+<style type="text/css">
+/* this DIV is the semi-transparent white background of each menu. the -moz-opacity is a proprietary way to get transparency in mozilla, the filter is for IE/windows 5.0+. */
+/* we set the background color in script because ie mac does not use it; that browser only uses a semi-transparent white PNG that the spacer gif inside this DIV is replaced by */
+.transMenu .background {
+	position:absolute;
+	left:0px; top:0px;
+	z-index:1;
+	-moz-opacity:0.8;
+	filter:alpha(opacity=80);
+}
+/* same concept as .background, but this is the sliver of shadow on the right of the menu. It's left, height, and background are set by script. In IE5/mac, it uses a PNG */
+.transMenu .shadowRight {
+	position:absolute;
+	z-index:3;
+	top:3px; width:2px;
+	-moz-opacity:0.4;
+	filter:alpha(opacity=40);
+}
+/* same concept as .background, but this is the sliver of shadow on the bottom of the menu. It's top, width, and background are set by script. In IE5/mac, it uses a PNG */
+.transMenu .shadowBottom {
+	position:absolute;
+	z-index:1;
+	left:3px; height:2px;
+	-moz-opacity:0.4;
+	filter:alpha(opacity=40);
+}
+</style>
+
+	<script language="javascript" type="text/javascript">
+	function getBgColor(root) {
+		var bgColor = '';
+		if (typeof root.style != '') {
+			if (typeof root.style.backgroundColor != 'undefined' && root.style.backgroundColor != '') {
+				bgColor = root.style.backgroundColor;
+			}
+		} else if (typeof root.bgColor != 'undefined' && root.bgColor != '') {
+			bgColor = root.bgColor;
+		} else {
+			bgColor = getBgColor(root.parentNode);
+		}
+		return bgColor;
+	}
+	</script>
+	<script language="javascript" type="text/javascript" src="http://topica.edu.vn/modules/mod_d4j_transmenu/transmenu.compact.js"></script>
+	
+<script language="javascript" type="text/javascript">
+	// Menu Class Suffix
+	var menu_class_suffix = "-nav";
+
+	// Placeholder CSS class
+	var sub_placeholder_style = "sublevel";
+
+	// TransMenu settings
+	TransMenu.spacerGif = "modules/mod_d4j_transmenu/img/x.gif";                     // path to a transparent spacer gif
+	TransMenu.dingbatOn = "modules/mod_d4j_transmenu/img/submenu-on.gif";            // path to the active sub menu dingbat
+	TransMenu.dingbatOff = "modules/mod_d4j_transmenu/img/submenu-off.gif";          // path to the inactive sub menu dingbat
+	TransMenu.shadowPng = "modules/mod_d4j_transmenu/img/grey-40.png";               // a PNG graphic to serve as the shadow for mac IE5
+	TransMenu.backgroundPng = "modules/mod_d4j_transmenu/img/white-90.png";          // a PNG graphic to server as the background for mac IE5
+	TransMenu.dingbatSize = 16;
+	TransMenu.menuPadding = 3;
+	TransMenu.itemPadding = 1;
+	TransMenu.shadowSize = 2;
+	TransMenu.shadowOffset = 3;
+	TransMenu.shadowColor = "#888888";
+
+	TransMenu.backgroundColor = getBgColor(document.getElementById('transmenu76627'));
+	TransMenu.backgroundColor = TransMenu.backgroundColor == '' ? '#555555' : TransMenu.backgroundColor;
+	
+	TransMenu.hideDelay = 1000;
+	TransMenu.slideTime = 400;
+
+	// if supported, initialize TransMenu
+	function initTransMenu() {
+		if (TransMenu.isSupported()) {
+			TransMenu.initialize();
+		}
+	}
+</script>
+<!-- Initialize TransMenu /-->
+
+<!-- Load TransMenu`s top level \-->
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td valign="middle"><a id="transmenu76627_menu47" class="mainlevel-nav" href="http://topica.edu.vn/?">Trang ch&#7911;</a></td><td valign="middle"><a id="transmenu76627_menu28" class="mainlevel-nav" href="http://topica.edu.vn/gioi-thieu/">Gi&#7899;i thi&#7879;u</a></td><td valign="middle"><a id="transmenu76627_menu3" class="mainlevel-nav" href="http://topica.edu.vn/chuong-trinh-dao-tao/">Ch&#432;&#417;ng tr&#236;nh &#273;&#224;o t&#7841;o</a></td><td valign="middle"><a id="transmenu76627_menu5" class="mainlevel-nav" href="http://topica.edu.vn/giang-vien/">H&#7897;i &#273;&#7891;ng KH, Gi&#7843;ng vi&#234;n</a></td><td valign="middle"><a id="transmenu76627_menu6" class="mainlevel-nav" href="http://topica.edu.vn/giai-thuong-hoat-dong-noi-bat/">Gi&#7843;i th&#432;&#7903;ng, ho&#7841;t &#273;&#7897;ng n&#7893;i b&#7853;t</a></td><td valign="middle"><a id="transmenu76627_menu7" class="mainlevel-nav" href="http://topica.edu.vn/ho-tro-sinh-vien/">H&#7895; tr&#7907; sinh vi&#234;n</a></td><td valign="middle"><a id="transmenu76627_menu52" class="mainlevel-nav" href="http://topica.edu.vn/topica-3d/">TOPICA 3D</a></td></tr></table><!-- Load TransMenu`s top level /-->
+
+<!-- Load TransMenu`s sub level \-->
+<script language="javascript" type="text/javascript">
+	if (TransMenu.isSupported()) {
+		self['transmenu76627'] = new TransMenuSet(TransMenu.direction.down, 0, 0, TransMenu.reference.bottomLeft);
+
+		document.getElementById('transmenu76627_menu47').onmouseover = function() { self['transmenu76627'].hideCurrent(); }
+		var transmenu76627_menu28 = self['transmenu76627'].addMenu(document.getElementById("transmenu76627_menu28"));
+		transmenu76627_menu28.addItem("Gi&#7899;i thi&#7879;u chung", "http://topica.edu.vn/gioi-thieu-chung/gioi-thieu-chung.html", 0);
+		transmenu76627_menu28.addItem("B&#7857;ng c&#7845;p, ch&#7913;ng ch&#7881;", "http://topica.edu.vn/bang-cap/bang-cap-chung-chi.html", 0);
+		transmenu76627_menu28.addItem("Ph&#432;&#417;ng Ph&#225;p &#273;&#224;o t&#7841;o TOPICA", "http://topica.edu.vn/phuong-phap-dao-tao-topica/phuong-phap-dao-tao-topica.html", 0);
+		transmenu76627_menu28.addItem("C&#417; s&#7903; v&#7853;t ch&#7845;t", "http://topica.edu.vn/gioi-thieu-chung/co-so-vat-chat.html", 0);
+		transmenu76627_menu28.addItem("Li&#234;n h&#7879;", "http://topica.edu.vn/lien-he/", 0);
+
+		var transmenu76627_menu3 = self['transmenu76627'].addMenu(document.getElementById("transmenu76627_menu3"));
+		transmenu76627_menu3.addItem("C&#7917; nh&#226;n Tin h&#7885;c &#7912;ng d&#7909;ng", "http://topica.edu.vn/chuong-trinh-cntt/", 0);
+		transmenu76627_menu3.addItem("C&#7917; nh&#226;n Qu&#7843;n tr&#7883; kinh doanh", "http://topica.edu.vn/chuong-trinh-qtkd/", 0);
+		transmenu76627_menu3.addItem("C&#7917; nh&#226;n T&#224;i ch&#237;nh k&#7871; to&#225;n", "http://topica.edu.vn/chuong-trinh-tcnh/", 0);
+		transmenu76627_menu3.addItem("Th&#244;ng tin tuy&#7875;n sinh", "http://topica.edu.vn/thong-tin-tuyen-sinh/", 0);
+
+		var transmenu76627_menu5 = self['transmenu76627'].addMenu(document.getElementById("transmenu76627_menu5"));
+		transmenu76627_menu5.addItem("Ng&#224;nh Tin h&#7885;c &#7912;ng d&#7909;ng", "http://topica.edu.vn/nganh-tin-hoc-ung-dung/", 0);
+		transmenu76627_menu5.addItem("Ng&#224;nh Qu&#7843;n tr&#7883; Kinh doanh", "http://topica.edu.vn/nganh-quan-tri-kinh-doanh/", 0);
+		transmenu76627_menu5.addItem("Ng&#224;nh T&#224;i ch&#237;nh K&#7871; to&#225;n", "http://topica.edu.vn/nganh-tai-chinh-ke-toan/", 0);
+		transmenu76627_menu5.addItem("Quy&#7873;n l&#7907;i gi&#7843;ng vi&#234;n", "http://topica.edu.vn/quyen-loi-giang-vien/", 0);
+
+		var transmenu76627_menu6 = self['transmenu76627'].addMenu(document.getElementById("transmenu76627_menu6"));
+		transmenu76627_menu6.addItem("Gi&#7843;i th&#432;&#7903;ng Qu&#7889;c t&#7871;", "http://topica.edu.vn/giai-thuong-quoc-te/giai-thuong-quoc-te.html", 0);
+		transmenu76627_menu6.addItem("Ph&#225;t tri&#7875;n, t&#224;i tr&#7907;", "http://topica.edu.vn/phat-trien-tai-tro/", 0);
+		transmenu76627_menu6.addItem("Tr&#237; Tu&#7879; Vi&#7879;t Nam", "http://topica.edu.vn/tri-tue-viet-nam/", 0);
+		transmenu76627_menu6.addItem("V&#432;&#7901;n &#431;&#417;m CRC-TOPIC", "http://topica.edu.vn/vuon-uom-crc-topic/", 0);
+		transmenu76627_menu6.addItem("M&#7841;ng l&#432;&#7899;i TOPIC64", "http://topica.edu.vn/mang-luoi-topic64/", 0);
+
+		var transmenu76627_menu7 = self['transmenu76627'].addMenu(document.getElementById("transmenu76627_menu7"));
+		transmenu76627_menu7.addItem("H&#7895; tr&#7907; sinh vi&#234;n", "http://topica.edu.vn/ho-tro-sinh-vien/ho-tro-sinh-vien.html", 0);
+		transmenu76627_menu7.addItem("Th&#432; vi&#7879;n &#273;i&#7879;n t&#7917;", "http://ebook-hou.edu.vn/opac/", 0);
+
+		document.getElementById('transmenu76627_menu52').onmouseover = function() { self['transmenu76627'].hideCurrent(); }
+		TransMenu.renderAll();
+	}
+	if (window.addEventListener) {
+		window.addEventListener('load', initTransMenu, false);
+	} else if (window.attachEvent) {
+		var tmev = window.attachEvent('onload', initTransMenu);
+	} else {
+		initTransMenu();
+	}
+</script>
+<!-- Load TransMenu`s sub level /--></div><!-- End menu -->
+      </div>
+    </div>
+  </div>
+  <!-- END: MAINNAV -->
+  
+  </div>
+ <!-- END: header by hieupdcrc -->
+  
+        <div class="headermenu"><?php echo $menu ?></div>
+    <?php print_container_end(); ?>
+<?php } else if ($heading) {  // This is what gets printed on any other page with a heading
+?>
+    <?php print_container_start(true, '', 'header'); ?>
+
+
+ <!-- BEGIN: header by hieiupdcrc -->
+<div id="ja-wrapper">
+<a name="Top" id="Top"></a>
+
+  <div id="ja-topborderwrap">
+    <div id="ja-topborder">
+    &nbsp;
+    </div>
+  </div>
+  
+  <div id="ja-headerwrap">
+    <div id="ja-header">
+		<div id="rs-banner"><a href="http://topica.edu.vn/Dang-ky-tu-van" border="0">	<img src="http://topica.edu.vn/thongbaotuyensinh/thong-bao-tuyen-sinh-topica.gif" border="0" />	</a>	</div>
+
+		<div id="rs-support">
+            H&#7895; tr&#7907; tr&#7921;c tuy&#7871;n: 
+            <a href="ymsgr:sendim?tuvantuyensinhtopica"><img width="30" height="30" src="http://topica.edu.vn/images/yahoo.gif" alt="online support" title="online support" border="0" hspace="0" vspace="0"></a>
+<br /> <br />Hotline: <img width="30" height="30" src="http://topica.edu.vn/images/phone.gif" alt="hotline" title="hotline" border="0" hspace="0" vspace="0"> (04) 3868-4287
+        </div>
+
+        <div id="rs-topmenu">
+      <table width="100%" border="0" cellpadding="0" cellspacing="1"><tr><td nowrap="nowrap"><a href="http://topica.edu.vn/" class="mainlevel-nav" id="active_menu-nav">Trang ch&#7911;</a><span class="mainlevel-nav"> | </span><a href="/moodle" class="mainlevel-nav" >H&#7885;c tr&#7921;c tuy&#7871;n</a><span class="mainlevel-nav"> | </span><a href="http://topica.edu.vn/lien-he/" class="mainlevel-nav" >Li&#234;n h&#7879;</a><span class="mainlevel-nav"> | </span><a href="?option=com_facileforms&amp;Itemid=1&amp;ff_form=1&amp;ff_frame=1" class="mainlevel-nav" >&#272;&#259;ng k&#253; tuy&#7875;n sinh</a><span class="mainlevel-nav"> | </span><a href="http://topica.edu.vn/So-do" class="mainlevel-nav" >S&#417; &#273;&#7891; trang web</a></td></tr></table>    </div>
+
+          
+        <div id="ja-toolwrap">
+  	 <div id="ja-tool" class="clearfif">
+  	     	   
+  	     	   <div id="ja-search">
+  	       	   </div>
+  	     	   
+  	 </div>
+  	</div>
+  	      
+    </div>
+  </div>
+  
+  <!-- BEGIN: MAINNAV -->
+
+  <div id="ja-mainnavwrap">
+
+    <div id="ja-mainnav">
+      <div id="ja-mainnav-inner" class="clearfix">
+        <!-- Begin menu -->
+<div id="ja-splitmenu" class="mainlevel">
+
+
+<!-- Initialize TransMenu \-->
+<div id="transmenu76627" style="display:none"></div>
+
+	<link rel="stylesheet" type="text/css" href="http://topica.edu.vn/modules/mod_d4j_transmenu.css" />
+
+	
+<style type="text/css">
+/* this DIV is the semi-transparent white background of each menu. the -moz-opacity is a proprietary way to get transparency in mozilla, the filter is for IE/windows 5.0+. */
+/* we set the background color in script because ie mac does not use it; that browser only uses a semi-transparent white PNG that the spacer gif inside this DIV is replaced by */
+.transMenu .background {
+	position:absolute;
+	left:0px; top:0px;
+	z-index:1;
+	-moz-opacity:0.8;
+	filter:alpha(opacity=80);
+}
+/* same concept as .background, but this is the sliver of shadow on the right of the menu. It's left, height, and background are set by script. In IE5/mac, it uses a PNG */
+.transMenu .shadowRight {
+	position:absolute;
+	z-index:3;
+	top:3px; width:2px;
+	-moz-opacity:0.4;
+	filter:alpha(opacity=40);
+}
+/* same concept as .background, but this is the sliver of shadow on the bottom of the menu. It's top, width, and background are set by script. In IE5/mac, it uses a PNG */
+.transMenu .shadowBottom {
+	position:absolute;
+	z-index:1;
+	left:3px; height:2px;
+	-moz-opacity:0.4;
+	filter:alpha(opacity=40);
+}
+</style>
+
+	<script language="javascript" type="text/javascript">
+	function getBgColor(root) {
+		var bgColor = '';
+		if (typeof root.style != '') {
+			if (typeof root.style.backgroundColor != 'undefined' && root.style.backgroundColor != '') {
+				bgColor = root.style.backgroundColor;
+			}
+		} else if (typeof root.bgColor != 'undefined' && root.bgColor != '') {
+			bgColor = root.bgColor;
+		} else {
+			bgColor = getBgColor(root.parentNode);
+		}
+		return bgColor;
+	}
+	</script>
+	<script language="javascript" type="text/javascript" src="http://topica.edu.vn/modules/mod_d4j_transmenu/transmenu.compact.js"></script>
+	
+<script language="javascript" type="text/javascript">
+	// Menu Class Suffix
+	var menu_class_suffix = "-nav";
+
+	// Placeholder CSS class
+	var sub_placeholder_style = "sublevel";
+
+	// TransMenu settings
+	TransMenu.spacerGif = "modules/mod_d4j_transmenu/img/x.gif";                     // path to a transparent spacer gif
+	TransMenu.dingbatOn = "modules/mod_d4j_transmenu/img/submenu-on.gif";            // path to the active sub menu dingbat
+	TransMenu.dingbatOff = "modules/mod_d4j_transmenu/img/submenu-off.gif";          // path to the inactive sub menu dingbat
+	TransMenu.shadowPng = "modules/mod_d4j_transmenu/img/grey-40.png";               // a PNG graphic to serve as the shadow for mac IE5
+	TransMenu.backgroundPng = "modules/mod_d4j_transmenu/img/white-90.png";          // a PNG graphic to server as the background for mac IE5
+	TransMenu.dingbatSize = 16;
+	TransMenu.menuPadding = 3;
+	TransMenu.itemPadding = 1;
+	TransMenu.shadowSize = 2;
+	TransMenu.shadowOffset = 3;
+	TransMenu.shadowColor = "#888888";
+
+	TransMenu.backgroundColor = getBgColor(document.getElementById('transmenu76627'));
+	TransMenu.backgroundColor = TransMenu.backgroundColor == '' ? '#555555' : TransMenu.backgroundColor;
+	
+	TransMenu.hideDelay = 1000;
+	TransMenu.slideTime = 400;
+
+	// if supported, initialize TransMenu
+	function initTransMenu() {
+		if (TransMenu.isSupported()) {
+			TransMenu.initialize();
+		}
+	}
+</script>
+<!-- Initialize TransMenu /-->
+
+<!-- Load TransMenu`s top level \-->
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td valign="middle"><a id="transmenu76627_menu47" class="mainlevel-nav" href="http://topica.edu.vn/?">Trang ch&#7911;</a></td><td valign="middle"><a id="transmenu76627_menu28" class="mainlevel-nav" href="http://topica.edu.vn/gioi-thieu/">Gi&#7899;i thi&#7879;u</a></td><td valign="middle"><a id="transmenu76627_menu3" class="mainlevel-nav" href="http://topica.edu.vn/chuong-trinh-dao-tao/">Ch&#432;&#417;ng tr&#236;nh &#273;&#224;o t&#7841;o</a></td><td valign="middle"><a id="transmenu76627_menu5" class="mainlevel-nav" href="http://topica.edu.vn/giang-vien/">H&#7897;i &#273;&#7891;ng KH, Gi&#7843;ng vi&#234;n</a></td><td valign="middle"><a id="transmenu76627_menu6" class="mainlevel-nav" href="http://topica.edu.vn/giai-thuong-hoat-dong-noi-bat/">Gi&#7843;i th&#432;&#7903;ng, ho&#7841;t &#273;&#7897;ng n&#7893;i b&#7853;t</a></td><td valign="middle"><a id="transmenu76627_menu7" class="mainlevel-nav" href="http://topica.edu.vn/ho-tro-sinh-vien/">H&#7895; tr&#7907; sinh vi&#234;n</a></td><td valign="middle"><a id="transmenu76627_menu52" class="mainlevel-nav" href="http://topica.edu.vn/topica-3d/">TOPICA 3D</a></td></tr></table><!-- Load TransMenu`s top level /-->
+
+<!-- Load TransMenu`s sub level \-->
+<script language="javascript" type="text/javascript">
+	if (TransMenu.isSupported()) {
+		self['transmenu76627'] = new TransMenuSet(TransMenu.direction.down, 0, 0, TransMenu.reference.bottomLeft);
+
+		document.getElementById('transmenu76627_menu47').onmouseover = function() { self['transmenu76627'].hideCurrent(); }
+		var transmenu76627_menu28 = self['transmenu76627'].addMenu(document.getElementById("transmenu76627_menu28"));
+		transmenu76627_menu28.addItem("Gi&#7899;i thi&#7879;u chung", "http://topica.edu.vn/gioi-thieu-chung/gioi-thieu-chung.html", 0);
+		transmenu76627_menu28.addItem("B&#7857;ng c&#7845;p, ch&#7913;ng ch&#7881;", "http://topica.edu.vn/bang-cap/bang-cap-chung-chi.html", 0);
+		transmenu76627_menu28.addItem("Ph&#432;&#417;ng Ph&#225;p &#273;&#224;o t&#7841;o TOPICA", "http://topica.edu.vn/phuong-phap-dao-tao-topica/phuong-phap-dao-tao-topica.html", 0);
+		transmenu76627_menu28.addItem("C&#417; s&#7903; v&#7853;t ch&#7845;t", "http://topica.edu.vn/gioi-thieu-chung/co-so-vat-chat.html", 0);
+		transmenu76627_menu28.addItem("Li&#234;n h&#7879;", "http://topica.edu.vn/lien-he/", 0);
+
+		var transmenu76627_menu3 = self['transmenu76627'].addMenu(document.getElementById("transmenu76627_menu3"));
+		transmenu76627_menu3.addItem("C&#7917; nh&#226;n Tin h&#7885;c &#7912;ng d&#7909;ng", "http://topica.edu.vn/chuong-trinh-cntt/", 0);
+		transmenu76627_menu3.addItem("C&#7917; nh&#226;n Qu&#7843;n tr&#7883; kinh doanh", "http://topica.edu.vn/chuong-trinh-qtkd/", 0);
+		transmenu76627_menu3.addItem("C&#7917; nh&#226;n T&#224;i ch&#237;nh k&#7871; to&#225;n", "http://topica.edu.vn/chuong-trinh-tcnh/", 0);
+		transmenu76627_menu3.addItem("Th&#244;ng tin tuy&#7875;n sinh", "http://topica.edu.vn/thong-tin-tuyen-sinh/", 0);
+
+		var transmenu76627_menu5 = self['transmenu76627'].addMenu(document.getElementById("transmenu76627_menu5"));
+		transmenu76627_menu5.addItem("Ng&#224;nh Tin h&#7885;c &#7912;ng d&#7909;ng", "http://topica.edu.vn/nganh-tin-hoc-ung-dung/", 0);
+		transmenu76627_menu5.addItem("Ng&#224;nh Qu&#7843;n tr&#7883; Kinh doanh", "http://topica.edu.vn/nganh-quan-tri-kinh-doanh/", 0);
+		transmenu76627_menu5.addItem("Ng&#224;nh T&#224;i ch&#237;nh K&#7871; to&#225;n", "http://topica.edu.vn/nganh-tai-chinh-ke-toan/", 0);
+		transmenu76627_menu5.addItem("Quy&#7873;n l&#7907;i gi&#7843;ng vi&#234;n", "http://topica.edu.vn/quyen-loi-giang-vien/", 0);
+
+		var transmenu76627_menu6 = self['transmenu76627'].addMenu(document.getElementById("transmenu76627_menu6"));
+		transmenu76627_menu6.addItem("Gi&#7843;i th&#432;&#7903;ng Qu&#7889;c t&#7871;", "http://topica.edu.vn/giai-thuong-quoc-te/giai-thuong-quoc-te.html", 0);
+		transmenu76627_menu6.addItem("Ph&#225;t tri&#7875;n, t&#224;i tr&#7907;", "http://topica.edu.vn/phat-trien-tai-tro/", 0);
+		transmenu76627_menu6.addItem("Tr&#237; Tu&#7879; Vi&#7879;t Nam", "http://topica.edu.vn/tri-tue-viet-nam/", 0);
+		transmenu76627_menu6.addItem("V&#432;&#7901;n &#431;&#417;m CRC-TOPIC", "http://topica.edu.vn/vuon-uom-crc-topic/", 0);
+		transmenu76627_menu6.addItem("M&#7841;ng l&#432;&#7899;i TOPIC64", "http://topica.edu.vn/mang-luoi-topic64/", 0);
+
+		var transmenu76627_menu7 = self['transmenu76627'].addMenu(document.getElementById("transmenu76627_menu7"));
+		transmenu76627_menu7.addItem("H&#7895; tr&#7907; sinh vi&#234;n", "http://topica.edu.vn/ho-tro-sinh-vien/ho-tro-sinh-vien.html", 0);
+		transmenu76627_menu7.addItem("Th&#432; vi&#7879;n &#273;i&#7879;n t&#7917;", "http://ebook-hou.edu.vn/opac/", 0);
+
+		document.getElementById('transmenu76627_menu52').onmouseover = function() { self['transmenu76627'].hideCurrent(); }
+		TransMenu.renderAll();
+	}
+	if (window.addEventListener) {
+		window.addEventListener('load', initTransMenu, false);
+	} else if (window.attachEvent) {
+		var tmev = window.attachEvent('onload', initTransMenu);
+	} else {
+		initTransMenu();
+	}
+</script>
+<!-- Load TransMenu`s sub level /--></div><!-- End menu -->
+      </div>
+    </div>
+  </div>
+  <!-- END: MAINNAV -->
+  
+  </div>
+ <!-- END: header by hieupdcrc -->
+
+
+        <div class="headermenu"><?php echo $menu ?></div>
+    <?php print_container_end(); ?>
+<?php } ?>
+<?php //Accessibility: breadcrumb trail/navbar now a DIV, not a table.
+      if ($navigation) { // This is the navigation bar with breadcrumbs  ?>
+    <div class="navbar clearfix">
+        <div class="breadcrumb"><?php print_navigation($navigation); ?></div>
+        <div class="navbutton"><?php echo $button; ?></div>
+    </div>
+<?php } else if ($heading) { // If no navigation, but a heading, then print a line
+?>
+
+
+<?php } ?>
+    <!-- END OF HEADER -->
+    <?php print_container_start(false, '', 'content'); ?>

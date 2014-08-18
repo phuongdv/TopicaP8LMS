@@ -1,0 +1,286 @@
+<ListCourse>
+	<HL0001>
+		<MaMon>ACC202</MaMon>
+		<TenMon>Nguyên lý kế toán</TenMon>
+	</HL0001>
+	<HL0001BA>
+		<MaMon>QT202</MaMon>
+		<TenMon>Nguyên lý kế toán</TenMon>
+	</HL0001BA>
+	<HL0001FA>
+		<MaMon>KT301</MaMon>
+		<TenMon>Nguyên lý kế toán</TenMon>
+	</HL0001FA>
+	<HL0001FB>
+		<MaMon>TC201</MaMon>
+		<TenMon>Nguyên lý kế toán</TenMon>
+	</HL0001FB>
+	<HL0002>
+		<MaMon>ACC304</MaMon>
+		<TenMon>Kế toán quản trị</TenMon>
+	</HL0002>
+	<HL0002BA>
+		<MaMon>QT314</MaMon>
+		<TenMon>Kế toán quản trị</TenMon>
+	</HL0002BA>
+	<HL0002FA>
+		<MaMon>KT303</MaMon>
+		<TenMon>Kế toán quản trị</TenMon>
+	</HL0002FA>
+	<HL0002FB>
+		<MaMon>TC321</MaMon>
+		<TenMon>Kế toán quản trị</TenMon>
+	</HL0002FB>
+	<HL0003>
+		<MaMon>ACC501</MaMon>
+		<TenMon>Kế toán thuế</TenMon>
+	</HL0003>
+	<HL0003BA>
+		<MaMon>KT314</MaMon>
+		<TenMon>Kế toán thuế</TenMon>
+	</HL0003BA>
+	<HL0004>
+		<MaMon>ACC508</MaMon>
+		<TenMon>Phân tích báo cáo tài chính</TenMon>
+	</HL0004>
+	<HL0004BA>
+		<MaMon>QT310</MaMon>
+		<TenMon>Phân tích báo cáo tài chính</TenMon>
+	</HL0004BA>
+	<HL0004FA>
+		<MaMon>KT309</MaMon>
+		<TenMon>Phân tích báo cáo tài chính</TenMon>
+	</HL0004FA>
+	<HL0004FB>
+		<MaMon>TC320</MaMon>
+		<TenMon>Phân tích tài chính doanh nghiệp</TenMon>
+	</HL0004FB>
+	<HL0005>
+		<MaMon>ECO101</MaMon>
+		<TenMon>Kinh tế vi mô</TenMon>
+	</HL0005>
+	<HL0005BA>
+		<MaMon>QT101</MaMon>
+		<TenMon>Kinh tế vi mô</TenMon>
+	</HL0005BA>
+	<HL0005FA>
+		<MaMon>TC101</MaMon>
+		<TenMon>Kinh tế vi mô</TenMon>
+	</HL0005FA>
+	<HL0005FB>
+		<MaMon>KT101</MaMon>
+		<TenMon>Kinh tế vi mô</TenMon>
+	</HL0005FB>
+	<HL0006>
+		<MaMon>ENG101</MaMon>
+		<TenMon>Tiếng anh cơ bản 1</TenMon>
+	</HL0006>
+	<HL0006BA>
+		<MaMon>EG010</MaMon>
+		<TenMon>Anh văn 1</TenMon>
+	</HL0006BA>
+	<HL0006FA>
+		<MaMon>EG010</MaMon>
+		<TenMon>Anh văn 1</TenMon>
+	</HL0006FA>
+	<HL0006FB>
+		<MaMon>EG010</MaMon>
+		<TenMon>Tiếng anh cơ bản 1</TenMon>
+	</HL0006FB>
+	<HL0006IT>
+		<MaMon>EG010</MaMon>
+		<TenMon>Anh văn 3</TenMon>
+	</HL0006IT>
+	<HL0007>
+		<MaMon>ENG103</MaMon>
+		<TenMon>Tiếng anh cơ bản 3</TenMon>
+	</HL0007>
+	<HL0007BA>
+		<MaMon>EG012</MaMon>
+		<TenMon>Anh văn 3</TenMon>
+	</HL0007BA>
+	<HL0007FA>
+		<MaMon>EG012</MaMon>
+		<TenMon>Anh văn 3</TenMon>
+	</HL0007FA>
+	<HL0007FB>
+		<MaMon>EG012</MaMon>
+		<TenMon>Tiếng anh cơ bản 3</TenMon>
+	</HL0007FB>
+	<HL0007IT>
+		<MaMon>EG012</MaMon>
+		<TenMon>Tiếng anh cơ bản 3</TenMon>
+	</HL0007IT>
+	<HL0008>
+		<MaMon>FIN401</MaMon>
+		<TenMon>Tài chính quốc tế</TenMon>
+	</HL0008>
+	<HL0008BA>
+		<MaMon>TC303</MaMon>
+		<TenMon>Tài chính quốc tế</TenMon>
+	</HL0008BA>
+	<HL0009>
+		<MaMon>ICT100</MaMon>
+		<TenMon>Kỹ năng học tập trong môi trường mạng</TenMon>
+	</HL0009>
+	<HL0010>
+		<MaMon>ICT101</MaMon>
+		<TenMon>Nhập môn Internet và E-learning</TenMon>
+	</HL0010>
+	<HL0010BA>
+		<MaMon>EG017</MaMon>
+		<TenMon>Nhập môn Internet và E-learning</TenMon>
+	</HL0010BA>
+	<HL0010FA>
+		<MaMon>EG017</MaMon>
+		<TenMon>Nhập môn Internet và E-learning</TenMon>
+	</HL0010FA>
+	<HL0010FB>
+		<MaMon>EG017</MaMon>
+		<TenMon>Nhập môn Internet và E-learning</TenMon>
+	</HL0010FB>
+	<HL0010IT>
+		<MaMon>EG017</MaMon>
+		<TenMon>Nhập môn Internet và E-learning</TenMon>
+	</HL0010IT>
+	<HL0011>
+		<MaMon>ICT102</MaMon>
+		<TenMon>Tin học cơ bản</TenMon>
+	</HL0011>
+	<HL0011BA>
+		<MaMon>EG016</MaMon>
+		<TenMon>Tin học đại cương</TenMon>
+	</HL0011BA>
+	<HL0011FA>
+		<MaMon>EG016</MaMon>
+		<TenMon>Tin học cơ bản</TenMon>
+	</HL0011FA>
+	<HL0011FB>
+		<MaMon>EG016</MaMon>
+		<TenMon>Tin học cơ bản</TenMon>
+	</HL0011FB>
+	<HL0011IT>
+		<MaMon>EG016</MaMon>
+		<TenMon>Tin học cơ bản</TenMon>
+	</HL0011IT>
+	<HL0012>
+		<MaMon>LAW101</MaMon>
+		<TenMon>Pháp luật đại cương</TenMon>
+	</HL0012>
+	<HL0012BA>
+		<MaMon>EG004</MaMon>
+		<TenMon>Pháp luật đại cương</TenMon>
+	</HL0012BA>
+	<HL0012FA>
+		<MaMon>EG004</MaMon>
+		<TenMon>Pháp luật đại cương</TenMon>
+	</HL0012FA>
+	<HL0012FB>
+		<MaMon>EG004</MaMon>
+		<TenMon>Pháp luật đại cương</TenMon>
+	</HL0012FB>
+	<HL0012IT>
+		<MaMon>EG004</MaMon>
+		<TenMon>Pháp luật đại cương</TenMon>
+	</HL0012IT>
+	<HL0013>
+		<MaMon>LAW201</MaMon>
+		<TenMon>Luật kinh tế</TenMon>
+	</HL0013>
+	<HL0013BA>
+		<MaMon>QT206</MaMon>
+		<TenMon>Luật kinh doanh</TenMon>
+	</HL0013BA>
+	<HL0013FA>
+		<MaMon>KT204</MaMon>
+		<TenMon>Luật kinh doanh</TenMon>
+	</HL0013FA>
+	<HL0013FB>
+		<MaMon>TC202</MaMon>
+		<TenMon>Luật kinh tế</TenMon>
+	</HL0013FB>
+	<HL0014>
+		<MaMon>MAN411</MaMon>
+		<TenMon>Thi tốt nghiệp - Quản trị kinh doanh</TenMon>
+	</HL0014>
+	<HL0015>
+		<MaMon>MAR201</MaMon>
+		<TenMon>Marketing cơ bản</TenMon>
+	</HL0015>
+	<HL0015BA>
+		<MaMon>QT203</MaMon>
+		<TenMon>Marketing cơ bản</TenMon>
+	</HL0015BA>
+	<HL0015FA>
+		<MaMon>KT203</MaMon>
+		<TenMon>Marketing cơ bản</TenMon>
+	</HL0015FA>
+	<HL0016>
+		<MaMon>PSD101</MaMon>
+		<TenMon>Phát triển kĩ năng cá nhân 1</TenMon>
+	</HL0016>
+	<HL0016BA>
+		<MaMon>EG005</MaMon>
+		<TenMon>Phát triển kĩ năng cá nhân 1</TenMon>
+	</HL0016BA>
+	<HL0016FA>
+		<MaMon>EG005</MaMon>
+		<TenMon>Phát triển kĩ năng cá nhân 1</TenMon>
+	</HL0016FA>
+	<HL0016FB>
+		<MaMon>EG005</MaMon>
+		<TenMon>Phát triển kĩ năng cá nhân 1</TenMon>
+	</HL0016FB>
+	<HL0016IT>
+		<MaMon>EG005</MaMon>
+		<TenMon>Phát triển kĩ năng cá nhân 1</TenMon>
+	</HL0016IT>
+	<HL0017>
+		<MaMon>ACC301</MaMon>
+		<TenMon>Kế toán tài chính 1</TenMon>
+	</HL0017>
+	<HL0017FA>
+		<MaMon>KT303</MaMon>
+		<TenMon>Kế toán tài chính 1</TenMon>
+	</HL0017FA>
+	<HL0018>
+		<MaMon>ACC303</MaMon>
+		<TenMon>Quản lý thu chi doanh nghiệp nhỏ và hộ gia đình</TenMon>
+	</HL0018>
+	<HL0018FA>
+		<MaMon>KT410</MaMon>
+		<TenMon>Quản lý thu chi doanh nghiệp nhỏ và hộ gia đình</TenMon>
+	</HL0018FA>
+	<HL0049>
+		<MaMon>ACC506</MaMon>
+		<TenMon>Kiểm toán nội bộ</TenMon>
+	</HL0049>
+	<HL0050>
+		<MaMon>ACC603</MaMon>
+		<TenMon>Ôn thi tốt nghiệp kế toán tổng hợp</TenMon>
+	</HL0050>
+	<HL0051>
+		<MaMon>DWS104</MaMon>
+		<TenMon>Kỹ thuật soạn thảo văn bản</TenMon>
+	</HL0051>
+	<HL0052>
+		<MaMon>EG009</MaMon>
+		<TenMon>Tiếng việt và soạn thảo văn bản</TenMon>
+	</HL0052>
+	<HL0053>
+		<MaMon>EG026</MaMon>
+		<TenMon>Soạn thảo văn bản</TenMon>
+	</HL0053>
+	<HL0054>
+		<MaMon>DWS104</MaMon>
+		<TenMon>Kỹ thuật soạn thảo văn bản và quản lý kinh tế</TenMon>
+	</HL0054>
+	<HL0055>
+		<MaMon>EBA201</MaMon>
+		<TenMon>Tiếng anh chuyên ngành BA1</TenMon>
+	</HL0055>
+	<HL0056>
+		<MaMon>QT401</MaMon>
+		<TenMon>Anh văn chuyên ngành 1</TenMon>
+	</HL0056>
+</ListCourse>

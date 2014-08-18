@@ -1,0 +1,228 @@
+/*******************************************************************
+ styles_variable.css
+  
+ This CSS file contains all color definitions like 
+ background-color, font-color, border-color etc.
+
+ 
+
+*******************************************************************/
+
+/***
+ ***  Core
+ ***/
+
+a:link,
+a:visited {
+  color:#810C15;
+}
+
+a:hover {
+  color:#810C15;
+}
+  
+body {
+  background: #FFFFFF;
+  border-color:#790000;
+  width: 960px;
+  margin-left: auto; 
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+
+.surround {
+  background: #ffffff;
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  border-left: 3px solid #ffffff;
+}
+
+.menubar {
+  background: #dddddd url('images/menubar.jpg') repeat-x;
+
+}
+
+.navbar {
+  border-color:#790000;
+  color: #810C15;
+}
+
+.navbar a:link {
+    color: #810C15;
+}
+.navbar a:visited {
+    color: #810C15;
+}
+.navbar a:hover {
+    color: #810C15;
+}
+
+
+div.headermenu 
+{
+	color:#ffffff;
+}
+
+.breadcrumb .sep, #admin-report-simpletest-index .sep {
+  color:#810C15;
+}
+
+.breadcrumb a{
+  color:#810C15;
+}
+
+.minicalendar a,
+.calendarmonth a {
+  color:#810C15;
+}
+
+*******************************************************************/
+
+/***
+ ***  hieupd
+ ***/
+
+#ja-headerwrap {
+	background: #FFFFFF url(../images/dot-white.gif) repeat-x top left;
+	clear: both;
+	padding: 0 5px;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #840C10;
+}
+
+#ja-header {
+	margin: 0 auto;
+	padding: 0;
+	background: url(http://topica.edu.vn/templates/topica/images/logo-topica.jpg) no-repeat bottom left;
+	line-height: normal;
+	text-align: left;
+	position: relative;
+	height: 129px;
+	z-index: 2;
+}
+
+#ja-header h1 {
+	margin: 0;
+	padding: 0;
+	width: 95px;
+	text-indent: -2000%;
+	position: absolute;
+	top: 26px;
+	left: 7px;
+	height: 95px;
+}
+
+#ja-header h1 a {
+	width: 95px;
+	display: block;
+	height: 95px;
+	outline: none;
+}
+
+#ja-header h1 a:hover,
+#ja-header h1 a:active,
+#ja-header h1 a:focus {
+}
+
+#rs-banner {
+	position: absolute;
+	top: 30px;
+	right: 250px;
+	text-align: right;
+	height: 75px;
+	width: 350;
+}
+
+#rs-support {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	text-align: left;
+	height: 75px;
+	width: 350;
+	color: #790000;
+	font-size: 11px;
+}
+
+#rs-topmenu {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	text-align: right;
+	font:bold;
+	font-size: 11px;
+}
+
+#rs-topmenu div.moduletable {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	float: right;
+}
+
+#rs-topmenu div.moduletable table {
+	width: auto !important;
+}
+
+#rs-topmenu div.moduletable a.mainlevel {
+	margin: 0;
+	padding: 0 5px !important;
+	width: auto;
+	color: #FFFFFF;
+	font-weight: normal;
+	border-left: 1px solid #FFFFFF;
+	float: left;
+}
+
+#rs-topmenu ul {
+	margin: 0;
+	padding: 0;
+}
+
+#rs-topmenu ul li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	line-height: 120%;
+}
+
+#rs-topmenu #active_menu {
+	background: none;
+}
+
+#ja-footer {
+	text-align: right;
+	overflow: hidden;
+	position: relative;
+	height:100px;
+	background: url(../images/footer-bg.gif) repeat-x top left #FFFFFF;
+	margin: 0 auto;
+}
+
+#ja-footer a {
+}
+
+#ja-footer a:hover,
+#ja-footer a:active,
+#ja-footer a:focus {
+}
+
+#ja-flogo {
+	width: 185px;
+	height: 60px;
+	position: absolute;
+	left: 5px;
+	top: 20px;
+}
+
+#ja-info {
+	width: 500px;
+	position: absolute;
+	top: 5px;
+	left: 250px;
+	text-align: left;
+	color: #810C15;
+}

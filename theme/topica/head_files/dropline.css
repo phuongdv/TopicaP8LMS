@@ -1,0 +1,60 @@
+/*
+$JA#COPYRIGHT$
+*/
+
+#jasdl-mainnav {
+	position: relative;
+}
+
+#jasdl-mainnav ul { display: block; }
+
+#jasdl-mainnav li {
+	float: left;
+	padding: 0;
+	margin: 0;
+	border-right: 1px solid #b78b8b;
+}
+
+#jasdl-mainnav a {
+	display: block;
+	float: left;
+	text-decoration: none;
+	padding: 0 9px;
+	line-height: 25px;
+	color: #FFF;
+	font-weight: bold;
+}
+
+#jasdl-mainnav a:hover,
+#jasdl-mainnav ul li.hover a {
+	background: url(../../images/mainnav-hover.gif) repeat-x bottom #f7f7f7;
+	color: #000;
+}
+
+#jasdl-mainnav li.active a,
+#jasdl-mainnav li.active a:hover,
+#jasdl-mainnav li.active a:active,
+#jasdl-mainnav li.active a:focus {
+	background: url(../../images/mainnav-hover.gif) repeat-x top #FFF;
+	color: #000;
+}
+
+
+#jasdl-mainnav li.removeActive a,
+#jasdl-mainnav li.removeActive a:hover,
+#jasdl-mainnav li.removeActive a:active,
+#jasdl-mainnav li.removeActive a:focus {
+	background: none;
+	color: #ffffff;
+}
+
+
+
+#jasdl-subnav .first-item { border-left: 0; }
+
+#jasdl-subnav { height: 25px; background-color: #e3e2e3; width: 900px; float: left;}
+
+#jasdl-subnav ul {
+	display: none;
+	
+}

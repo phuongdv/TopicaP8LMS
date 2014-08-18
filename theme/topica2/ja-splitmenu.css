@@ -1,0 +1,113 @@
+/*------------------------------------------------------------------------
+# JA Iris - Oct, 2007
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2007 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+-------------------------------------------------------------------------*/
+
+
+/* MAIN NAVIGATION
+----------------------------------------------------------- */
+#ja-splitmenu {
+	margin: 0;
+	padding: 0;
+	text-transform:capitalize;
+	font-size: 11px;
+}
+
+#ja-splitmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#ja-splitmenu li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+#ja-splitmenu a {
+	float: left;
+	margin: 0 1px 0 0;
+	padding: 5px 10px;
+	border-bottom: none;
+	display: block;
+	font-size: 110%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFFFFF;
+
+}
+
+#ja-splitmenu a:hover,
+#ja-splitmenu a:active,
+#ja-splitmenu a:focus {
+	border-bottom: none;
+	background-color: #84354E;
+	text-decoration: none;
+}
+
+#ja-splitmenu li.active a,
+#ja-splitmenu li.active a:hover,
+#ja-splitmenu li.active a:active,
+#ja-splitmenu li.active a:focus {
+	border-bottom: none;
+	color: #FFFFFF;
+	background: #84354E;
+}
+
+/* SUB NAVIGATION
+--------------------------------------------------------- */
+#ja-subnav {
+	border-bottom: 1px solid #CCCCCC;
+	clear: right;
+	padding: 5px;
+	background: #F7F7F7;
+}
+
+#ja-subnav ul {
+	margin: 0;
+	padding: 0;
+}
+
+#ja-subnav li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	background: none;
+	line-height: normal;
+}
+
+#ja-subnav a {
+	padding: 3px 15px;
+	float: left;
+	display: block;
+	background: url(../images/vdot.gif) no-repeat center left;
+	text-decoration: none;
+	text-transform: lowcase;
+}
+
+#ja-subnav a:hover,
+#ja-subnav a:active,
+#ja-subnav a:focus {
+	text-decoration: underline;
+}
+
+#ja-subnav li.active a {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#ja-subnav li.active a:hover,
+#ja-subnav li.active a:active,
+#ja-subnav li.active a:focus {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#ja-subnav .first-item {
+	background: none;
+}

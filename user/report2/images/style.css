@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/*menu.php*/
+
+#Menu {
+	position:absolute;
+	width:200px;
+	height:228px;
+	z-index:1;
+	left: 0px;
+	top: 50px;
+}
+.content 
+{font-family: tahoma;
+
+}
+#Menutd
+{background:#FFFFFF;}
+#Menutd:hover
+{background: #99FFFF;
+cursor:pointer;
+color:#000000;
+}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+
+/*ProductsList.php*/
+
+table.sortable thead{background:#F0F0F0; color:#000000; text-align:center;}
+table.sortable tfoot{font-weight:bold; }
+table.sortable tfoot td{border:none;}
+
+
+#Main{
+	position:absolute;
+	left: 6px;
+	height: 774px;
+	width: 993px;
+	top: 101px;
+}
+#Option{
+	position:absolute;
+	left: 0px;
+	height: 774px;
+	top: 0px;
+}
+.option{
+font-family:tahoma;
+font-size:12px;
+}
+.tablecontent{
+font-family:tahoma;
+font-size:12px;
+bolder:none;
+background: #999999;       
+}
+#tabletd{
+background: #FFFFFF
+}
+#tabletd:hover{
+
+}
+#tabletd2{
+background: #DDDDDD;
+}
+#tabletd2:hover{
+
+}
+/*ProductsAdd.php*/
+
+#addmain
+{
+	position:absolute;
+	width:537px;
+	height:364px;
+	z-index:1;
+	left: 248px;
+	top: 106px;
+}
+/*categoryList*/
+#CategoryList {
+	position:absolute;
+	width:972px;
+	height:376px;
+	z-index:2;
+	left: 2%;
+	right: 2%;
+	top: 98px;
+}
+/*add category*/
+#addcategory
+{
+	position:absolute;
+	width:550px;
+	height:115px;
+	z-index:3;
+	left: 248px;
+	top: 102px;
+}
+/*sulliers list*/
+#suppliersList
+{
+	position:absolute;
+	width:972px;
+	height:115px;
+	z-index:3;
+	left: 14px;
+	top: 102px;
+}
+/*add supplier*/
+#addsupplier
+{
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 211px;
+	top: 101px;
+
+}
+/* red star*/
+.red {color: #FF0000};

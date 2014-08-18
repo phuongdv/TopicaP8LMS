@@ -1,0 +1,25 @@
+/*
+$JA#COPYRIGHT$
+*/
+
+.ja-thumbnailwrap { margin-bottom: 10px; }
+
+.thumb-left { float: left; margin-right: 15px; }
+.thumb-right { float: right; margin-left: 15px; }
+
+.ja-thumbnail { position: relative; }
+
+
+
+.ja-thumbnailwrap ul.nav {
+	font-size: 92%;
+	text-transform: uppercase;
+	margin: 1px 0 0;
+	padding: 0 0 2px;
+	background: #f7f7f7;
+	color: #999;
+	position: relative;
+	text-align: center;
+}
+.ja-thumbnailwrap ul.nav li.next { position: absolute; right:0; top: 0; text-align: right; }
+.ja-thumbnailwrap ul.nav li.prev	{ position: absolute; left:0; top: 0;}

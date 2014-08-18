@@ -1,0 +1,6 @@
+01-09-2009
++ fix base 64 nguoi quan ly hoc vien- line 316,317,327
++ sua loi tim nhap sai dau cach - line 645
+-----------------------------------------------------------------
+03-09-2009
++fix   L?i phân trang, sau khi hi?n th? k?t qu? search line 664 -> 725 ,line 753,757,764

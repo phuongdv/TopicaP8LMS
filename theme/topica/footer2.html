@@ -1,0 +1,28 @@
+
+</div> <!-- end div containerContent -->
+<!-- START OF FOOTER -->
+<div id="footer">
+
+<?php if ($navigation and false) { ?>
+    <div class="navbar clearfix">
+        <div class="breadcrumb"><?php print_navigation($navigation); ?></div>
+        <div class="menu"><?php echo $menu; ?></div>
+    </div>
+<?php } ?>
+<div class="footer">
+<hr color="#790000" size="5" width="100%">
+	<table width="100%">
+		<tr>
+			<td align="center" valign="middle">Copyright &copy 2009. IncubationAsia. All rights reserved.</td>
+		</tr>
+	</table>
+
+</div>
+<?php if (!empty($performanceinfo)) {
+          echo $performanceinfo;
+} ?>
+
+</div>
+
+</body>
+</html>

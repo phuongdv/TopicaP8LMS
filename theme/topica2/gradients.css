@@ -1,0 +1,21 @@
+/**
+  *  Adds all the nice finish to the standard theme
+  *
+  */
+
+th.header,
+td.header,
+div.header {     
+	background:#810C15;
+    background-position:top;
+    background-repeat:repeat-x;
+	color:#fff;
+}
+
+.navbar {
+	background:#DEDFDE;
+    background-position:top;
+    background-repeat:repeat-x;
+	color:#fff;
+}
+

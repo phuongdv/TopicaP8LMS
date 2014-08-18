@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b3edd84f-d19d-4854-9eee-fa2ff4ccf099" name="Default" comment="" />
+    <ignored path="lipe.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="lipe" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="lipe2014_V2.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lipe2014_V2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="108" column="21" selection-start="3261" selection-end="3261" vertical-scroll-proportion="-10.615385" vertical-offset="1560" max-vertical-offset="4845">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="report.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/controllers/report.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="175" column="14" selection-start="5598" selection-end="5598" vertical-scroll-proportion="-10.038462" vertical-offset="2714" max-vertical-offset="5763">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common_helper.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/cms/helpers/common_helper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="171" column="41" selection-start="4617" selection-end="4617" vertical-scroll-proportion="-12.692307" vertical-offset="2577" max-vertical-offset="3808">
+              <folding>
+                <marker date="1395914532514" expanded="true" signature="1521:1562" placeholder="select count..ci_sessions..." />
+                <marker date="1395914532514" expanded="true" signature="1665:1688" placeholder="delete from ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="report_table.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/report_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="58" selection-start="1151" selection-end="1151" vertical-scroll-proportion="15.692307" vertical-offset="1003" max-vertical-offset="2550">
+              <folding>
+                <marker date="1395915621434" expanded="true" signature="4403:4468" placeholder="..." />
+                <marker date="1395915621434" expanded="true" signature="4430:4468" placeholder="..." />
+                <marker date="1395915621434" expanded="true" signature="4439:4468" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my_style.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/system/cms/themes/mytheme/css/my_style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="51" selection-start="4921" selection-end="4921" vertical-scroll-proportion="0.7558348" vertical-offset="820" max-vertical-offset="1377">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/cms/modules/test/controllers/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="207" column="26" selection-start="5055" selection-end="5055" vertical-scroll-proportion="-18.307692" vertical-offset="3043" max-vertical-offset="3655">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/system/cms/logs/log-2014-03-22.php" />
+        <option value="$PROJECT_DIR$/time.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/views/client/setting_mode_form.php" />
+        <option value="$PROJECT_DIR$/system/cms/models/mdl_course_m.php" />
+        <option value="$PROJECT_DIR$/system/cms/models/lipe_course_mode_m.php" />
+        <option value="$PROJECT_DIR$/system/cms/themes/mytheme/views/layouts/default.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/controllers/setting_mode.php" />
+        <option value="$PROJECT_DIR$/system/cms/themes/mytheme/views/partials/header.html" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/views/client/setting_lipe_table.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/views/client/setting_calendar_index.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/views/client/setting_calendar_form.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/controllers/setting_offline.php" />
+        <option value="$PROJECT_DIR$/system/codeigniter/database/DB_driver.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/views/client/setting_lipe_form.php" />
+        <option value="$PROJECT_DIR$/system/cms/logs/log-2014-03-24.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/views/client/course_index.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/models/sms_info_m.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/controllers/sms.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/views/client/offline_index.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/models/mdl_user_m.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/controllers/lipe.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/controllers/offline.php" />
+        <option value="$PROJECT_DIR$/system/cms/logs/log-2014-03-25.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/views/client/setting_calendar_table.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/controllers/setting_calendar.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/models/offline_m.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/system/cms/core/MY_Model.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/views/client/course_table.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/views/client/offline_table.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/models/vbb_thread_m.php" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/views/client/report_index.php" />
+        <option value="$PROJECT_DIR$/lipe2014.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/models/vietth_q169_attempts_m.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/models/huy_setting_calendar_m.php" />
+        <option value="$PROJECT_DIR$/system/cms/logs/log-2014-03-26.php" />
+        <option value="$PROJECT_DIR$/system/cms/config/database.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/views/client/vbb_post_view.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/views/client/setting_lipe_index.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/controllers/setting_lipe.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/models/vbb_post_m.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/models/tblanswer_m.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/views/client/answer_post_view.php" />
+        <option value="$PROJECT_DIR$/system/cms/logs/log-2014-03-27.php" />
+        <option value="$PROJECT_DIR$/system/cms/themes/mytheme/views/partials/footer.html" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/controllers/report.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/test/controllers/test.php" />
+        <option value="$PROJECT_DIR$/system/cms/helpers/common_helper.php" />
+        <option value="$PROJECT_DIR$/system/cms/modules/lipe/views/client/report_table.php" />
+        <option value="$PROJECT_DIR$/system/cms/themes/mytheme/css/my_style.css" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1364" />
+    <option name="height" value="726" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="D:/BK/Code/cr" />
+    <property name="SearchEverywhereHistory" value="" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b3edd84f-d19d-4854-9eee-fa2ff4ccf099" name="Default" comment="" />
+      <created>1395323349779</created>
+      <updated>1395323349779</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30704442" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24961714" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/report_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="55" selection-start="3364" selection-end="3364" vertical-scroll-proportion="0.0" vertical-offset="1526" max-vertical-offset="2142">
+          <folding>
+            <marker date="1395915621434" expanded="true" signature="4403:4468" placeholder="..." />
+            <marker date="1395915621434" expanded="true" signature="4430:4468" placeholder="..." />
+            <marker date="1395915621434" expanded="true" signature="4439:4468" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/controllers/sitemap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="247" selection-end="247" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/sms_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="17" selection-start="91" selection-end="91" vertical-scroll-proportion="0.16314779" vertical-offset="0" max-vertical-offset="521" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/controllers/sms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="906" selection-end="906" vertical-scroll-proportion="0.11900192" vertical-offset="737" max-vertical-offset="1411" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/setting_calendar_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="11" selection-start="655" selection-end="655" vertical-scroll-proportion="-1.0885122" vertical-offset="1190" max-vertical-offset="1785" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/setting_lipe_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="16" selection-start="2174" selection-end="2174" vertical-scroll-proportion="0.51224107" vertical-offset="816" max-vertical-offset="1547" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/codeigniter/database/drivers/mysqli/mysqli_driver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="39" selection-start="4056" selection-end="4071" vertical-scroll-proportion="0.0" vertical-offset="2268" max-vertical-offset="8347" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/codeigniter/database/DB_driver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="174" column="47" selection-start="4905" selection-end="4905" vertical-scroll-proportion="0.0" vertical-offset="2701" max-vertical-offset="26741" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/codeigniter/core/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/codeigniter/database/drivers/mysql/mysql_driver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="39" selection-start="3633" selection-end="3641" vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="8313" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/controllers/offline.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="220" column="44" selection-start="6311" selection-end="6311" vertical-scroll-proportion="-7.923077" vertical-offset="3534" max-vertical-offset="4216" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/course_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="5" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.73913044" vertical-offset="204" max-vertical-offset="1020" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/setting_calendar_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="93" selection-start="119" selection-end="119" vertical-scroll-proportion="0.031365313" vertical-offset="0" max-vertical-offset="542" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/setting_calendar_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="60" selection-start="848" selection-end="858" vertical-scroll-proportion="0.43503937" vertical-offset="221" max-vertical-offset="731" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/offline_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="27" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.9962193" vertical-offset="51" max-vertical-offset="1445" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="2" selection-start="47" selection-end="47" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/core/MY_Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="12" selection-start="1830" selection-end="1830" vertical-scroll-proportion="-6.9615383" vertical-offset="1230" max-vertical-offset="17595" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/models/huy_setting_lipe_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/models/lipe_course_mode_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="259" selection-end="259" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="255" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/models/mdl_course_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="549" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/models/mdl_quiz_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="0" selection-end="235" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="255" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/models/offline_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="233" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="255" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/models/sms_info_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="0" selection-end="236" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="255" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/models/vbb_thread_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="1" selection-start="277" selection-end="277" vertical-scroll-proportion="0.3125" vertical-offset="0" max-vertical-offset="544" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/models/mdl_user_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="236" selection-end="236" vertical-scroll-proportion="0.28228784" vertical-offset="0" max-vertical-offset="542" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/models/vietth_q169_attempts_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="272" selection-end="272" vertical-scroll-proportion="0.28228784" vertical-offset="0" max-vertical-offset="542" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/setting_mode_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="42" selection-start="147" selection-end="147" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="493" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/controllers/setting_mode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="42" selection-start="625" selection-end="634" vertical-scroll-proportion="-0.5" vertical-offset="531" max-vertical-offset="1615" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/course_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="19" selection-start="0" selection-end="1726" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="748" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="3" selection-start="1564" selection-end="1564" vertical-scroll-proportion="0.51224107" vertical-offset="544" max-vertical-offset="4879" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="29" selection-start="3007" selection-end="3007" vertical-scroll-proportion="0.4375" vertical-offset="1411" max-vertical-offset="2057" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lipe2014.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="13" selection-start="3414" selection-end="3414" vertical-scroll-proportion="0.34971645" vertical-offset="1600" max-vertical-offset="6460" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/models/huy_setting_calendar_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="31" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.7103321" vertical-offset="550" max-vertical-offset="1394" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/controllers/lipe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="54" selection-start="752" selection-end="752" vertical-scroll-proportion="0.5784499" vertical-offset="238" max-vertical-offset="1462" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/controllers/setting_calendar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="37" selection-start="1507" selection-end="1507" vertical-scroll-proportion="-12.615385" vertical-offset="726" max-vertical-offset="3876" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/controllers/setting_lipe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="27" selection-start="961" selection-end="961" vertical-scroll-proportion="-20.923077" vertical-offset="153" max-vertical-offset="6817" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/offline_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="7" selection-start="1001" selection-end="1001" vertical-scroll-proportion="-6.8846154" vertical-offset="382" max-vertical-offset="1207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/setting_lipe_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="26" selection-start="928" selection-end="928" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/models/vbb_post_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="1" selection-start="271" selection-end="271" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/answer_post_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="20" selection-start="359" selection-end="359" vertical-scroll-proportion="0.4375" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/models/tblanswer_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/themes/mytheme/views/partials/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="22" selection-start="625" selection-end="625" vertical-scroll-proportion="0.14889705" vertical-offset="242" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/vbb_post_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="20" selection-start="285" selection-end="285" vertical-scroll-proportion="0.41619587" vertical-offset="0" max-vertical-offset="531">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/logs/log-2014-03-27.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="51" selection-start="214" selection-end="214" vertical-scroll-proportion="0.06666667" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/report_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="96" selection-start="2031" selection-end="2031" vertical-scroll-proportion="0.6177024" vertical-offset="607" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/test/controllers/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="207" column="26" selection-start="5055" selection-end="5055" vertical-scroll-proportion="-18.307692" vertical-offset="3043" max-vertical-offset="3655">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/helpers/common_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="41" selection-start="4617" selection-end="4617" vertical-scroll-proportion="-12.692307" vertical-offset="2577" max-vertical-offset="3808">
+          <folding>
+            <marker date="1395914532514" expanded="true" signature="1521:1562" placeholder="select count..ci_sessions..." />
+            <marker date="1395914532514" expanded="true" signature="1665:1688" placeholder="delete from ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/controllers/report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="14" selection-start="5598" selection-end="5598" vertical-scroll-proportion="-10.038462" vertical-offset="2714" max-vertical-offset="5763">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lipe2014_V2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="21" selection-start="3261" selection-end="3261" vertical-scroll-proportion="-10.615385" vertical-offset="1560" max-vertical-offset="4845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/modules/lipe/views/client/report_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="58" selection-start="1151" selection-end="1151" vertical-scroll-proportion="15.692307" vertical-offset="1003" max-vertical-offset="2550">
+          <folding>
+            <marker date="1395915621434" expanded="true" signature="4403:4468" placeholder="..." />
+            <marker date="1395915621434" expanded="true" signature="4430:4468" placeholder="..." />
+            <marker date="1395915621434" expanded="true" signature="4439:4468" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/cms/themes/mytheme/css/my_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="51" selection-start="4921" selection-end="4921" vertical-scroll-proportion="0.7558348" vertical-offset="820" max-vertical-offset="1377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
