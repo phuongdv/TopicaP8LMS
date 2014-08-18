@@ -1,0 +1,984 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>WIRIS Moodle Plugin installation</title>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+</head>
+
+
+<body>
+
+<h1>Installation of WIRIS plugin 2.1 for Moodle </h1>
+
+<ol>
+
+  <li><a href="#automatic">Automatic
+installation</a> </li>
+
+  <li><a href="#req">Requirements</a>
+    <ol type="i">
+
+      <li> <a href="#req1">Moodle</a> </li>
+
+      <li> <a href="#req2">WIRIS Components</a>
+      </li>
+
+    </ol>
+
+  </li>
+
+  <li> <a href="#copy">Copying files in your Moodle
+installation</a>
+    <ol type="i">
+
+      <li> <a href="#copy1">Plug-in files</a>
+      </li>
+
+      <li> <a href="#copy2">WIRIS Editor jar file</a></li>
+
+    </ol>
+
+  </li>
+
+  <li> <a href="#filter">Installing WIRIS filter</a>
+  </li>
+
+  <li> <a href="#acthtml">Activating the HTML
+editor plugin </a> </li>
+
+  <li> <a href="#conf">Configuring installation</a>
+    <ol type="i">
+
+      <li> <a href="#conf1">Configuration file</a>
+      </li>
+	
+		<li><a href="#php4">PHP4 support</a>
+		</li>
+      <li> <a href="#conf2">WIRIS Image Service</a>
+      </li>
+
+      <li> <a href="#conf3">WIRIS Editor</a> </li>
+
+      <li> <a href="#conf4">WIRIS CAS Applet</a>
+      </li>
+
+    </ol>
+
+  </li>
+
+  <li> <a href="#test">Testing installation</a>
+  </li>
+
+</ol>
+
+<ol>
+
+  <li>
+    <h2 id="automatic" style="color:#FF0000;font-weight: bold;">Automatic
+installation</h2>
+
+  </li>
+
+
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color:#FF0000;font-weight: bold;">If you want to install Plugin WIRIS
+automatically:<br/><br/>
+<ol>
+<li>Download <a
+href="http://www.wiris.com/download/moodle/download?file=pluginwiris.zip">WIRIS
+plugin</a></li>
+<li>Extract it on your moodle root directory</li>
+<li>Open with your
+browser: http://your.server/moodle_path/pluginwiris/install.php</li>
+<li>Follow the installation steps. Important! Apache user must have write permisions on moodle directory!</li>
+</ol>
+</span>
+
+  <li>
+    <h2 id="req">Requirements</h2>
+
+    <ol type="i">
+
+      <li>
+        <h3 a="req1">Moodle</h3>
+
+        <ul>
+
+          <li>Moodle platform 1.5, 1.6, 1.7, 1.8 or 1.9 (not tested on
+other versions)</li>
+
+          <li>PHP version 4.3 or higher (note: read <a href="#php4">this</a> if you are using PHP &lt; 5.0.0).</li>
+
+        </ul>
+
+      </li>
+
+      <li>
+        <h3 id="req2">WIRIS components</h3>
+
+        <p>The WIRIS plugin for Moodle is a bridge between the
+Moodle platform and the WIRIS components.</p>
+
+        <p>You can either use the WIRIS plugin as a tool to
+insert
+mathematical formulas in Moodle's HTML Editor, or use it to insert
+WIRIS CAS applets. Each of these two functionalities is optional and
+completely independent of the other: you must choose which one you want
+to install and integrate with your Moodle platform.</p>
+
+        <p>Before installing this plugin you must be sure to have
+a
+legal copy of the needed WIRIS components installed at one of your
+servers or to have a legal access to them. You do not need all the
+components, but those used by the desired functionality. WIRIS Formula
+Image Service and WIRIS Editor are the components needed for the
+formula's edition; WIRIS CAS is needed for applet insertion.</p>
+
+        <p>The needed WIRIS Components are:</p>
+
+        <ul>
+
+          <li>
+            <p><!-- a href="http://www.wiris.com/download/imageService/" target="_blank" --><strong>The
+WIRIS plugin.</strong><br>
+
+            <a href="http://www.wiris.com/download/moodle/download?file=pluginwiris.zip">download
+WIRIS plugin</a> (<a href="http://www.wiris.com/download/moodle/download?history=pluginwiris.zip">hist</a>)
+            </p>
+
+          </li>
+
+          <li>
+            <p> <strong>WIRIS Formula Image Service</strong>
+            </p>
+
+            <p> This is a web service that generates images of
+mathematical formulas. It is used by the plugin to insert formulas
+within the Moodle content. You must have an access to an already
+installed copy or install a new legal copy before installing the WIRIS
+plugin. </p>
+
+            <p> During the plugin installation you will need the<strong>
+URL of the WIRIS Image Service</strong> (see the installation
+documentation of the WIRIS Image service, for more information) </p>
+
+          </li>
+
+          <li> <strong>WIRIS Editor</strong> <a href="http://www.wiris.com/content/view/20/62/" target="_blank">more
+info</a><br>
+
+            <a href="http://www.wiris.com/download/editor/download?file=wiriseditor.zip">download
+WIRIS Editor</a> (<a href="http://www.wiris.com/download/editor/download?history=wiriseditor.zip">hist</a>)
+            <p> This is a Java applet that allows to edit
+graphically mathematical formulas. The plugin will make it available in
+the HTML Editor of Moodle. </p>
+
+            <p> For the WIRIS plugin installation, you need the
+JAR archive 'wiriseditor.jar' of the WIRIS Editor. </p>
+
+          </li>
+
+          <li> <strong>WIRIS CAS</strong> <a href="http://www.wiris.com/content/view/18/3/" target="_blank">more
+info</a>
+            <p> If your institution owns a licence of WIRIS CAS,
+the WIRIS plugin will allow you to insert WIRIS CAS applets in your
+course using the HTML Editor of Moodle. </p>
+
+            <p> For the WIRIS plugin installation, you will need
+the following information: </p>
+
+            <ol>
+
+              <li> The <em>codebase</em> of your
+WIRIS CAS applet</li>
+
+              <li> The <em>archive name </em> of
+your WIRIS CAS applet</li>
+
+              <li> The classname (or <em>code</em> )
+of your WIRIS CAS applet</li>
+
+              <li>The list of the languages available in your
+WIRIS CAS installation. </li>
+
+            </ol>
+
+            <p>The default configuration files of WIRIS Plugin
+include that information relative to WIRIS CAS demonstration versions
+at <a href="www.wiris.com">www.wiris.com</a>.</p>
+
+          </li>
+
+        </ul>
+
+      </li>
+
+    </ol>
+
+  </li>
+
+  <li>
+    <h2 id="copy"> Copying files in your Moodle
+installation </h2>
+
+    <p> <strong>NOTE</strong> In the examples of
+this document we suppose that Moodle is installed in a directory called
+    <em>moodle</em>. </p>
+
+    <ol type="i">
+
+      <li id="copy1">
+        <p> After having extracted the WIRIS plugin archive copy
+the <strong> <em>pluginwiris</em> </strong>
+directory into the Moodle web directory. After this operation the
+moodle directory should have the following structure:</p>
+
+        <pre>
+		moodle/
+			admin/
+			auth/
+			backup/
+			...
+			user/
+			userpix/
+			<strong>pluginwiris/
+				doc/
+				editor/
+				filter/
+				install/
+				lang/
+				lib/
+				wrs_config.php</strong>
+        </pre>
+
+      </li>
+
+      <li id="copy2"> Then copy the JAR file of the WIRIS
+Editor <em> <strong>wiriseditor.jar</strong> </em>
+into the directory <strong> <em>moodle/pluginwiris/editor/jar</em>
+        </strong>.</li>
+
+    </ol>
+
+  </li>
+
+  <li>
+    <h2 id="filter">Installing WIRIS filter</h2>
+
+    <p>WIRIS filter is needed in order to correctly visualize the
+inserted WIRIS formulas and applets.</p>
+
+    <p> Copy the <em> <strong>wiris</strong> </em>
+directory from <em> <strong>pluginwiris/install/filter/</strong>
+    </em> to <em> <strong>moodle/filter</strong>
+    </em>. After the operation a wiris directory
+must&nbsp;appear&nbsp;in&nbsp;the&nbsp;filter&nbsp;directory
+of moodle: </p>
+
+    <pre> moodle/&nbsp;<br> admin/<br> ...<br> <strong>filter/<br> wiris/<br> filter.php</strong><br>...<br>pluginwiris/<br></pre>
+
+    <p>Then activate the WIRIS filter in the Moodle
+administration.</p>
+
+    <ul>
+
+      <li> Moodle 1.7 and greater <b>Administration
+&gt; Modules &gt; Filters</b> <br>
+
+        <div style="margin-bottom: 8px; text-align: center;">
+        <img src="img/moodlefilter16.jpeg" alt="Moodle Filter Configuration"> </div>
+
+      </li>
+
+      <li> Moodle 1.6 <b>Administration &gt;
+Configuration &gt; Filters</b> <br>
+
+        <div style="margin-bottom: 8px; text-align: center;">
+        <img src="img/moodlefilter16.jpeg" alt="Moodle Filter Configuration"> </div>
+
+      </li>
+
+      <li> Moodle 1.5 <b>Administration &gt;
+Configuration &gt; Filters</b> <br>
+
+        <div style="margin-bottom: 8px; text-align: center;">
+        <img src="img/moodlefilter.jpeg" alt="Moodle Filter Configuration"> </div>
+
+      </li>
+
+    </ul>
+
+  </li>
+
+  <li>
+    <h2 id="acthtml">Activating the HTML editor plugin</h2>
+
+    <p> The WIRIS plugin adds new buttons to the toolbar of the
+HTML editor. In order to activate them the moodle file <em> <strong>moodle/lib/weblib.php</strong>
+    </em> must be modified.</p>
+
+    <p> First make a backup copy of the file lib/weblib.php. Then
+open it with a text editor and go in the function <strong> <em>print_textarea</em>
+    </strong> (you can search for the text '<em>function
+print_textarea(</em>'). Then insert the following code just
+before the line</p>
+
+    <pre> $scriptcount++;</pre>
+
+  </li>
+
+</ol>
+
+<ol>
+
+  <li>
+    <table style="width: 1266px; height: 322px;">
+
+      <tbody>
+
+        <tr>
+
+          <th style="background-color: rgb(204, 204, 204);">
+Moodle 1.8 </th>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">
+          <pre>/**** begin WIRIS Plugin ****/<br> $str .= ($scriptcount &lt; 1) ? '&lt;script type="text/javascript" src="'. $CFG-&gt;httpswwwroot .'/pluginwiris/editor/wrs_plugin.js.php"&gt;&lt;/script&gt;'."\n" : '';<br>/**** end WIRIS Plugin ****/</pre>
+
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <th style="background-color: rgb(204, 204, 204);">
+Moodle 1.7, 1.6 and 1.5.3 </th>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">
+          <pre>/**** begin WIRIS Plugin ****/<br> $str .= ($scriptcount &lt; 1) ? '&lt;script type="text/javascript" src="'. $CFG-&gt;wwwroot .'/pluginwiris/editor/wrs_plugin.js.php"&gt;&lt;/script&gt;'."\n" : '';<br>/**** end WIRIS Plugin ****/</pre>
+
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <th style="background-color: rgb(204, 204, 204);">
+Moodle version previous to 1.5.3 </th>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">
+          <pre>/**** begin WIRIS Plugin ****/<br> echo ($scriptcount &lt; 1) ? '&lt;script type="text/javascript" src="'. $CFG-&gt;wwwroot .'/pluginwiris/editor/wrs_plugin.js.php"&gt;&lt;/script&gt;'."\n" : '';<br>/**** end WIRIS Plugin ****/</pre>
+
+          </td>
+
+        </tr>
+
+      </tbody>
+    </table>
+
+    <p>Then go to&nbsp;function <strong> <em>use_html_editor</em>
+    </strong> (you can search for the text '<em>function
+use_html_editor(</em>') and insert the following code just after
+the line</p>
+
+    <span style="font-family: monospace;">echo
+print_editor_config($editorhidebuttons);</span><br>
+
+    <table style="width: 1265px; height: 110px;">
+
+      <tbody>
+
+        <tr>
+
+          <th style="background-color: rgb(204, 204, 204);">
+Moodle 1.8, 1.7, 1.6 and 1.5.x</th>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">
+          <pre style="width: 1256px;">/**** start WIRIS Plugin ****/<br> echo "\nWiris.register(config);\n";<br>/**** end WIRIS Plugin ****/</pre>
+
+          </td>
+
+        </tr>
+
+      </tbody>
+    </table>
+
+    <h3>Moodle 1.8 - Examples</h3>
+
+    <table style="width: 1267px; height: 258px;">
+
+      <tbody>
+
+        <tr>
+
+          <th style="width: 1256px; text-align: left;" colspan="2"> Before</th>
+
+        </tr>
+
+        <tr>
+
+          <th style="background-color: rgb(204, 204, 204);">
+Code</th>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">
+          <pre> $str .= ($scriptcount &lt; 1) ? '&lt;script type="text/javascript" src="'.<br> $CFG-&gt;httpswwwroot .'/lib/editor/htmlarea/lang/en.php"&gt;&lt;/script&gt;'."\n" : '';<br> $scriptcount++;</pre>
+
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">...</td>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">
+          <pre style="width: 1256px;"> echo print_editor_config($editorhidebuttons);<br>	<br> if (empty($THEME-&gt;htmleditorpostprocess)) {<br> if (empty($name)) {</pre>
+
+          </td>
+
+        </tr>
+
+      </tbody>
+    </table>
+
+    <br>
+
+    <table>
+
+      <tbody>
+
+        <tr>
+
+          <th style="text-align: left;" colspan="2">
+After</th>
+
+        </tr>
+
+        <tr>
+
+          <th style="background-color: rgb(204, 204, 204);">
+Code</th>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">
+          <pre> $str .= ($scriptcount &lt; 1) ? '&lt;script type="text/javascript" src="'.<br> $CFG-&gt;httpswwwroot .'/lib/editor/htmlarea/lang/en.php"&gt;&lt;/script&gt;'."\n" : '';<br><br> /**** WIRIS Plugin ****/<br> $str .= ($scriptcount &lt; 1) ? '&lt;script type="text/javascript" src="'. $CFG-&gt;httpswwwroot .'/pluginwiris/editor/wrs_plugin.js.php"&gt;&lt;/script&gt;'."\n" : '';<br> /**** WIRIS Plugin ****/<br><br> $scriptcount++;</pre>
+
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">...</td>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">
+          <pre> echo print_editor_config($editorhidebuttons);<br><br> /**** start WIRIS Plugin ****/<br> echo "\nWiris.register(config);\n";<br> /**** end WIRIS Plugin ****/<br><br> if (empty($THEME-&gt;htmleditorpostprocess)) {<br> if (empty($name)) {</pre>
+
+          </td>
+
+        </tr>
+
+      </tbody>
+    </table>
+
+    <h3>Moodle 1.7 and 1.6 - Examples</h3>
+
+    <table style="width: 1266px; height: 242px;">
+
+      <tbody>
+
+        <tr>
+
+          <th style="text-align: left; width: 1258px;" colspan="2"> Before</th>
+
+        </tr>
+
+        <tr>
+
+          <th style="background-color: rgb(204, 204, 204); width: 1258px;">
+Code</th>
+
+        </tr>
+
+        <tr>
+
+          <td style="width: 1258px; background-color: rgb(224, 224, 224);">
+          <pre> $str .= ($scriptcount &lt; 1) ? '&lt;script type="text/javascript" src="'.<br> $CFG-&gt;wwwroot .'/lib/editor/htmlarea/lang/en.php"&gt;&lt;/script&gt;'."\n" : '';<br> $scriptcount++;</pre>
+
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td style="width: 1258px; background-color: rgb(224, 224, 224);">...</td>
+
+        </tr>
+
+        <tr>
+
+          <td style="width: 1258px; background-color: rgb(224, 224, 224);">
+          <pre> echo print_editor_config($editorhidebuttons);<br><br> if (empty($name)) {</pre>
+
+          </td>
+
+        </tr>
+
+      </tbody>
+    </table>
+
+    <br>
+
+    <table>
+
+      <tbody>
+
+        <tr>
+
+          <th style="text-align: left;" colspan="2">
+After</th>
+
+        </tr>
+
+        <tr>
+
+          <th style="background-color: rgb(204, 204, 204);">
+Code</th>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">
+          <pre style="width: 1256px;"> $str .= ($scriptcount &lt; 1) ? '&lt;script type="text/javascript" src="'.<br> $CFG-&gt;wwwroot .'/lib/editor/htmlarea/lang/en.php"&gt;&lt;/script&gt;'."\n" : '';<br><br> /**** WIRIS Plugin ****/<br> $str .= ($scriptcount &lt; 1) ? '&lt;script type="text/javascript" src="'. $CFG-&gt;wwwroot .'/pluginwiris/editor/wrs_plugin.js.php"&gt;&lt;/script&gt;'."\n" : '';<br> /**** WIRIS Plugin ****/<br><br> $scriptcount++;</pre>
+
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">...</td>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">
+          <pre> echo print_editor_config($editorhidebuttons);<br><br> /**** start WIRIS Plugin ****/<br> echo "\nWiris.register(config);\n";<br> /**** end WIRIS Plugin ****/<br><br> if (empty($name)) {</pre>
+
+          </td>
+
+        </tr>
+
+      </tbody>
+    </table>
+
+    <h3>Moodle 1.5.3 - Examples :</h3>
+
+    <table style="width: 1266px; height: 226px;">
+
+      <tbody>
+
+        <tr>
+
+          <th style="text-align: left;" colspan="2">
+Before</th>
+
+        </tr>
+
+        <tr>
+
+          <th style="background-color: rgb(204, 204, 204);">
+Code</th>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">
+          <pre> $str .= ($scriptcount &lt; 1) ? '&lt;script type="text/javascript" src="'. $CFG-&gt;wwwroot .'/lib/editor/lang/en.php"&gt;&lt;/script&gt;'."\n" : '';<br> $scriptcount++;</pre>
+
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">...</td>
+
+        </tr>
+
+        <tr>
+
+          <td style="background-color: rgb(224, 224, 224);">
+          <pre> echo print_editor_config($editorhidebuttons);<br><br> if (empty($name)) {</pre>
+
+          </td>
+
+        </tr>
+
+      </tbody>
+    </table>
+
+    <br>
+
+    <table style="width: 1266px; height: 370px;">
+
+      <tbody>
+
+        <tr>
+
+          <th style="text-align: left; width: 1258px;" colspan="2"> After</th>
+
+        </tr>
+
+        <tr>
+
+          <th style="background-color: rgb(204, 204, 204); width: 1258px;">
+Code</th>
+
+        </tr>
+
+        <tr>
+
+          <td style="width: 1258px; background-color: rgb(224, 224, 224);">
+          <pre> $str .= ($scriptcount &lt; 1) ? '&lt;script type="text/javascript" src="'. $CFG-&gt;wwwroot .'/lib/editor/lang/en.php"&gt;&lt;/script&gt;'."\n" : '';<br><br> /**** WIRIS Plugin ****/<br> $str .= ($scriptcount &lt; 1) ? '&lt;script type="text/javascript" src="'. $CFG-&gt;wwwroot .'/pluginwiris/editor/wrs_plugin.js.php"&gt;&lt;/script&gt;'."\n" : '';<br> /**** WIRIS Plugin ****/<br><br> $scriptcount++;</pre>
+
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td style="width: 1258px; background-color: rgb(224, 224, 224);">...</td>
+
+        </tr>
+
+        <tr>
+
+          <td style="width: 1258px; background-color: rgb(224, 224, 224);">
+          <pre> echo print_editor_config($editorhidebuttons);<br><br> /**** start WIRIS Plugin ****/<br> echo "\nWiris.register(config);\n";<br> /**** end WIRIS Plugin ****/<br><br> if (empty($name)) {</pre>
+
+          </td>
+
+        </tr>
+
+      </tbody>
+    </table>
+
+  </li>
+
+  <li>
+    <h2 id="conf">Configuration instalation</h2>
+
+    <ol type="i">
+
+      <li>
+        <h3 id="conf1">Configuration file</h3>
+
+        <p> The last installation step is editing the
+configuration file of the WIRIS plugin. This file contains a set of
+properties that are used by the plugin. Be careful to respect the PHP
+syntax when modifying the configuration. Open the file <em> <strong>moodle/pluginwiris/wrs_config.php</strong>
+        </em> in a text editor and modify the value of the
+properties.</p>
+
+        <table style="width: 1266px; height: 508px;">
+
+          <tbody>
+
+            <tr>
+
+              <th style="background-color: rgb(204, 204, 204); width: 1258px;" colspan="2"> The WIRIS Plugin configuration file</th>
+
+            </tr>
+
+            <tr>
+
+              <td style="vertical-align: top; width: 1258px; background-color: rgb(224, 224, 224);">
+              <pre>&lt;?php<br>/* WIRIS Formula Image Service */<br>$CFG-&gt;wirisformulaeditorenabled=true;<br>$CFG-&gt;wirisimageservicehost='services.wiris.com';<br>$CFG-&gt;wirisimageserviceport=80;<br>$CFG-&gt;wirisimageservicepath='/formula/render';<br>$CFG-&gt;wirisimagebgcolor='#fafafa';<br>$CFG-&gt;wiristransparency='false';<br>$CFG-&gt;wirisimagesymbolcolor='#000000';<br>$CFG-&gt;wirisimagefontsize='16';<br><br>/* WIRIS editor */<br>$CFG-&gt;wiriseditorcodebase='/pluginwiris/editor/jar/';<br>$CFG-&gt;wiriseditorarchive='wiriseditor.jar';<br>$CFG-&gt;wiriseditorclass='WirisFormulaEditor';<br><br>/* WIRIS CAS calculator */<br>$CFG-&gt;wiriscasenabled=false;<br>$CFG-&gt;wiriscascodebase='http://XXXXXX/wiris/wiris-codebase';<br>$CFG-&gt;wiriscasarchive='wrs_XX_en.jar';<br>$CFG-&gt;wiriscasclass='WirisApplet_XX_en';<br>$CFG-&gt;wiriscaslang='en,es,fr,it,nl,et,ca,eu';<br><br>/* Filter variables */<br>$CFG-&gt;wirisfilterdir = 'filter/wiris';<br>$CFG-&gt;wirisimagedir = 'filter/wiris';<br>$CFG-&gt;wirisformulaimageclass = 'Wirisformula';<br>$CFG-&gt;wiriscasimageclass = 'Wiriscas';<br><br>/* Proxy variables */<br>$CFG->wirisproxy = false;<br>$CFG->wirisproxy_host = '';<br>$CFG->wirisproxy_port = 8080;<br><br>$CFG->wirisPHP4compatibility = false;<br>?&gt;</pre>
+
+              </td>
+
+              <td style="vertical-align: top; background-color: rgb(224, 224, 224);">
+              <pre>
+
+<br>// enable the insertion of formulas using WIRIS Editor<br>// host of the Java application server<br>// port of the Java application server<br>// context root of the Image service<br>// background color of the formulas<br>// set transparent background for the formulas (available for Mozilla / IE 7 or greater)<br>//symbol color of the formulas<br>//font size of the formula<br><br><br>// codebase of your WIRIS Editor jar file<br>// SHOULD USUALLY NOT BE MODIFIED<br>// SHOULD USUALLY NOT BE MODIFIED<br><br><br>// enable the insertion of WIRIS Cas Applet in the HTML Editor<br>// codebase of the WIRIS CAS applet<br>// archive of the WIRIS CAS applet<br>// class name of the WIRIS CAS applet<br>// available languages (depend on your WIRIS CAS installation).<br><br><br>// SHOULD USUALLY NOT BE MODIFIED<br>// SHOULD USUALLY NOT BE MODIFIED<br>// SHOULD USUALLY NOT BE MODIFIED<br>// SHOULD USUALLY NOT BE MODIFIED<br><br><br><br><br><br><br>// PHP 4 COMPATIBILITY: MARKT IT IF YOU ARE USING PHP 4, BUT DON'T USE PROXY.</pre>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+        </table>
+
+      </li>
+
+      <li>
+		<h3 id="php4">PHP4 support</h3>
+		<p>If you are using PHP &lt; 5.0.0, you must enable PHP4 support on your wrs_config.php.</p>
+		
+		<p>Edit this line:<br>
+		$CFG->wirisPHP4compatibility = false;<br><br>
+		
+		By this:
+		$CFG->wirisPHP4compatibility = true;</p>
+		
+		<p>Remember that if you are using PHP4, you haven't proxy support.</p>
+		</li>
+		
+        <li><h3 id="conf2">Configuring the WIRIS Image Service</h3>
+
+        <p> Edit the value of the properties <em>$CFG-&gt;wirisimageservicehost,
+$CFG-&gt;wirisimageserviceport</em> and <em>$CFG-&gt;wirisimageservicepath</em>
+to fit your installation of the WIRIS Formula Image Service. The
+correct values depend on the URL of the WIRIS Image Service (see
+example bellow). If the Java application server where is installed the
+image service resides on the same host as your Web server you can let
+the <em>$CFG-&gt;wirisimageservicehost</em> property
+to 'localhost'.</p>
+
+        <p> The property <em>$CFG-&gt;wirisimagebgcolor</em>
+defines the background color of the formula (hexadecimal code). The
+value should be the same as the value of the background color of your
+Moodle theme, and should but a opaque color (6 hexadecimal) digits
+because Internet Explorer 6 does not support transparent images.
+However, you can specify a fully transparent background setting the
+value of<em>$CFG-&gt;wiristransparency </em>to <em>'true'</em>.
+If this is property is enabled, the background color value will be
+ignored and a transparent background will be set. This configuration
+won't work with Internet Explorer browsers prior to IE7, where a pale
+gray background will be shown.</p>
+
+        <h4>Example 1</h4>
+
+        <p> In case you are using the Image Service provided at
+wiris.com website the URL of the image service is: <a>http://services.wiris.com:80/formula/render</a>
+        </p>
+
+        <p>The configuration files have to be modified as follows
+        </p>
+
+        <table>
+
+          <tbody>
+
+            <tr>
+
+              <td style="background-color: rgb(224, 224, 224);">
+              <pre>&lt;?php /* WIRIS Formula Image Service<br>*/$CFG-&gt;wirisimageservicehost='<strong>services.wiris.com</strong>'; //host of the Java application<br>server$CFG-&gt;wirisimageserviceport=<strong>80</strong>	; //port of the Java application<br>server$CFG-&gt;wirisimageservicepath='<strong>/formula/render</strong>'; //context root of the Image service<br>...<br></pre>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+        </table>
+
+        <h4>Example 2</h4>
+
+        <p> In case you installed the WAR file of the WIRIS
+Formula Image Service <em>wirisformula.war </em>in the <em>webapps</em>
+of Tomcat listening on <em>localhost</em> at the port <em>8080</em>.
+        </p>
+
+        <p> The URL of the image service is: <a>http://localhost:8080/formula/render</a>
+        </p>
+
+        <p>The configuration files have to be modified as follows
+        </p>
+
+        <table>
+
+          <tbody>
+
+            <tr>
+
+              <td style="background-color: rgb(224, 224, 224);">
+              <pre>&lt;?php /* WIRIS Formula Image Service<br>*/$CFG-&gt;wirisimageservicehost='<strong>localhost</strong>'; //host of the Java application<br>server$CFG-&gt;wirisimageserviceport=<strong>8080</strong>	; //port of the Java application<br>server$CFG-&gt;wirisimageservicepath='<strong>/formula/render</strong>'; //context root of the Image service<br>...<br></pre>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+        </table>
+
+      </li>
+
+      <li>
+        <h3 id="conf3">Configuring WIRIS Editor</h3>
+
+        <p>WIRIS Editor jar file can be installed in the same
+server or in a different server to Image service. Edit the value of the
+properties <em>$CFG-&gt;wiriseditorcodebase</em>
+to determine the URL where the editor jar file can be found. The
+default value '/pluginwiris/editor/jar/' determines that the jar file
+has been installed in the pluginwiris folder in moodle installation.</p>
+
+        <p>Properties <em>$CFG-&gt;wiriseditorarchive</em>
+and <em>$CFG-&gt;wiriseditorclass</em> should not be
+usually modified.
+The correct values depend on the URL of the WIRIS Editor (see example
+bellow).</p>
+
+      </li>
+
+      <li>
+        <h3 id="conf4">Configuring WIRIS CAS</h3>
+
+        <p> If your institution has WIRIS CAS installed on a
+server you can enable the WIRIS CAS feature that will allow to insert
+WIRIS CAS applets in your content directly from the Moodle HTML editor.
+Set the property <em>$CFG-&gt;wiriscasenabled</em> to <em>true</em>
+to enable the feature. The properties <em>$CFG-&gt;wiriscascodebase</em>,
+        <em>$CFG-&gt;wiriscasarchive</em>, <em>$CFG-&gt;wiriscasclass</em>
+must correspond respectively to the codebase, the archive (jar file)
+and the class name (code) of the WIRIS Applet.</p>
+
+        <p> If you have a multilingual version of WIRIS CAS you
+have to set the value of the property <em>$CFG-&gt;wiriscaslang</em>
+with the list of available languages. This list is a comma separated
+list of ISO language codes (2 characters by language). The archive and
+the class name of the WIRIS Applet can be those of any of the available
+languages.</p>
+
+        <p>If you have WIRIS CAS in only one language, the value
+of <em>$CFG-&gt;wiriscaslang</em> must be either the
+corresponding ISO language code or the empty string ''. </p>
+
+      </li>
+
+    </ol>
+
+  </li>
+
+  <li>
+    <h2 id="test">Testing installation</h2>
+
+    <p> To check that&nbsp;the WIRIS Plugin was successfully
+installed, try editing the content of a course with the HTML Editor of
+Moodle: new buttons should be available in the toolbar: </p>
+
+    <div align="left">
+    <blockquote>
+      <table width="426">
+
+        <tbody>
+
+          <tr>
+
+            <td width="418">
+            <div align="left"> <img src="img/toolbar2.png" alt="Toolbar with WIRIS Formula button" border="0"> </div>
+
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+            <div align="left">WIRIS Editor button</div>
+
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+            <div align="left"> <img src="img/toolbar3.png" alt="Toolbar with WIRIS CAS button"></div>
+
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+            <div align="left">WIRIS CAS button</div>
+
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+            <div align="left"> <img alt="Toolbar with WIRIS Formula and WIRIS CAS buttons" src="img/toolbar.png"> </div>
+
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+            <div align="left">WIRIS Editor and WIRIS CAS
+buttons</div>
+
+            </td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+    </blockquote>
+
+    </div>
+
+    <p> To learn how to use these buttons, you can look at the
+following flash animations: </p>
+
+    <ul>
+
+      <li> <a href="http://www.wiris.com/demo/moodle/formulas.htm">Adding
+formula </a> </li>
+
+      <li> <a href="http://www.wiris.com/demo/moodle/cas.htm">Adding
+WIRIS CAS applet</a> </li>
+
+    </ul>
+
+  </li>
+
+</ol>
+
+</body>
+</html>

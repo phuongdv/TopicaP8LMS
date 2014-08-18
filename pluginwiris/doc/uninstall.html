@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>WIRIS Moodle plugin uninstallation</title>
+
+
+</head>
+
+
+<body>
+
+<h1>Uninstallation of WIRIS plugin 2.1 for Moodle</h1>
+
+<ol>
+
+  <li>Go to your moodle and modify filters and turn off WIRIS filter:
+    <ul>
+
+      <li>
+Moodle 1.7 and greater Administration &gt; Modules &gt; Filters:<br>
+
+Moodle 1.6 Administration &gt; Configuration &gt; Filters<br>
+
+        <img src="./img/moodlefilter16_uninstall.jpeg"></li>
+
+      <li>
+Moodle 1.5 Administration &gt; Configuration &gt; Filters<br>
+
+        <img src="./img/moodlefilter_uninstall.jpeg">
+      </li>
+
+    </ul>
+
+  </li>
+
+  <li>Restore your moodle/lib/weblib.php. In manually instalation
+you have backuped it, maybe on moodle/lib/weblib.php.old</li>
+
+  <li>Remove moodle/filter/wiris directory</li>
+
+  <li>Remove moodle/pluginwiris/ directory</li>
+
+</ol>
+
+</body>
+</html>

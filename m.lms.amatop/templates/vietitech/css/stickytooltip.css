@@ -1,0 +1,5 @@
+.stickytooltip { display:none; position:absolute; display:none; background-color:#fff; z-index:3000;}
+.head_tips { background:#da251d url(../images/tooltip_03.gif) no-repeat; width:356px; height:7px; font-size:0%;}
+.body_tips { background:url(../images/tooltip_06.gif) repeat-y; width:356px;}
+.bottom_tips { background:#da251d url(../images/tooltip_08.gif) no-repeat; width:356px; height:7px; font-size:0%;}
+.tips_content { font-family:Arial; font-size:12px; color:#000; font-weight:normal; padding:7px 7px 7px 15px; overflow:hidden;}

@@ -1,0 +1,77 @@
+<div style="width:100%; float:left;">
+    <div style="width:540px; padding-left:10px; float:left; color:#FFF; padding-top:15px;">
+        <p style="text-align: justify;">
+            <img width="320" height="55" alt="" src="{$URL_IMAGES}/title_danang.png">
+            <br>
+            <br>
+{$infoDanang.content_vn|html_entity_decode|truncate:1200}
+        <span class="xem_tiep"><a href="{$NVCMS_URL}/da-nang.html">chi tiết</a></span>
+    </div>
+    <div style="width:400px; float:left; padding-top:20px; margin-right:10px;" align="right">
+        <object width="380" height="214"><param name="movie" value="http://www.youtube.com/v/flO9JtEa27Q?version=3&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/flO9JtEa27Q?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="380" height="214" allowscriptaccess="always" allowfullscreen="true"></embed>
+        </object>
+    </div>
+</div>
+<div class="clear"></div>	
+<div style="width:100%; float:left;">
+<div class="title_dulich_home">
+    Chương trình du lịch đà nẵng 2013
+</div>
+<ul class="show_tour_home">
+	{section name=id loop=$arrListTourHome}
+    <li>
+        <a href="{$NVCMS_URL}/{$arrListTourHome[id].title_vn_alias}.html"><img src="{$URL_UPLOADS}/{$arrListTourHome[id].image_small}" width="210" />
+        {$arrListTourHome[id].title_vn|html_entity_decode|strip_tags|truncate:90}</a>
+        <p><strong>Thời gian</strong> : {$arrListTourHome[id].long_time}</p>
+        <p><strong>Giá</strong> : {$core->formatNumber($arrListTourHome[id].price_sell)} VNĐ</p>
+        <p><strong>Khởi hành</strong> : {$arrListTourHome[id].ngay_khoi_hanh}</p>
+    </li>
+    {/section}
+    
+</ul>
+</div>
+<div class="clear"></div>
+<div style="height:20px;"></div>
+<div style="width:100%; float:left;">
+<div style="width:465px; float:left; padding-left:10px;">
+    <div class="tieude_home">
+        <a href="{$NVCMS_URL}/diem-du-lich-da-nang/">Điểm du lịch đà nẵng</a>
+        <div class="line_home1"></div>
+        <div class="line_home2"></div>
+    </div>
+    <ul class="show_news_home">
+    	{section name=id loop=$arrListDiemDuLichHome}
+        <li>
+            <img src="{$URL_UPLOADS}/{$arrListDiemDuLichHome[id].image_small}" width="150" />
+            <a href="{$NVCMS_URL}/diem-du-lich-da-nang/{$arrListDiemDuLichHome[id].title_en_alias}.html">{$arrListDiemDuLichHome[id].title_en}</a>
+            <p>
+                {$arrListDiemDuLichHome[id].intro_en|html_entity_decode|strip_tags|truncate:220}
+            </p>
+            <span class="xem_tiep"><a href="{$NVCMS_URL}/diem-du-lich-da-nang/{$arrListDiemDuLichHome[id].title_en_alias}.html">chi tiết</a></span>
+        </li>
+        {/section}
+
+    </ul>
+</div>
+<div style="width:475px; float:left; padding-left:10px;">
+    <div class="tieude_home">
+        <a href="{$NVCMS_URL}/tin-tuc-du-lich/">Tin tức du lịch</a>
+        <div style="width:275px; height:1px; background-color:#e6e9d1; float:left;"></div>
+        <div style="width:275px; float:left;border-top: 3px solid #e6e9d1;
+    margin-top: 3px;"></div>
+    </div>
+    <ul class="show_news_home">
+    	{section name=id loop=$arrListTinDuLichHome}
+        <li>
+            <img src="{$URL_UPLOADS}/{$arrListTinDuLichHome[id].image_small}" width="150" />
+            <a href="{$NVCMS_URL}/tin-tuc-du-lich/{$arrListTinDuLichHome[id].title_en_alias}.html">{$arrListTinDuLichHome[id].title_en}</a>
+            <p>
+                {$arrListTinDuLichHome[id].intro_en|html_entity_decode|strip_tags|truncate:220}
+            </p>
+            <span class="xem_tiep"><a href="{$NVCMS_URL}/tin-tuc-du-lich/{$arrListTinDuLichHome[id].title_en_alias}.html">chi tiết</a></span>
+        </li>
+        {/section}
+        
+    </ul>
+</div>
+</div>

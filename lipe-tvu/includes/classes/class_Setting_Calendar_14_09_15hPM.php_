@@ -1,0 +1,11 @@
+<?
+class Setting_Calendar extends DbBasic{
+	
+	function Setting_Calendar(){
+		$this->pkey = "id";
+		$this->tbl = "huy_setting_calendar";	
+	}		
+	
+	
+}
+?>

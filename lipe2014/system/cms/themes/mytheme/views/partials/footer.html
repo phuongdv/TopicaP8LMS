@@ -1,0 +1,67 @@
+<div class="footer">
+	Topica System 2.0
+	<br/>©<?php echo date('Y',time());?> All Rights Reserved.
+</div>
+<img src="<?php echo IMAGE_PATH;?>gotop.gif" id="scroll-top" title="Lên đầu trang" alt="scroll top" >
+{{ theme:js file="scroll.top.js" }}
+
+{{ theme:js file="jquery.colorbox.js" }}
+{{ theme:js file="jquery.validate.js" }}
+
+{{ theme:js file="jquery.ui.core.js" }}
+{{ theme:js file="jquery.ui.widget.js" }}
+{{ theme:js file="jquery.ui.datepicker.js" }}
+<script type="text/javascript">
+	var $ = jQuery.noConflict();
+	$(document).ready(function() {
+		$(".colorboximage").colorbox({rel:'group1'});
+		$(".lightbox-image").colorbox({rel:'group1'});
+		$('a.confirm').live('click', function(e){
+			e.preventDefault();
+			var href        = $(this).attr('href'),
+			removemsg    = $(this).attr('title');
+			if (confirm("Bạn có chắc chắn muốn xóa không?"||removemsg))
+			{
+				$(this).trigger('click-confirmed');
+				if ($.data(this, 'stop-click')){
+					$.data(this, 'stop-click', false);
+					return;
+				}
+				window.location.replace(href);
+			}
+		});
+	});
+
+	/**
+	 * Hiển thị những bài đăng trên forum
+	 * @param id_popup
+	 */
+	function showVbbPopUp(id_popup){
+		$.colorbox({
+			width: "800px",
+			height: "500px",
+			href:'<?php echo site_url("/lipe/report/display_vbb_post/true");?>?data='+id_popup
+		});
+	}
+
+	/**
+	 * Hiển thị danh sách trả lời
+	 * @param id_popup
+	 */
+	function showAnwerPopUp(id_popup){
+		$.colorbox({
+			width: "800px",
+			height: "500px",
+			href:'<?php echo site_url("/lipe/report/display_answer_post/true");?>?data='+id_popup
+		});
+	}
+
+	function showPopup(uri_popup,id_popup){
+		$.colorbox({
+			width: "800px",
+			height: "500px",
+			href:'<?php echo site_url("'+uri_popup+'/true");?>?data='+id_popup
+		});
+	}
+</script>
+

@@ -1,0 +1,110 @@
+<link 	href="{$URL_CSS}/admin_content.css"	type="text/css" rel="stylesheet"/>
+{literal}
+<style type="text/css">
+	a.linkEdit {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	}
+	a.linkEdit:link {
+		text-decoration: none;
+		color: #003399;
+	}
+	a.linkEdit:visited {
+		text-decoration: none;
+		color: #003399;
+	}
+	a.linkEdit:hover {
+		text-decoration: underline;
+		color: #003399;
+	}
+	a.linkEdit:active {
+		text-decoration: none;
+		color: #003399;
+	}
+</style>
+{/literal}
+{if $act ne "default"}
+	{include file="$mod/act_$act.html"}
+{else}
+
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<tr style="background:#FBFBFB">
+<td width="55px" style="border-bottom:1px #CCCCCC solid;">
+<div style="padding:3px"><a href="?{$_SITE_ROOT}&mod={$mod}"><img src="{$URL_IMAGES}/largeicon/d-Newsgroup-Quan-ly-nhom-tin-tuc.gif" border="0"/></a></div>
+</td>
+<td style="color:#990000;border-bottom:1px #CCCCCC solid;">
+<font style="font-size:24px;"><b>MODULES USER LEVEL </b></font><br />
+<font style="font-size:9px"><i>User Level Management</i></font>
+</td>
+<td style="padding-right:10px; border-bottom:1px #CCCCCC solid;" align="right">
+<div>
+	<table cellpadding="2px" border="0">
+	<tr>
+		{$clsButtonNav->render()}		
+	</tr>
+	</table>
+</div>
+</td>
+</tr>
+</table>
+<br />
+<form action="" name="frmList" method="post" id="frmList">
+	<table width="100%" border="0">
+		<tr>
+			<td style="padding-left:10px;padding-right:10px">
+				<div style="padding-bottom:5px;font-size:14px">
+					<strong>{$core->getLang("ListOf")} User Level </strong>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>	
+<table cellpadding="0" cellspacing="0" width="100%" border="0" class="girdtable">
+	<tr>
+		<td width="5%" class="gridheader" ><input name="chkAll" type="checkbox" id="chkAll" onClick="SelectAll(this)" ></td>
+		<td width="70%" class="gridheader" >Name Level  <img src="{$URL_IMAGES}/icon/sort_down.gif" width="9px" height="5px"/></td>
+		<td width="25%" align="center" class="gridheader">Min Post </td>
+		</tr>
+	
+	<!-- Loop rows -->
+   {section name=i loop=$r_userlevel}   
+	<tr >
+		<td class="gridrow"><input type="checkbox" name="chkItem[]" value="{$r_userlevel[i]->user_level_id}" /></td>
+		<td class="gridrow"><a href="?{$_SITE_ROOT}&mod={$mod}&act=add&id={$r_userlevel[i]->user_level_id}" class="linkEdit">{$r_userlevel[i]->name}</a></td>
+		<td align="center" class="gridrow"><a href="?{$_SITE_ROOT}&amp;mod={$mod}&amp;act=add&amp;id={$r_userlevel[i]->user_level_id}" class="linkEdit">
+		  {$r_userlevel[i]->min_post}
+		</a></td>
+		</tr>	
+	{sectionelse}
+	<tr>
+		<td colspan="3" style="font-family:Tahoma;color:#FF0000;font-size:12px" align="center">&loz;IS NOT ROWSFIELD.......!</td>
+	</tr>
+	{/section}	
+	</table>
+	</td>
+	</tr>
+	<tr>
+		<td  style="padding-left:10px;padding-right:10px">
+			<table cellpadding="0" cellspacing="0" width="100%" border="0" style="font-size:12px">
+				<tr>
+					<td width="30%" align="left">Total: {$totalRecord} record(s), {$totalPage} page(s)</td>
+					<td width="40%" align="center" nowrap>
+					{if $currentPage>0}<a href="?{$_SITE_ROOT}&mod={$mod}&page={$currentPage-1}">Prev</a>{else}Prev{/if} | 
+					{if $first-$pageNum+1 > 0}<a href="?{$_SITE_ROOT}&mod={$mod}&page={$first-$pageNum}">...</a>{/if}
+					{$pageView} 
+					{if $first+$pageNum<$totalPage}<a href="?{$_SITE_ROOT}&mod={$mod}&page={$first+$pageNum}">...</a>{/if} | 
+					{if $currentPage<$totalPage-1}<a href="?{$_SITE_ROOT}&mod={$mod}&page={$currentPage+1}">Next</a>{else}Next{/if}
+					</td>
+						<td width="30%" align="right">
+						Page: <select name="gotoPage" style="font-size:11px"><option>1</option></select>											
+						</td>
+						<input type="hidden" name="cmd" value="" />
+				</tr>
+			</table>
+		</td>
+	</tr>	
+
+</table>
+</form>			
+
+{/if}

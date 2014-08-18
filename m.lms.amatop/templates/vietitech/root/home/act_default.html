@@ -1,0 +1,41 @@
+<!-- Sidebar Toggle & Tabbed Navigation -->
+<header>
+    <div class="controls">
+        <a title="Toggle Sidebar"><img src="{$URL_IMAGES}/icon-toggle.png" alt="Toggle Sidebar"></a>
+    </div>
+    <div id="textLogo">
+    <a href="{$NVCMS_URL}/index.html" title="Quay lại trang chủ">Topica Mobile Learning</a>
+    </div>
+</header>
+
+<!-- Breadcrumb -->
+<section id="breadcrumb">
+<a href="/index.html">Topica Mobile Learning</a>
+›
+<a href="#">Courses</a>
+</section>
+
+<!-- Main Content Area -->
+<section id="main">
+	{section name=id loop=$listCourse}
+    <!-- Repeat this Area for Multiple Boxes -->
+    <div class="module">
+        <h4><a href="{$NVCMS_URL}/course-{$listCourse[id].id}.html">{$listCourse[id].fullname}</a></h4>
+        <div>
+<!--<strong>THÔNG TIN LỚP HỌC</strong><br>
+                <ul>
+                  <li>Môn  Pháp luật đại cương cho lớp O12 ngành Quản trị kinh doanh, lớp T4 ngành Tài chính ngân hàng và lớp F8-F9 ngành Kế toán.<br>
+                </li>
+                  <li>Giảng viên: Ths.Phạm Thị Mai Vui, Ths. Nguyễn Hoài Sơn - Luật sư Công ty Luật TNHH Châu Á.<br>
+                </li>
+                  <li>Phụ trách lớp: Lê Thị Ánh Ly (O12) - 08 667 214 93, Trần Thị Bích Hảo (T4) - 04 85855 621, Huỳnh Việt Lào (F8) - 08 6659 7647, Bùi Thị Minh Huệ (F9) - 04 8585 5761. </li>
+              </ul>
+                <strong>NHIỆM VỤ HỌC TẬP</strong><br>
+                <p align="center">LỚP HỌC ĐÃ KẾT THÚC - ĐÃ THI HẾT MÔN</p>-->
+			{$listCourse[id].summary|replace:'href':''|html_entity_decode}
+        </div>
+    </div>
+    {/section}
+
+
+</section>

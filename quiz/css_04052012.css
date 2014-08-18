@@ -1,0 +1,104 @@
+body{
+	/*background:#CCC;*/
+	font:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	
+}
+#wapper{
+	width: 960px;
+	margin:auto;
+}
+#left {
+	position:relative;
+	border:1px #00F solid;
+	overflow:auto;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	background:#FFF;
+	padding:2px;
+} 
+#title{
+	height:90px;
+	margin-top:-15px;
+}
+#task{
+	text-align:left;
+	height:280px;
+	padding-left:10px;
+	overflow:auto;
+	border-bottom:#CCC 1px solid;
+}
+#result_ext, #clock{
+	float:left;
+	position:relative;
+}
+#time{
+	color:#F00;
+	font-size:14px;
+	font-weight:bold;
+}
+.error{
+	color:#F00;
+	font-size:10px;
+}
+#listExam li{
+	list-style:square;
+	text-align:left;
+}
+#listExam a{
+text-decoration:none;
+color:#000;
+font-size:12px;
+font-weight:bold;
+}
+#listExam a:hover{
+text-decoration:none;
+color:#00F;
+font-size:12px;
+font-weight:bold;
+}
+.title_top {
+ 	font-family: Arial,Verdana,Helvetica,sans-serif;
+    font-size:12px;
+    letter-spacing: 0.02em;	
+	width:400px; 
+	float:left; 
+	padding-left:10px;
+	font-weight:bold;
+	padding-top:6px;
+}
+.title_top a {
+	color:#790000;
+	text-decoration:none;
+	
+}
+.arrow_sep {
+	color:#790000;
+	padding-left:5px;
+	padding-right:5px;
+	
+}
+#status {
+	color:#FF0000;
+	font-size:12px;
+}
+.status_true{
+	width:50px;
+	height:21px;
+	text-align:right;
+	position:absolute;
+	background:url(tick_green.gif) no-repeat left;
+}
+.status_false{
+	width:50px;
+	height:21px;
+	text-align:right;
+	position:absolute;
+	background:url(tick_red.gif) no-repeat left;
+}
+div.reasons{
+	border:#999 1px solid;
+	padding:7px;
+	clear:both;
+	overflow:hidden;
+}

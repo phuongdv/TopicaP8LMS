@@ -1,0 +1,65 @@
+<?php
+$date=time();   
+
+header("Pragma: public");
+
+    header("Expires: 0");
+
+    header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+
+    header("Content-Type: application/force-download");
+
+    header("Content-Type: application/octet-stream");
+
+    header("Content-Type: application/download");;
+
+    header("Content-Disposition: attachment;filename=li-pe-$date.xls");
+
+$c_id=$_REQUEST['c_id'];
+
+require_once 'global.php';
+require_once DIR_ADODB. '/adodb.inc.php';
+require_once DIR_SMARTY. '/Smarty.class.php';
+require_once DIR_COMMON . '/clsDbBasic.php';
+require_once DIR_CLASSES . '/class_User.php';
+require_once DIR_CLASSES . '/class_Setting_Calendar.php';
+require_once DIR_CLASSES . '/class_Setting_Lipe.php';
+require_once DIR_CLASSES . '/class_QuizGrades.php';
+define("DIR_TEMPLATES_C", 	NVCMS_DIR."/www_c/topica");
+define("DIR_TEMPLATES",		DIR_THEMES."/".SITE_THEME."/topica/lipe");
+$clsUser = new User();
+$clsSettingCalendar = new Setting_Calendar();
+$clsSettingLipe = new Setting_Lipe();	
+$clsQuizGrades = new QuizGrades();
+$dbconn = &ADONewConnection(DB_TYPE);
+if (isset($dbinfo) && is_array($dbinfo)){
+	$dbconn->Connect($dbinfo['localhost'], $dbinfo['root'], $dbinfo['123'], $dbinfo['lipe2409']);
+}else{
+	$dbconn->Connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+}
+
+$sqlUser = "select * from mdl_user where id in (select distinct userid from mdl_course_display where course = $c_id) and id not in (select userid from mdl_role_assignments where roleid in (1,2,3,4,8) ) order by firstname asc  limit 0,500";
+
+$arrSettingCalendar = $clsSettingCalendar->GetAll(" c_id = $c_id ");	
+
+//$arrUser = $clsUser->GetAll($sqlUser);
+	$arrUser = $dbconn->GetAll($sqlUser);
+
+$smarty = new Smarty;
+$smarty->compile_check = COMPILE_CHECK;
+$smarty->template_dir = DIR_TEMPLATES;
+$smarty->compile_dir = DIR_TEMPLATES_C;
+$smarty->config_dir = DIR_INCLUDES."/conf";
+$smarty->config_overwrite = true;
+
+
+$smarty->assign('clsUser',$clsUser);
+$smarty->assign('clsSettingCalendar',$clsSettingCalendar);
+$smarty->assign('arrSettingCalendar',$arrSettingCalendar);
+$smarty->assign('arrUser',$arrUser);
+
+$smarty->assign('c_id',$c_id);
+
+$smarty->display('act_report_excell.html');
+
+?>

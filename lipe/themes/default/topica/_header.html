@@ -1,0 +1,21 @@
+{if $mod ne "vbb" and $act ne "canhan" and $act ne "export"}
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td background="{$URL_IMAGES}/admin/bg_header.gif" height="60" style="padding:5px">
+	<table cellpadding="0" cellspacing="3" border="0" align="left">
+	<tr>
+		<td class="menubutton" id="m1" nowrap width="" onmouseover="this.className='menubuttonActive';" onmouseout="this.className='menubutton';" onclick="gotoUrl('?topica')" title="Home"><img src="{$URL_IMAGES}/admin/house.png" border="0" align="left" >Trang chủ</td>
+        <td class="menubutton" id="m1" nowrap width="" onmouseover="this.className='menubuttonActive';" onmouseout="this.className='menubutton';" onclick="gotoUrl('?topica&mod=vbb&start=0&end=50')" title="Home"><img src="{$URL_IMAGES}/admin/house.png" border="0" align="left" >Học viên tích cực diễn đàn</td>
+		<td class="menubutton" id="m2" nowrap width="" onmouseover="this.className='menubuttonActive';" onmouseout="this.className='menubutton';" onclick="gotoUrl('?{$_SITE_ROOT}&mod=user&act=profile&id={$core->_SESS->id}')" title="Your Account"><img src="{$URL_IMAGES}/admin/account.png" border="0" align="left">Tài khoản</td>			
+		<td class="menubutton" nowrap width="" onmouseover="this.className='menubuttonActive';" onmouseout="this.className='menubutton';" onclick="return logout()"><img src="{$URL_IMAGES}/admin/close_16.png" border="0" align="left" />Thoát</td>
+		
+	</tr>
+	</table>
+	</td>
+	<td>
+	
+	</td>
+</tr>
+</table>
+{/if}
+

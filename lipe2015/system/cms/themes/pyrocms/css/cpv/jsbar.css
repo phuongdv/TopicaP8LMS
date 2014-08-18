@@ -1,0 +1,45 @@
+/* CSS Document */
+
+
+.menu_list {	
+	width:200px; float:left;
+}
+.menu_head {
+	cursor: pointer;
+	position: relative;
+	margin:1px;
+	float:left; width:100%; background:url(../../images/title_gt.jpg) no-repeat;
+	height:27px; line-height:27px;text-transform:uppercase; cursor:pointer; margin-bottom:2px;
+	color:#fff;
+	border-top:1px solid #fafafa; border-bottom:1px solid #dedede;margin:0;
+}
+.menu_head span { padding-left:10px; }
+.menu_body {
+	display:none;
+	padding-left: 10px;
+}
+.menu_body a{
+  display:block;
+  color: #0072bc;
+  padding:3px 0 3px 10px ;
+  text-decoration:none;border-top:1px solid #fafafa; border-bottom:1px solid #dedede; 
+  
+}
+.menu_body a:hover{
+  color: #0072bc;
+  }
+  .iconDS {
+    background: url(../../images/1362756459_folder.png) no-repeat;
+    float: left;
+    height: 14px;
+	margin-top:5px;
+    padding-right: 5px;
+    width: 14px;
+}
+.IconListMN { background:url(../../images/iconlistMN.png) no-repeat; width:5px; height:5px; float:left;  margin-top:10px;}
+.block_drow {}
+.block_drow li { list-style:none;}
+.click_mouse { padding-left:15px; display:none; }
+.click_mouse li {}
+.click_mouse li:hover { }
+.list_style {background-repeat:no-repeat; padding-top:5px;}

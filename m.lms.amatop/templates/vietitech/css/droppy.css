@@ -1,0 +1,28 @@
+/* Basic code - don't modify */
+ 
+ #nav { display: block; margin: 0; padding: 0; position: relative; }
+  #nav li { display: block; list-style: none; margin: 0; padding: 0; float: left; position: relative; }
+  #nav a { display: block; }
+  #nav ul { display: none; position: absolute; left: 16px; margin: 0; padding: 0; margin-top:10px;}
+  * html #nav ul { line-height: 0; } /* IE6 "fix" */
+  	#nav ul a { zoom: 1; } /* IE6/7 fix */
+    #nav ul li { float: none; }
+    #nav ul ul { top: 0; }
+    
+/* Essentials - configure this */
+
+#nav ul { width: 130px; }
+#nav ul ul { left: 131px; }
+
+/* Everything else is theming */
+ 
+#nav {  height: 24px; }
+#nav *:hover { background-color: none; }
+#nav a { font-family:Verdana, Geneva, sans-serif; font-weight:bold; font-size:14px; height:24px; padding-left:16px; padding-top:7px; }
+  #nav li.hover a { }
+  #nav ul { top: 25px; }
+    #nav ul li a { background-color: #efefef; width:138px; padding-top:4px;  }
+      #nav ul a.hover { background-color: #e1e1e1; width:138px; padding-top:4px;}
+   #nav ul a { border-right: none; opacity: 0.9; filter: alpha(opacity=90); border-bottom: 1px solid  #CCC; }
+/* #nav ul a { border-bottom: none; } - I also needed this for IE6/7 */
+

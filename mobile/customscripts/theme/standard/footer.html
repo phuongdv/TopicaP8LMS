@@ -1,0 +1,15 @@
+<?php
+    //just in case
+    require_once($CFG->mfm_dirroot .'/lib/weblib.php');
+?>
+<?php if ($THEME->navigation) { // This is the navigation table with breadcrumbs  ?>
+       <hr size="1"/>
+ <?php mfm_print_navigation($THEME->navigation); ?><?php echo $button; ?>
+<?php } else if ($heading) { // If no navigation, but a heading, then print a line  
+?>
+        <br />
+<?php } ?>
+       <hr size="1"/>
+       <?php echo ($menu.'<br><center>'.$homelink.'</center>'); ?>
+</body>
+</html>

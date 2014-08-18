@@ -1,0 +1,1 @@
+See http://docs.moodle.org/en/Moodle_for_Mobiles_installation for installation instructions.

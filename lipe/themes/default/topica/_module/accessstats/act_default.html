@@ -1,0 +1,107 @@
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<tr style="background:#FBFBFB">
+<td width="55px" style="border-bottom:1px #CCCCCC solid;">
+<div style="padding:3px"><a href="?{$_SITE_ROOT}&mod={$mod}"><img src="{$URL_IMAGES}/largeicon/z2-Thong-ke-website.gif" border="0"/></a></div>
+</td>
+<td style="color:#990000;border-bottom:1px #CCCCCC solid;">
+<font style="font-size:24px;"><b>ACCESS STATSTICS</b></font><br />
+<font style="font-size:9px"><i>Access Management</i></font>
+</td>
+<td style="padding-right:10px; border-bottom:1px #CCCCCC solid;" align="right">
+<div>
+	<table cellpadding="2px" border="0">
+	<tr>
+		{$clsButtonNav->render()}		
+	</tr>
+	</table>
+</div>
+</td>
+</tr>
+</table>
+<form name="theForm" action="" method="post">
+<table width="100%" border="0">
+<tr>
+<td style="padding-left:10px;padding-right:10px">
+	<div style="padding-bottom:5px;font-size:14px">
+	<strong>Access Stats</strong>
+	</div>
+</td>
+</tr>
+<tr>
+<td style="padding-left:10px;padding-right:10px" width="100%" valign="top">
+	
+	
+<!--Start Table-->
+<script>{$regdateHtml[0]}</script>
+
+<table cellpadding="5" cellspacing="1" class="tableborder" width="400">
+<tr>
+	<td>Total visitor:</td>
+	<td style="color:red"><strong>{$aStats.total_visitor}</strong></td>
+</tr>
+<tr>
+	<td>Max Total Access:</td>
+	<td><font color="red"><strong>{$aStats.max_online_number}</strong></font></td>
+</tr>
+<tr>
+	<td align="right">at time</td>
+	<td><font color="red">{$aStats.max_online_day|date_format:"%m/%d/%Y %Hh:%M"}</font></td>
+</tr>
+<tr>
+	<td>Total Online:</td>
+	<td><font color="red"><strong>{$intTotalOnline}</strong></font>&nbsp;&nbsp;<a href="?{$_SITE_ROOT}&mod={$mod}&act=viewonline">Detail</a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" class="smallgrey1" width="{$tblwidth}">
+<tr>
+	<td align="left">
+	{$regdateHtml[1]}
+	<input type="submit" name="searchBtn" value="<<< View by day " class="inputfield">
+	</td>
+</tr>
+</table>
+<h2 id="c1">Top of daily News</h2>
+<table cellpadding="0" cellspacing="0" width="50%" border="0" class="girdtable">
+<tr>
+	<td  class="gridheader" nowrap width="15%">No</td>
+	<td  class="gridheader" nowrap width="70%">Title</td>
+	<td  class="gridheader1" nowrap width="15%" align="center">Views No</td>
+</tr>
+{section name=id loop=$statsNewsList}
+{if $smarty.section.id.last}
+	{assign var="class1" value="gridrow2"}
+	{assign var="class2" value="gridrow3"}
+{else}
+	{assign var="class1" value="gridrow"}
+	{assign var="class2" value="gridrow1"}
+{/if}
+<tr>
+	<td class="{$class1}">{$smarty.section.id.index+1}</td>
+	<td class="{$class1}"><a href="?mod=news&act=detail&newsid={$statsNewsList[id].newsid}" target="_blank">
+	{$newsCls->getTitle($statsNewsList[id].newsid)}
+	</a>
+	</td>
+	<td align="center" class="{$class2}"><font color="red"><strong>{$statsNewsList[id].number}</strong></font></td>
+</tr>
+{sectionelse}
+<tr>
+	<td class="{$class1}" colspan="5" style="color:red">No record!</td>
+</tr>
+
+{/section}
+</table>
+
+
+<!--End Table-->
+
+	
+</td>
+</tr>
+<tr>
+<td  style="padding-left:10px;padding-right:10px">
+	
+</td>
+</tr>
+</table>
+</form>

@@ -1,0 +1,255 @@
+
+body {
+	background-color: #FFFFFF;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.menubutton, .menubuttonActive{
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:5px;
+	padding-right:5px;
+	text-shadow:#000000;
+	font-weight:bold;
+	font-size:12px;
+	cursor:pointer;
+	text-decoration:none;
+}
+.menubutton{
+	color:white; 
+	border-top:1px #CCCCCC dotted; 
+	border-left:1px #CCCCCC dotted; 
+	border-right:1px #999999 dotted; 
+	border-bottom:1px #999999 dotted; 
+}
+.menubuttonActive{
+	color:#FFFF00;
+	border-top:1px #CCCCCC solid; 
+	border-left:1px #CCCCCC solid; 
+	border-right:1px #999999 solid; 
+	border-bottom:1px #999999 solid; 
+}
+
+/*LINK EDIT*/
+a.linkEdit {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+a.linkEdit:link {
+	text-decoration: none;
+	color: #003399;
+}
+a.linkEdit:visited {
+	text-decoration: none;
+	color: #003399;
+}
+a.linkEdit:hover {
+	text-decoration: underline;
+	color: #003399;
+}
+a.linkEdit:active {
+	text-decoration: none;
+	color: #003399;
+}
+
+/*Navigation*/
+.navi{
+	border-top:1px #000000 solid; 
+	border-bottom:1px #B9B9B9 solid; 
+	height:22px;
+	font-size:12px;
+	background-color:#E6E6E6
+}
+.navi a{
+	color:#000000;
+	font-weight:bold;
+	text-decoration:none;
+}
+.navi a:hover{
+	color:#0000FF;
+	
+}
+.footer{
+	border-top:1px #B9B9B9 solid; 
+	border-bottom:1px #B9B9B9 solid; 
+	height:22px;
+	font-size:12px;
+	background-color:#E6E6E6
+}
+
+/* These are the style specifications for the menu layers.  
+   Set width to get more browsers corporation  */
+div.menu  { 
+  position:absolute; visibility:hidden; 
+  width:132px;
+  left:0; 
+  top:0; 
+  z-index:500; 
+  font-size:12px; 
+  background-color: #3865B0;/*#e6e6e6; */
+  color:#FFFFFF;
+  /*border: 1px solid;	
+  border-color: #CCCCCC #999999 #999999 #CCCCCC; */
+}
+
+/* Style specifications for menu items and links  */
+div.menu ul {
+	margin:0; padding:0 
+}
+/* Need to set padding of at least one pixel or ie sets very large margin */
+div.menu ul li { 
+  
+  padding:1px; 
+  margin:0;
+  list-style-type:none
+}
+
+/* Set display block and position relative so clicks on list items activate links  */  
+div.menu a { 
+  cursor:pointer;
+  padding:.3em .4em; margin:0; 
+  background-color:transparent; 
+  display:block; position:relative; 
+  text-decoration:none ;
+  color:#FFFFFF;
+  border-top:1px #CCCCCC dotted; 
+  border-left:1px #CCCCCC dotted; 
+  border-right:1px #999999 dotted; 
+  border-bottom:1px #999999 dotted; 	 
+}
+div.menu a:hover { 
+	color:#FFFF00; 	
+	border-top:1px #CCCCCC solid; 
+	border-left:1px #CCCCCC solid; 
+	border-right:1px #999999 solid; 
+	border-bottom:1px #999999 solid; 
+}
+
+.tdlargeicon{
+	border-top:1px #FFFFFF solid; 
+	border-left:1px #FFFFFF solid; 
+	border-right:1px #FFFFFF solid; 
+	border-bottom:1px #FFFFFF solid; 
+	width: 100px;
+}
+.tdlargeiconActive{
+	border-top:1px #CCCCCC solid; 
+	border-left:1px #CCCCCC solid; 
+	border-right:1px #999999 solid; 
+	border-bottom:1px #999999 solid;
+	cursor:pointer;
+	width: 100px;
+}
+
+/*
+Button
+*/
+.buttonfunc{
+	border-top:#999999 1px solid;
+	border-left:#999999 1px solid;
+	border-right:#CCCCCC 1px solid;
+	border-bottom:#CCCCCC 1px solid;
+	width:70px;
+	font-weight:bold;
+	font-size:12px;
+	text-align:center;
+}
+.buttonfunc_off{
+	border-top:#999999 1px solid;
+	border-left:#999999 1px solid;
+	border-right:#CCCCCC 1px solid;
+	border-bottom:#CCCCCC 1px solid;
+	width:70px;
+	color:#999999;
+	font-size:12px;
+	text-align:center;
+}
+
+.buttonfunc_on{
+	border-top:#CCCCCC 1px solid;
+	border-left:#CCCCCC 1px solid;
+	border-right:#999999 1px solid;
+	border-bottom:#999999 1px solid;
+	width:70px;
+	cursor:pointer;
+	font-weight:bold;
+	font-size:12px;
+	text-align:center;
+	background-color:#F0F0F0;
+}
+
+.activetxt{
+	font-size:12px;
+}
+
+.blurimg{
+	filter: alpha(opacity=30);
+}
+.blurtxt{
+	color:#999999;
+	font-size:12px;
+}
+
+/*
+Data Grid
+*/
+.girdtable{
+	border-top:#CCCCCC 1px solid;
+	border-bottom:#CCCCCC 1px solid;
+	border-left:#CCCCCC 1px solid;
+	border-right:#CCCCCC 1px solid;
+}
+.girdtable a{
+	text-decoration:none;
+}
+.gridheader{
+	border-bottom:1px #E2E2E2 solid;
+	border-right:1px #CCCCCC solid;
+	font-weight:bold;
+	font-size:12px;
+	padding-left:2px;
+	padding-right:2px;
+	background:#F0F0F0;
+	height:24px;
+}
+.gridheader1{
+	border-bottom:1px #E2E2E2 solid;
+	font-size:12px;
+	font-weight:bold;
+	font-size:12px;
+	padding-left:2px;
+	padding-right:2px;
+	background:#F0F0F0;
+	height:24px;
+}
+
+.gridrow{
+	padding-left:2px;
+	padding-right:2px;
+	font-size:11px;
+	height:22px;
+	border-right:1px #CCCCCC dotted;
+	border-bottom:1px #CCCCCC dotted;
+}
+
+.gridrow1{
+	padding-left:2px;
+	padding-right:2px;
+	font-size:11px;
+	height:22px;
+	border-bottom:1px #CCCCCC dotted;
+}
+
+.gridrow2{
+	padding-left:2px;
+	padding-right:2px;
+	font-size:11px;
+	height:22px;
+	border-right:1px #CCCCCC dotted;
+}
+
+.gridrow3{
+	padding-left:2px;
+	padding-right:2px;
+	font-size:11px;
+	height:22px;
+}

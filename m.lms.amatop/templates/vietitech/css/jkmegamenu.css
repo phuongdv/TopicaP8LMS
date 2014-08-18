@@ -1,0 +1,39 @@
+.megamenu { position: absolute; display: none; background: #0C78A6; border: 1px solid #333; font: normal 12px Arial; z-index: 100; padding-bottom:10px;}
+.megamenu .column { width: 330px; /*width of each menu column*/ padding-top: 10px; padding-right: 10px; padding-left: 10px;}
+.megamenu .column a { float:left; text-decoration: none; color:#0c78a6; display:block; padding:5px;}
+.megamenu .column a:hover { color: #00bbff; background:#333;}
+.w_134 { width:134px;}
+.w_320 { width:320px;}
+.w_327 { width:327px;}
+.w_670 { width:670px;}
+.w_20p { width:20%;}
+.h_35 { height:35px;}
+.h_144 { height:144px;}
+.h_155 { height:155px;}
+.bg_search{ background: url(../images/bg_search.gif) repeat-x; height:22px; width:362px;}
+.bg_menu{ background:url(../images/bg_menu_top.gif) repeat-x; width:990px; height:35px;}
+.bg_menu_footer{ background:#3399cc; width:990px;}
+.footermenu h3 { text-align:left; font-size:13px; color:#fff; font-weight:bold; font-family:Arial; padding-left:10px; padding-top:10px;}
+.finfo { list-style: none; margin:0; padding:0;}
+.finfo li { margin-top:2px; padding-left:10px; padding-left:10px; text-align:left;}
+.finfo li a, .finfo li a:link { display: block; color:#fff; text-decoration: none; font-weight: normal; font-size:12px; padding:0; height: 26px; line-height: 26px;}
+.finfo li a:hover { color:#ffbb00; text-decoration:underline;}
+.lang_flag { position: absolute; top:3px; padding-left:930px;}
+.padd_l5 { padding-left:5px;}
+.padd_l30 { padding-left:35px;}
+.padd_t9 { padding-top:9px;}
+ul#lsthrnews { text-align:center; width:100%;}
+ul#lsthrnews li { padding:0;}
+ul#spkm { text-align:center; width:100%;}
+ul#spkm li { padding:0;}
+.mg_t8 { margin-top:8px;}
+.mg_t18 { margin-top:18px;}
+.cs_p { cursor:pointer;}
+ul#navi {float: left;position: relative;font-size: 12px;height: 35px;}
+ul#navi li  {float: left;height: 35px;padding: 0px;border-right: 1px solid #2f6184;font-weight: bold;}
+ul#navi li a {padding-top: 10px; padding-bottom: 10px; padding-left:10px; display: block;color: #ffffff;text-decoration: none; width:135px;}
+ul#navi li:hover {background:url(../images/menuhover.gif) repeat-x; height:35px;}
+.ov_fl_hd { overflow:hidden;}
+ul.slpcontent { padding-left:10px; padding-right:10px;}
+ul.slpcontent li { float:left; width:31%; padding-left:5px; padding-right:5px; padding-top:18px; text-align:center; display:inline-table;}
+ul.slpcontent li.result { height:234px; overflow:hidden; text-align:center;}

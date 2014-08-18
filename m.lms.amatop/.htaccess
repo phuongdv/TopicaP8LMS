@@ -1,0 +1,20 @@
+RewriteEngine On
+Options +FollowSymLinks
+#ErrorDocument 404 /index.html
+RewriteCond %{REQUEST_FILENAME} !\.(jpg|jpeg|gif|png|css|js|pl|txt)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+RewriteRule ^index.html$		index.php?mod=home&act=default [L] 
+
+RewriteRule ^login.html$ index.php?mod=member&act=login [L]
+RewriteRule ^logout.html$ index.php?mod=member&act=logout [L]
+RewriteRule ^btvn.html$ index.php?mod=home&act=btvn [L]
+RewriteRule ^lttn.html$ index.php?mod=home&act=lttn [L]
+RewriteRule ^lipe.html$ index.php?mod=home&act=lipe [L]
+RewriteRule ^h2472-([0-9]+).html$ index.php?mod=home&act=h2472&id=$1 [L]
+RewriteRule ^course-([0-9]+).html$ index.php?mod=home&act=course&id=$1 [L]
+RewriteRule ^pdf-([0-9]+)/url=(.*)$ index.php?mod=home&act=viewpdf&id=$1&url=$2 [L]
+RewriteRule ^mp3-([0-9]+)/url=(.*)$ index.php?mod=home&act=viewmp3&id=$1&url=$2 [L]
+RewriteRule ^slide-([0-9]+)/week-([0-9]+)/$ index.php?mod=home&act=viewvideo&id=$1&week=$2 [L]

@@ -1,0 +1,60 @@
+	div#popup-header {
+	position:relative;
+	float:left;
+	width:500px;
+	line-height:30px;
+	font-size:20px;
+	background:#990000;
+	color:white;
+	top:0px;
+	cursor:move;
+}
+div#popup-content {
+	margin: 10px;
+}
+	.danglx-modal-bg { 
+		position: fixed; 
+		height: 100%;
+		width: 100%;
+		background: rgba(0,0,0,.4);
+		z-index: 100;
+		display: none;
+		top: 0;
+		left: 0; 
+		}	
+	.danglx-modal {
+		visibility: hidden;
+		
+		top: 200px; 
+		left: 50%;
+		margin-left: -300px;
+		width: 500px;
+		background: #fff ;
+		position: absolute;
+		z-index: 101;
+		padding: 2px 2px 0px 2px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		}
+		
+	.danglx-modal.small 		{ width: 200px; margin-left: -140px;}
+	.danglx-modal.medium 		{ width: 400px; margin-left: -240px;}
+	.danglx-modal.large 		{ width: 600px; margin-left: -340px;}
+	.danglx-modal.xlarge 		{ width: 800px; margin-left: -440px;}
+	
+	.danglx-modal .close-danglx-modal {
+		font-size: 22px;
+		line-height: .5;
+		position: absolute;
+		top: 8px;
+		right: 11px;
+		color: #fff;
+		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+		font-weight: bold;
+		cursor: pointer;
+		} 
+	.big-link { display:block; margin-top: 100px; text-align: center; font-size: 70px; color: #06f; }

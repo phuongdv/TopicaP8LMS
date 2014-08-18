@@ -1,0 +1,37 @@
+<div class="tieude_right">
+    Tin tức du lịch
+</div>
+<div class="clear"></div>
+<div style="width:100%; float:left">
+  <div class="detail_title_news"><h1>{$arrListOneNewsDetail.title_en}</h1></div>
+</div>
+<div class="header_detail_tour">
+        <img src="{$URL_UPLOADS}/{$arrListOneNewsDetail.image_small}"  title="{$arrListOneNewsDetail.title_en}" alt="{$arrListOneNewsDetail.title_en}" width="150" />
+        <p><strong>{$arrListOneNewsDetail.intro_en|html_entity_decode}</strong></p>
+        
+</div>
+<div class="clear"></div>
+<div class="content_detail">
+    <br />
+    <p>{$arrListOneNewsDetail.content_en|html_entity_decode}</p>
+</div>
+<div class="clear"></div>
+<div style="width:100%; float:left; padding-left:10px; padding-top:20px;">
+    <p class="post_tags">Tagged as:
+    	{section name=id loop=$arrTag}
+        	<a rel="tag" href="/tag/{$arrTag[id].name_alias}/">{$arrTag[id].name}</a>,
+        {/section}
+    </p>
+</div>
+<div class="clear"></div>
+<div class="other_news">
+    <h3>Các tin tức khác</h3>
+    <ul >
+    	{section name=id loop=$arrListSameNews}
+        <li><a href="/tin-tuc-du-lich/{$arrListSameNews[id].title_en_alias}">{$arrListSameNews[id].title_en}</a>
+        </li>
+        {/section}
+    </ul>
+</div>
+                
+                

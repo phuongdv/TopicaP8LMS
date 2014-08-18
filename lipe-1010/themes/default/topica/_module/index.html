@@ -1,0 +1,153 @@
+{literal}
+<script language="javascript">
+function save(){
+	document.theForm.btnSave.value = "Save";
+	document.theForm.submit();
+}
+
+function CheckAll() {
+	 var fmobj = document.theForm;
+	 for (var i=0;i<fmobj.elements.length;i++) {
+		 var e = fmobj.elements[i];
+		 if ((e.name != 'allbox') && (e.type=='checkbox') && (!e.disabled)) {
+			 e.checked = fmobj.allbox.checked;
+		 }
+	 }
+	 return true;
+}
+
+function confirmEdit() {
+	var total = 0;
+	var fmobj = document.theForm;
+	var pvalue = 0;
+	for (var i=0;i<fmobj.elements.length;i++) {
+	 var e = fmobj.elements[i];
+	 if ((e.name != 'allbox') && (e.type=='checkbox') && (!e.disabled)) {
+		 if (e.checked){ 
+		 	total++;
+			pvalue = e.value;
+		 }
+	 }
+	}
+	if (total==0 ){ 
+		alert('You must choose one!');
+		return false;
+	}
+	if (total>1 ){ 
+		alert('You only choose one to edit!');
+		return false;
+	}
+	window.location = "?admin&mod=_module&act=editini&site_name="+pvalue;
+	return true;
+}
+</script>
+{/literal}
+{if $act ne "default"}
+	{include file="$mod/act_$act.html"}
+{else}
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<tr style="background:#FBFBFB">
+<td width="55px" style="border-bottom:1px #CCCCCC solid;">
+<div style="padding:3px"><a href="?{$_SITE_ROOT}&mod={$mod}"><img src="{$URL_IMAGES}/largeicon/package.png" border="0"/></a></div>
+</td>
+<td style="color:#990000;border-bottom:1px #CCCCCC solid;">
+<font style="font-size:24px;"><b>MODULES</b></font><br />
+<font style="font-size:9px"><i>Modules Management</i></font>
+</td>
+<td style="padding-right:10px; border-bottom:1px #CCCCCC solid;" align="right">
+<div>
+	<table cellpadding="2px" border="0">
+	<tr>
+		{$clsButtonNav->render()}		
+	</tr>
+	</table>
+</div>
+</td>
+</tr>
+</table>
+<form name="theForm" action="" method="post">
+<input type="hidden" name="btnSave" value="" />
+<table width="100%" border="0">
+<tr>
+<td style="padding-left:10px;padding-right:10px">
+	<div style="padding-bottom:5px;font-size:14px">
+	<strong>{$core->getLang("ListOf")} Modules</strong>
+	</div>
+</td>
+</tr>
+<tr>
+<td style="padding-left:10px;padding-right:10px" width="100%" valign="top">
+	<table cellpadding="0" cellspacing="0" width="100%" border="0" class="girdtable">
+	<tr>
+		<td width="1%" class="gridheader"><input type="checkbox" name="allbox" value="" onClick="return CheckAll()"/></td>
+		<td width="15%" class="gridheader">Name <img src="{$URL_IMAGES}/icon/sort_down.gif"/></td>
+		<td width="15%" class="gridheader" align="left">Display Name</td>
+		<td width="10%" class="gridheader" align="center">Status</td>
+		<td width="20%" class="gridheader" align="center">Anonymous</td>
+		<td width="10%" class="gridheader" align="center">Update</td>
+	</tr>
+	{section name=s loop=$arrListSite}
+		{assign var=site value=$arrListSite[s]}
+		<tr>
+			<td class="gridrow1" colspan="7"><strong>?{$site}</strong></td>
+		</tr>			
+		{assign var=arrMod value=$arrListModule.$site}
+		{section name=m loop=$arrMod}	
+			{if $smarty.section.s.last && $smarty.section.m.last}
+				{assign var="class1" value="gridrow2"}
+				{assign var="class2" value="gridrow3"}
+			{else}
+				{assign var="class1" value="gridrow"}
+				{assign var="class2" value="gridrow1"}
+			{/if}
+			{assign var=aMod value=$arrListModuleDB.$site}
+			{assign var=name value=$arrMod[m]}
+			{assign var=aMod value=$aMod.$name}
+		<tr>
+			<td class="{$class1}"><input type="checkbox" name="checkList[]" value="{$site}_{$name}" /></td>
+			<td class="{$class2}"><a href="?{$_SITE_ROOT}&mod={$mod}&act=editini&site_name={$site}_{$arrMod[m]}">{$arrMod[m]}</a></td>
+			<td class="{$class1}" align="left">{$aMod.display_name}</td>
+			<td class="{$class2}" align="center"><select name="statusList[{$site}_{$name}]" style="font-size:10px">{$clsModule->makeOptions($aMod.status, "Active,InActive")}</select>
+			</td>
+			<td class="{$class1}" align="center"><select name="anonymousList[{$site}_{$name}]" style="font-size:10px">{$clsModule->makeOptions($aMod.anonymous, "YES,NO")}</select></td>
+			<td class="{$class2}" align="center">{$aMod.upddate|date_format:"%m/%d/%Y %H:%M"}</td>
+			
+			</td>	
+		</tr>
+					
+		{/section}
+	{/section}
+	</table>
+</td>
+</tr>
+<tr>
+<td  style="padding-left:10px;padding-right:10px">
+	
+	<!--{$clsPaging->showPaging("theForm")}
+	<table cellpadding="0" cellspacing="0" width="100%" border="0" style="font-size:12px">
+	<tr>
+		<td width="30%" align="left" nowrap>Total: 11 row(s), 2 page(s)</td>
+		<td width="40%" align="center" nowrap>Prev | <b>1</b> 2 3 4 5 ... | Next</td>
+		<td width="30%" align="right" nowrap>Page: 
+		<select name="gotoPage" style="font-size:11px" onchange="document.theForm.submit()">
+		<option>1</option>
+		<option>2</option>
+		</select></td>
+	</tr>
+	</table>
+	-->
+</td>
+</tr>
+</table>
+</form>
+<!--
+<td style="display:none">
+<table cellpadding="0" cellspacing="0">
+<tr>
+	<td><img src="{$URL_IMAGES}/icon/add2.png"/></td>
+	<td>&nbsp;<b>New</b></td>
+</tr>
+</table>
+</td>
+-->
+{/if}

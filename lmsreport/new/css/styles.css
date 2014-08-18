@@ -1,0 +1,35 @@
+input,select,.titulo1{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+textarea{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px solid #000000;
+}
+
+td,.Estilo1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+hr {
+	line-height: 1px;
+	color: #000000;
+}
+.titulo_ayuda {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+.titulo_tablas {
+	font-family: Arial;
+	font-size: 13px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+}

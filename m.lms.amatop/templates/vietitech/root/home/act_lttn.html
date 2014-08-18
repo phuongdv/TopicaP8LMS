@@ -1,0 +1,42 @@
+<!-- Sidebar Toggle & Tabbed Navigation -->
+<header>
+    <div class="controls">
+        <a title="Toggle Sidebar"><img src="{$URL_IMAGES}/icon-toggle.png" alt="Toggle Sidebar"></a>
+    </div>
+    <div id="textLogo">
+    <a href="/index.html" title="Quay lại trang chủ">Topica Mobile Learning</a>
+    </div>
+</header>
+
+<!-- Breadcrumb -->
+<section id="breadcrumb">
+<a href="/index.html">Topica Mobile Learning</a>
+› 
+<a href="#">Multiple choice practice</a>
+</section>
+
+<!-- Main Content Area -->
+<section id="main">
+
+    <!-- Repeat this Area for Multiple Boxes -->
+    {section name=id loop=$listCourse}
+   
+    {assign var=arrLTTN value=$clsMdlCourse->getArrLTTN($listCourse[id].id)}
+    
+    {if $arrLTTN ne ''}
+    <div class="module">
+        <h4><a href="{$NV_CMS}/course-{$listCourse[id].id}.html">{$listCourse[id].fullname}</a></h4>
+        <div class="practice-list">
+                <ul>
+                	{section name=k loop=$arrLTTN}
+                  <li><a href="http://elearning.tvu.topica.vn/mod/bt72/review_pr_mobile.php?q={$arrLTTN[k].id}&u={$userid}&c={$listCourse[id].id}&s={$secret|md5}">{$arrLTTN[k].NAME}</a></li>
+                  	{/section}
+              </ul>
+        </div>
+    </div>
+    {/if}
+    {/section}
+    
+    
+
+</section>

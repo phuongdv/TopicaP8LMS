@@ -1,0 +1,27 @@
+.ratings{ list-style:none;	margin: 0px;	padding:0px; width: 100px; height: 20px; position: relative; 
+background: url('s.gif') top left repeat-x;		
+}
+
+.ratings li{	text-indent: -90000px;	padding:0px;	margin:0px;
+	/*\*/
+	float: left;
+	/* */
+}
+.ratings li a{	display:block;	width:20px;	height: 20px;	text-decoration: none;	z-index: 20;	position: absolute;	padding: 0px;
+}
+.ratings li a:hover{	background: url('s.gif') left center;	z-index: 2;	left: 0px;}
+.ratings li a.voted{	cursor: default !important;}
+
+.ratings li a:hover.voted{	background:inherit;}
+
+.ratings a.s1{left: 0px;}
+.ratings a.r1:hover{width:20px;}
+.ratings a.s2{left:20px;}
+.ratings a.s2:hover{width: 40px;}
+.ratings a.s3{left: 40px;}
+.ratings a.s3:hover{width: 60px;}
+.ratings a.s4{left: 60px;}	
+.ratings a.s4:hover{width: 80px;}
+.ratings a.s5{left: 80px;}
+.ratings a.s5:hover{width: 100px;}
+.ratings li.current{	background: url('s.gif') left bottom;	position: absolute;	height: 20px;	display: block;	z-index: 1;}	

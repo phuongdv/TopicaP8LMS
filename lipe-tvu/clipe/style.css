@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+.tb_main {
+	
+	font-size:12px;
+	font-family:Tahoma, Geneva, sans-serif;
+	color:#000;
+	
+	
+	
+}
+.tb_row {
+	
+	border-right:dotted 1px #CCC; 
+	border-bottom: dotted 1px #CCC;
+}
+

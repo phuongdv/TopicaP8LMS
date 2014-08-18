@@ -1,0 +1,37 @@
+# Rewrite by: nguyenduy (nguyenduypt86@gmail.com)
+# Date      : 12/12/2012   
+# Project   : website company
+RewriteEngine on
+Options +FollowSymlinks
+ErrorDocument 404 /index.html 
+
+RewriteRule ^index.html$ index.php?mod=home [L]
+
+RewriteRule ^responsive.html$ index.php?mod=responsive&act=default [L]
+#RewriteRule ^responsive/trang-([0-9]+).html$ index.php?mod=responsive&act=default&page=$1 [L]
+RewriteRule ^chi-tiet-responsive-design/(.*?).html$ index.php?mod=responsive&act=view&news_alias=$1 [L]
+
+
+#danh muc web free
+RewriteRule ^webfree.html$ index.php?mod=webfree&act=default [L]
+RewriteRule ^webfree/trang-([0-9]+).html$ index.php?mod=webfree&act=default&page=$1 [L]
+RewriteRule ^danh-muc-web-mien-phi/([A-Z0-9a-z_\-]+).html$ index.php?mod=webfree&act=category&name_free_alias=$1 [L]
+RewriteRule ^danh-muc-web-mien-phi/([A-Z0-9a-z_\-]+)/trang-([0-9]+).html$ index.php?mod=webfree&act=category&name_free_alias=$1&page=$2 [L]
+RewriteRule ^danh-muc-web/web-mien-phi/chi-tiet-(.*?).html$ index.php?mod=webfree&act=view&name_free_alias=$1 [L]
+
+
+#thiet ke website
+RewriteRule ^thiet-ke-website.html$ index.php?mod=designweb&act=default [L]
+RewriteRule ^thiet-ke-website/chi-tiet-(.*?).html$ index.php?mod=designweb&act=view&name_alias=$1 [L]
+
+#marketing online
+RewriteRule ^marketing-online.html$ index.php?mod=fanfacebook&act=default [L]
+RewriteRule ^marketing-online/(.*?).html$ index.php?mod=fanfacebook&act=view&title_alias=$1 [L]
+
+
+
+RewriteRule ^hosting.html$ index.php?mod=hosting&act=default [L]
+RewriteRule ^lien-he.html$ index.php?mod=contact&act=default [L]
+RewriteRule ^gioi-thieu.html$ index.php?mod=aboutus&act=default [L]
+
+RewriteRule ^slang/([a-zA-Z0-9_\-\=\/)(]+).html$ index.php?mod=home&act=lang&query=$1 [QSA,L]

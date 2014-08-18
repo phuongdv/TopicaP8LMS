@@ -1,0 +1,40 @@
+<!-- Sidebar Toggle & Tabbed Navigation -->
+<header>
+    <div class="controls">
+        <a title="Toggle Sidebar"><img src="{$URL_IMAGES}/icon-toggle.png" alt="Toggle Sidebar"></a>
+    </div>
+    <div id="textLogo">
+    <a href="{$NVCMS_URL}/index.html" title="Quay lại trang chủ">Mobile Learning Assitant</a>
+    </div>
+</header>
+
+<!-- Breadcrumb -->
+<section id="breadcrumb">
+<a href="/index.html">Mobile Learning Assitant</a>
+› 
+<a href="#">{$NameCourse}</a>
+</section>
+
+
+<section id="main">
+
+<video width="100%" height="100%" src="{$link}" type="video/mp4" 
+	id="player1" poster="{$URL_IMAGES}/video-logo.jpg" 
+	controls="controls" preload="none"></video>
+
+
+	
+
+{literal}	
+<script>
+$('audio,video').mediaelementplayer({
+	success: function(player, node) {
+		$('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+	}
+});
+
+</script>
+{/literal}
+
+
+</section>

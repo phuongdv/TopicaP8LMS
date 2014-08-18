@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+Body{
+	
+}
+TR.on {
+	display:on;
+}
+TR.off {
+	display:none;
+}
+TABLE.tblMenuLeft {
+	width:158;
+}
+
+TABLE.tblMenuLeft tr.Category{
+	text-align: left;
+	padding: 0 0 0 5;
+	margin: 0;
+	background-color:#728DCB;
+	font-family:'Verdana';
+	font-size:8pt;
+	color:#000000;
+	font-weight:normal;
+	width:100%;
+}
+TABLE.tblMenuLeft tr.CategoryHover{
+	text-align: left;
+	padding: 0 0 0 5;
+	margin: 0;
+	background-color:#FF9933;
+	font-family:'Verdana';
+	font-size:8pt;
+	color:#000000;
+	font-weight:normal;
+	cursor:hand;
+	width:100%;
+}

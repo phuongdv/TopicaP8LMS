@@ -1,0 +1,26 @@
+
+<div class="tieude_right">
+    Tin tức du lịch
+</div>
+<div class="clear"></div>
+
+<ul class="header_detail_tour">
+	{section name=id loop=$arrListNews}
+    <li>
+        <h3><a href="/tin-tuc-du-lich/{$arrListNews[id].title_en_alias}.html">{$arrListNews[id].title_en}</a></h3>
+        <img src="{$URL_UPLOADS}/{$arrListNews[id].image_small}" width="150" height=""  />
+        <p style="text-align:justify;">{$arrListNews[id].intro_en|html_entity_decode|strip_tags}</p>
+        <p class="xem_tiep" style="text-align:right" ><a href="{$NVCMS_URL}/tin-tuc-du-lich/{$arrListNews[id].title_en_alias}.html">chi tiết</a></p>
+    </li>
+    {/section}
+    
+</ul>
+<div class="lisPage">
+    <div class="paging">
+        <ul>
+            {$showPage}
+        </ul>
+    </div>
+</div>                
+                
+                

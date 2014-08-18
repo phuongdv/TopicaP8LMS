@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>TOPICA - LIPE CÁ NHÂN</title>
+
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bottommargin="0" >
+<div align="center">
+
+  <table width="548" border="0">
+    <tr>
+    {assign var=arrUser value=$clsLipecanhan->getUserinfo($userid)}
+      <td width="112" class="title_col">Họ tên học viên: &nbsp;&nbsp;</td>
+      <td width="155" class="title_col">{$arrUser[0].lastname} {$arrUser[0].firstname} </td>
+      
+      <td class="title_col">&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="title_col">Lớp: &nbsp;&nbsp;</td>
+      <td class="title_col">  {$arrUser[0].topica_lop}</td>
+      
+      <td width="190" class="title_col">{$arrUser[0].topica_namsinh}</td>
+    </tr>
+
+    <tr>
+      <td colspan="2">&nbsp;</td>
+      <td >&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div align="center">
+  <table width="98%" border="0">
+    
+   
+{assign var=arrCourse value=$clsLipecanhan->getCourse($userid)}
+      {section name=c loop=$arrCourse}
+      {assign var=arrListCalendar value=$clsSettingCalendar->getCalendarInLipeCN($arrCourse[c].id)}
+
+       <tr>
+      		<td class="content_col" colspan="8" style="font-weight:bold; font-size:14px;">{$arrCourse[c].fullname}</td>
+      </tr>
+      
+   		<tr>
+        	<td class="gridheader">
+            	<table cellspacing="0" cellpadding="0" border="0" style="font-family:Tahoma, Geneva, sans-serif; font-size:12px;">
+            		<tr height="25" bgcolor="#f0f0f0">
+                    	{section name=ca loop=$arrListCalendar}
+                        {if $arrListCalendar[ca].week_name ne "Tổng"}
+                		<td align="center" colspan="4" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC">{$arrListCalendar[ca].week_name}<br>
+                       {$arrListCalendar[ca].start_date|date_format:"%d/%m/%Y"} -&gt; {$arrListCalendar[ca].end_date|date_format:"%d/%m/%Y"})</td>
+                       	{/if}
+                        {/section}
+                        <td align="center" colspan="6" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC">Tuần tổng
+                       </td>
+                	</tr>
+                	<tr height="25" bgcolor="#f0f0f0">
+                    	{section name=ca loop=$arrListCalendar}
+                        {if $arrListCalendar[ca].week_name ne "Tổng"}
+                        {assign var=count_quizweek value=$clsSettingCalendar->QuizPerWeek($arrCourse[c].id,$arrListCalendar[ca].id) }
+                        <td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" rowspan="2">I</td>
+                      	<td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" rowspan="2">P({$count_quizweek})</td>
+                       	<td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" rowspan="2">E</td>
+                       	<td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" rowspan="2">H</td>
+                        {/if}
+                        {/section}
+                        
+                        <td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" rowspan="2">Forum Post</td>
+                        <td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" rowspan="2">H2472</td>
+                      	<td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" colspan="2"><p>Số bài đã làm</p></td>
+                        <td align="center" width="212" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" rowspan="2" >CC</td>                        
+                	</tr>
+                	<tr height="25" bgcolor="#f0f0f0">
+                         <td align="center" width="217" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC">P</td>
+                         <td align="center" width="212" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC">E</td>
+                         
+
+                	</tr>
+                    <tr height="25">
+                    	{section name=ca loop=$arrListCalendar}
+                        {assign var=count_post2 value=$clsSettingCalendar->getRelationCalendarAndLipesettingVBB($arrUser[0].username,$arrListCalendar[ca].id,$arrCourse[c].id)}
+                        {assign var=count_practice_week value=$clsSettingCalendar->CountPractice($userid,$arrCourse[c].id,$arrListCalendar[ca].start_date,$arrListCalendar[ca].end_date)}
+                        {assign var=grades value=$clsSettingCalendar->getRelationCalendarAndLipesettingGrades($userid,$arrListCalendar[ca].id,$arrCourse[c].id)}
+                        
+                        {assign var=count_h2472 value=$clsSettingCalendar->get2472($arrUser[id].id,$arrCourse[c].id,$arrListCalendar[ca].start_date,$arrListCalendar[ca].end_date)}
+                        {if $arrListCalendar[ca].week_name ne "Tổng"}
+                		<td width="139" height="62" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; ">&nbsp;<font style="color:#00F; font-weight:bold;">{if $count_post2 ne 0}{$count_post2}{/if}{if $count_post ne 0}{$count_post}{/if}</font></td>
+                  		<td align="center" width="155" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "><font style="color:#000; font-weight:bold;">{if $count_practice_week ne 0}{ $count_practice_week}{/if}</font></td>
+                   		<td align="center" width="70" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; ">&nbsp;{if $grades ne 0 }<span style="color:#F00; font-weight:bold">{$grades}</span> {else}  {/if}</td>
+                   		<td align="center" width="70" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; ">{$clsSettingCalendar->countPostInWeekH2472($arrCourse[c].id,$arrListCalendar[ca].start_date,$arrListCalendar[ca].end_date,$userid)}&nbsp;</td>
+                       	{/if}
+                        {/section}
+                        <!-- Tuan tong -->
+                        {section name=ca loop=$arrListCalendar}
+                         {assign var=count_practice value=$clsSettingCalendar->CountPractice($userid,$arrCourse[c].id,$arrListCalendar[ca].start_date,$arrListCalendar[ca].end_date)}
+                         {assign var=count_exam value=$clsSettingCalendar->CountExam($userid,$arrCourse[c].id)}
+                         {assign var=count_post2 value=$clsSettingCalendar->getRelationCalendarAndLipesettingVBB($arrUser[0].username,$arrListCalendar[ca].id,$arrCourse[c].id)}
+                         {assign var=cc value=$clsOffline->getCCTemp($arrCourse[c].id,$userid)}
+						{if $arrListCalendar[ca].week_name eq "Tổng"}
+                        <td align="center" width="139" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; ">&nbsp;<font style="color:#00F; font-weight:bold;">{if $count_post2 ne 0}{$count_post2}{/if}</font></td>
+                    	<td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; ">{$clsSettingCalendar->countPostInWeekH2472($arrCourse[c].id,$arrListCalendar[ca].start_date,$arrListCalendar[ca].end_date,$userid)}</td>
+                    	<td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; ">&nbsp;<span style="color:#F00; font-weight:bold">{$count_practice}</span></td>
+                    	<td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "><span style="color:#F00; font-weight:bold">{$count_exam}</span></td>
+                         <td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "><span style="color:#F00; font-weight:bold">{$cc}</span></td>
+                    	
+                        {/if}
+                          {/section}                    
+                	</tr>
+                </table>
+            </td>
+   		</tr>
+       
+         
+    {/section}
+  </table>
+ 
+
+</div>
+</body>
+</html>

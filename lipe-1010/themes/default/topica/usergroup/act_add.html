@@ -1,0 +1,120 @@
+{literal}
+<script language="JavaScript">
+function CheckAll1(cb) {
+	 var fmobj = document.theForm;
+	 for (var i=0;i<fmobj.elements.length;i++) {
+		 var e = fmobj.elements[i];
+		 if ((e.name != 'allbox1') && (e.type=='checkbox') && (e.value==cb)&& (!e.disabled)) {
+			 e.checked = fmobj.allbox1.checked;
+		 }
+	 }
+}
+function CheckAll2(cb) {
+	 var fmobj = document.theForm;
+	 for (var i=0;i<fmobj.elements.length;i++) {
+		 var e = fmobj.elements[i];
+		 if ((e.name != 'allbox2') && (e.type=='checkbox') && (e.value==cb)&& (!e.disabled)) {
+			 e.checked = fmobj.allbox2.checked;
+		 }
+	 }
+}
+function CheckAll3(cb) {
+	 var fmobj = document.theForm;
+	 for (var i=0;i<fmobj.elements.length;i++) {
+		 var e = fmobj.elements[i];
+		 if ((e.name != 'allbox3') && (e.type=='checkbox') && (e.value==cb)&& (!e.disabled)) {
+			 e.checked = fmobj.allbox3.checked;
+		 }
+	 }
+}
+function CheckAll4(cb) {
+	 var fmobj = document.theForm;
+	 for (var i=0;i<fmobj.elements.length;i++) {
+		 var e = fmobj.elements[i];
+		 if ((e.name != 'allbox4') && (e.type=='checkbox') && (e.value==cb)&& (!e.disabled)) {
+			 e.checked = fmobj.allbox4.checked;
+		 }
+	 }
+}
+function save2(){
+	document.theForm.btnSave.value = "SaveAndContinue";
+	document.theForm.submit();
+}
+</script>
+{/literal}
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<tr style="background:#FBFBFB">
+<td width="55px" style="border-bottom:1px #CCCCCC solid;">
+<div style="padding:3px"><a href="?{$_SITE_ROOT}&mod={$mod}"><img src="{$URL_IMAGES}/largeicon/n-UserGroup-Quan-ly-nhom-nguoi-dung.gif" border="0"/></a></div>
+</td>
+<td style="color:#990000;border-bottom:1px #CCCCCC solid;">
+<font style="font-size:24px;"><b>{if $_LANG_ID ne "vn"}{$clsForm->getTitle()|upper}{else}{$clsForm->getTitle()}{/if}</b></font><br />
+<font style="font-size:9px"><i>{if $_LANG_ID ne "vn"}{$clsForm->getTitle()} {$core->getLang("Management")}{else}{$core->getLang("Management")} {$clsForm->getTitle()}{/if}</i></font>
+</td>
+<td style="padding-right:10px; border-bottom:1px #CCCCCC solid;" align="right">
+<div>
+	<table cellpadding="2px" border="0">
+	<tr>
+		{$clsButtonNav->render()}		
+	</tr>
+	</table>
+</div>
+</td>
+</tr>
+</table>
+<form name="theForm" action="" method="post">
+<table width="100%" border="0">
+<tr>
+<td style="padding-left:10px;padding-right:10px" colspan="4">
+	<div style="padding-bottom:5px;font-size:14px">
+	<strong>{if $clsForm->pval ne ""}{$core->getLang("Edit")} {$clsForm->getTitle()}: #{$clsForm->pval}
+			{else}{$core->getLang("Add")} {$clsForm->getTitle()}
+			{/if}</strong>
+	</div>
+</td>
+</tr>
+<tr>
+<td style="padding-left:10px;padding-right:10px" width="100%" valign="top">
+	{$clsForm->showJS()}
+	<table cellpadding="0" cellspacing="0" width="100%" border="0" class="girdtable">
+	<tr>
+		<td colspan="2" class="gridheader1">{$core->getLang("InputCorrectlyAllBelowFields")}<Br />
+		
+		</td>
+	</tr>
+	{if $clsForm->isValid ne 1}
+	<tr>
+		<td class="gridrow1" style="color:red; padding:5px" colspan="2">
+		{$clsForm->showAllError()}
+		</td>
+	</tr>
+	{/if}
+	{$clsForm->showForm()}
+	</table>
+	<table cellpadding="0" cellspacing="0" width="100%" border="0" class="girdtable">
+	<tr>
+		<td colspan="6" class="gridheader1">{$core->getLang("Permissions")}:</td>
+	</tr>
+	<tr>
+		<td class="gridrow1" width="40%"><strong>Module Name</strong></td>
+		<td class="gridrow1" width="10%"><strong>{$core->getLang("List")}</strong><br /><input type="checkbox" name="allbox4" onClick="CheckAll4(4)" /></td>
+		<td class="gridrow1" width="10%"><strong>{$core->getLang("Add")}</strong><br /><input type="checkbox" name="allbox1" onClick="CheckAll1(1)" /></td>
+		<td class="gridrow1" width="10%"><strong>{$core->getLang("Edit")}</strong><br /><input type="checkbox" name="allbox2" onClick="CheckAll2(2)" /></td>
+		<td class="gridrow1"><strong>{$core->getLang("Delete")}</strong><br /><input type="checkbox" name="allbox3" onClick="CheckAll3(3)" /></td>
+	</tr>
+	{section name=id loop=$arrAdminModule}
+	{assign var=site_name value=$arrAdminModule[id].site_name}
+	<tr>
+		<td class="gridrow" width="40%">{$arrAdminModule[id].display_name}</td>
+		<td class="gridrow1" width="10%"><input type="checkbox" name="{$site_name}[L]" value="4" {if $arrAccessPermiss[$site_name].L>0}checked{/if}/></td>
+		<td class="gridrow1" width="10%"><input type="checkbox" name="{$site_name}[A]" value="1"  {if $arrAccessPermiss[$site_name].A>0}checked{/if}/></td>
+		<td class="gridrow1" width="10%"><input type="checkbox" name="{$site_name}[E]" value="2"  {if $arrAccessPermiss[$site_name].E>0}checked{/if}/></td>
+		<td class="gridrow1"			><input type="checkbox" name="{$site_name}[D]" value="3"  {if $arrAccessPermiss[$site_name].D>0}checked{/if}/></td>
+	</tr>
+	{/section}
+	</table>
+	<em><font style="font-size:10px">{$core->getLang("Note: * isrequired")}</font></em>
+</td>
+</tr>
+</table>
+</form>

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TOPICA System 1.0</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{literal}
+<style>
+body {
+	font-size: 11px; COLOR: #000000; font-style: normal;
+	font-family: Tahoma;
+}
+a:link{text-decoration: none; color:#004FDF}
+a:visited{text-decoration: none; color: #004FDF}
+a:hover{text-decoration: underline; color: #004FDF}
+a:active{text-decoration: none; color: #004FDF}
+</style>
+{/literal}
+</head>
+<body background="bg.jpg">
+<form action="" method="post" name="frmLogin" id="frmLogin">
+<table cellpadding="0" cellspacing="0" align="center" width="100%" height="100%">
+<tr>
+	<td align="center" valign="middle">
+	<table cellpadding="0" cellspacing="3" width="380" style="border:1px solid #cccccc">
+	<tr>
+		<td style="border:#e6e6e6 1px solid;" bgcolor="#FFFFFF" height="120" valign="top">
+		<table cellpadding="0" cellspacing="2" width="100%">
+		<tr>
+			<td  bgcolor="#0554AD" height="30px" style="border-bottom:2px solid #CCCCCC">
+			<img src="{$URL_IMAGES}/admin/password.png" align="absmiddle">
+			<font style="font-size:12px;color:white"><b>Đăng nhập</b></font>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px;padding-top:10px;padding-right:10px;">
+			<font style="font-size:11px;color:#000000">Điền tên đăng nhập và mật khẩu vào ô bên dưới, sau đó bấm login.</font>			
+			</td>
+		</tr>
+		{if $isValid eq 0}
+		<tr>
+			<td style="padding-left:10px;padding-top:10px;padding-right:10px;">
+			<font style="font-size:11px;color:red">InCorrect! Please try again!</font>			
+			</td>
+		</tr>		
+		{/if}
+		<tr>
+			<td height="65" align="center">
+			<table cellpadding="0" cellspacing="0" width="100%" border="1" style="border:solid 1px #333">
+			<tr>
+				<td style="padding-left:30px;" width="50%" height="30"><font style="font-size:11px;color:#666666">Tên đăng nhập</font></td>
+				<td><input type="text" name="txtUsername" id="txtUsername" value="{$txtUsername}" size="20" maxlength="16" style="height:20px;width:150"></td>
+			</tr>
+			<tr>
+				<td style="padding-left:30px;" height="30"><font style="font-size:11px;color:#666666">Mật khẩu</font></td>
+				<td><input type="password" name="txtPassword" id="txtPassword" size="20" maxlength="16" style="height:20px;width:150"></td>
+			</tr>
+			<tr>
+				<td style="padding-left:30px;" height="40">
+				<font style="font-size:11px;color:#666666">
+				<a href="mailto:trungvq@topica.edu.vn" title="Forgot password?">Quên mật khẩu?</a>
+				</font>
+				</td>
+				<td>
+				<input type="image" src="{$URL_IMAGES}/admin/btnlogin.jpg" name="btnLogin" value="  Login  " style="border:1px solid #cccccc">
+				</td>
+			</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#f5f5f5" style="padding-left:10px;padding-right:10px; ">
+			<div style="padding:1px;color:#000000;font-size:10px" align="right">
+			{$core->_copyright} <a href="http://wwww.topica.edu.vn" title="TOPICA Elearning">TOPICA</a>
+			</div>
+			</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+</table>
+</form>
+<script>document.frmLogin.txtUsername.focus();</script>
+</body>
+</html>

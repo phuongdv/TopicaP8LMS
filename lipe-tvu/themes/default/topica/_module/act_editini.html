@@ -1,0 +1,150 @@
+{literal}
+<style>
+.txt{
+	height:22px;
+}
+</style>
+<script language="javascript">
+function save(){
+	document.theForm.btnSave.value = "Save";
+	document.theForm.submit();
+}
+function save2(){
+	document.theForm.btnSave.value = "SaveAndContinue";
+	document.theForm.submit();
+}
+</script>
+{/literal}
+<link rel="stylesheet" type="text/css" media="all" href="{$URL_CSS}/calendar-system.css" title="system" />
+
+<!-- import the calendar script -->
+<script type="text/javascript" src="{$URL_JS}/calendar.js"></script>
+
+<!-- import the language module -->
+<script type="text/javascript" src="{$URL_JS}/calendar-en.js"></script>
+
+<script type="text/javascript" src="{$URL_JS}/calendar-setup.js"></script>
+
+
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<tr style="background:#FBFBFB">
+<td width="55px" style="border-bottom:1px #CCCCCC solid;">
+<div style="padding:3px"><a href="?{$_SITE_ROOT}&mod={$mod}"><img src="{$URL_IMAGES}/largeicon/package.png" border="0"/></a></div>
+</td>
+<td style="color:#990000;border-bottom:1px #CCCCCC solid;">
+<font style="font-size:24px;"><b>MODULES</b></font><br />
+<font style="font-size:9px"><i>Modules Management</i></font>
+</td>
+<td style="padding-right:10px; border-bottom:1px #CCCCCC solid;" align="right">
+<div>
+	<table cellpadding="2px" border="0">
+	<tr>
+		{$clsButtonNav->render()}		
+	</tr>
+	</table>
+</div>
+</td>
+</tr>
+</table>
+<form name="theForm" action="" method="post">
+<input type="hidden" name="btnSave" value="" />
+<table width="100%" border="0">
+<tr>
+<td style="padding-left:10px;padding-right:10px" colspan="4">
+	<div style="padding-bottom:5px;font-size:14px">
+	<strong>Edit Module:</strong> {$site}/{$name}
+	</div>
+</td>
+</tr>
+<tr>
+<td style="padding-left:10px;padding-right:10px" width="50%" valign="top">
+	<table cellpadding="0" cellspacing="0" width="100%" border="0" class="girdtable">
+	<tr>
+		<td colspan="2" class="gridheader1">Info</td>
+	</tr>
+	<tr>
+		<td class="gridrow" width="40%" nowrap>Name</td>
+		<td class="gridrow1" nowrap><input type="text" name="name" value="{$name}"  class="txt" style="width:110px" readonly/></td>
+	</tr>
+	<tr>
+		<td class="gridrow" nowrap>Display Name</td>
+		<td class="gridrow1" nowrap><input type="text" name="display_name" value="{$display_name}" class="txt" style="width:200px"/></td>
+	</tr>
+	<tr>
+		<td class="gridrow" nowrap>Description</td>
+		<td class="gridrow1" nowrap><input type="text" name="des" value="{$des}" class="txt" style="width:100%"/></td>
+	</tr>
+	<tr>
+		<td class="gridrow" nowrap>Status</td>
+		<td class="gridrow1" nowrap><select name="status" style="font-size:10px">{$clsModule->makeOptions($status, "Active,InActive")}</select></td>
+	</tr>
+	<tr>
+		<td class="gridrow" nowrap>Anonymous</td>
+		<td class="gridrow1" nowrap><select type="text" name="anonymous" style="font-size:10px">{$clsModule->makeOptions($anonymous, "YES,NO")}</select></td>
+	</tr>
+	<tr >
+		<td class="gridrow" nowrap>Author</td>
+		<td class="gridrow1" nowrap style="color:red">{$config_info.Author|default:"&nbsp;"}</td>
+	</tr>
+	<tr>
+		<td class="gridrow" nowrap>Credits</td>
+		<td class="gridrow1" nowrap style="color:red">{$config_info.Credits|default:"&nbsp;"}</td>
+	</tr>
+	<tr>
+		<td class="gridrow" nowrap>License</td>
+		<td class="gridrow1" nowrap style="color:red">{$config_info.License|default:"&nbsp;"}</td>
+	</tr>
+	<tr>
+		<td class="gridrow2" nowrap>Update</td>
+		<td class="gridrow3" nowrap>{$upddate|date_format:'%m/%d/%Y %H:%M'}
+		
+		</td>
+	</tr>
+	</table>
+{if $site ne "admin"}	
+	<br />
+	<table cellpadding="0" cellspacing="0" width="100%" border="0" class="girdtable">
+	<tr>
+		<td colspan="2" class="gridheader1">Global</td>
+	</tr>
+	<tr>
+		<td class="gridrow" width="40%" nowrap>Left Panel</td>
+		<td class="gridrow1" nowrap><select name="leftpanel" style="font-size:10px">{$clsModule->makeOptions($leftpanel)}</select></td>
+	</tr>
+	<tr>
+		<td class="gridrow2" nowrap>Right Panel</td>
+		<td class="gridrow3" nowrap><select name="rightpanel" style="font-size:10px">{$clsModule->makeOptions($rightpanel)}</select></td>
+	</tr>
+	</table>
+{/if}	
+</td>
+<td style="padding-left:10px;padding-right:10px" valign="top">
+	<table cellpadding="0" cellspacing="0" width="100%" border="0" class="girdtable">
+	<tr>
+		<td colspan="4" class="gridheader1">Blocks</td>
+	</tr>
+	{section name=b loop=$arrListBlock}
+	{if $smarty.section.b.last}
+		{assign var="class1" value="gridrow2"}
+		{assign var="class2" value="gridrow3"}
+	{else}
+		{assign var="class1" value="gridrow"}
+		{assign var="class2" value="gridrow1"}
+	{/if}
+	<tr>
+		<td class="{$class1}" width="95%" nowrap>{$arrListBlock[b].display_name}</td>
+		<td class="{$class1}" width="3%" nowrap><select type="text" name="positionList[{$arrListBlock[b].name}]" style="font-size:10px">{$clsModule->makeOptions($arrListBlock[b].position, "L,R")}</select></td>
+		<!--<td class="{$class1}" width="3%" nowrap><input type="text" name="orderList[{$arrListBlock[b].name}]" value="{$smarty.section.b.rownum}" style="width:25px" title="Order No" /></td>-->
+		<td class="{$class2}" width="2%" nowrap align="center"><select type="text" name="statusList[{$arrListBlock[b].name}]" style="font-size:10px">{$clsModule->makeOptions($arrListBlock[b].status, "OFF,ON")}</select></td>
+	</tr>
+	{sectionelse}
+	<tr>
+		<td class="gridrow3" width="95%" nowrap><font color="red">Empty!</font></td>
+	</tr>	
+	{/section}
+	</table>
+	
+</td>
+</tr>
+</table>
+</form>

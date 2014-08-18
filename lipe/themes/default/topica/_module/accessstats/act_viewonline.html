@@ -1,0 +1,71 @@
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<tr style="background:#FBFBFB">
+<td width="55px" style="border-bottom:1px #CCCCCC solid;">
+<div style="padding:3px"><a href="?{$_SITE_ROOT}&mod={$mod}"><img src="{$URL_IMAGES}/largeicon/z2-Thong-ke-website.gif" border="0"/></a></div>
+</td>
+<td style="color:#990000;border-bottom:1px #CCCCCC solid;">
+<font style="font-size:24px;"><b>ACCESS STATSTICS</b></font><br />
+<font style="font-size:9px"><i>Access Management</i></font>
+</td>
+<td style="padding-right:10px; border-bottom:1px #CCCCCC solid;" align="right">
+<div>
+	<table cellpadding="2px" border="0">
+	<tr>
+		{$clsButtonNav->render()}		
+	</tr>
+	</table>
+</div>
+</td>
+</tr>
+</table>
+<form name="theForm" action="" method="post">
+<table width="100%" border="0">
+<tr>
+<td style="padding-left:10px;padding-right:10px">
+	<div style="padding-bottom:5px;font-size:14px">
+	<strong>Online? {$intTotalOnline} user(s)</strong>
+	</div>
+</td>
+</tr>
+<tr>
+<td style="padding-left:10px;padding-right:10px" width="100%" valign="top">
+	
+<!--Start Table-->
+
+<table cellpadding="0" cellspacing="0" width="50%" border="0" class="girdtable">
+<tr>
+	<td class="gridheader" nowrap width="5%">#</td>
+	<td class="gridheader" nowrap width="10%">UserId</td>
+	<td class="gridheader" nowrap width="20%" align="center">IP</td>
+	<td class="gridheader" nowrap width="20%" align="center">At time</td>
+	<td class="gridheader1" nowrap width="5%">Logged In?</td>
+</tr>
+{section name=id loop=$arrListSession}
+{if $smarty.section.id.last}
+	{assign var="class1" value="gridrow2"}
+	{assign var="class2" value="gridrow3"}
+{else}
+	{assign var="class1" value="gridrow"}
+	{assign var="class2" value="gridrow1"}
+{/if}
+<tr>
+	<td align="center" class="{$class1}">{$smarty.section.id.rownum}</td>
+	<td align="center" class="{$class1}">{$arrListSession[id].id}&nbsp;</td>
+	<td align="center" class="{$class1}">{$arrListSession[id].ip_address}</td>
+	<td align="center" class="{$class1}">{$arrListSession[id].running_time|date_format:"%H:%M:%S %d/%m/%Y"}</td>
+	<td align="center" class="{$class2}">{if $arrListSession[id].loggedin==0}No{else}Yes{/if}</td>
+</tr>
+{/section}
+</table>
+
+<!--End Table-->	
+	
+</td>
+</tr>
+<tr>
+<td  style="padding-left:10px;padding-right:10px">
+	
+</td>
+</tr>
+</table>
+</form>

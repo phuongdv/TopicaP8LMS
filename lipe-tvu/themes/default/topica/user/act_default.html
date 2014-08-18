@@ -1,0 +1,152 @@
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<tr style="background:#FBFBFB">
+<td width="55px" style="border-bottom:1px #CCCCCC solid;">
+<div style="padding:3px"><a href="?{$_SITE_ROOT}&amp;mod={$mod}"><img src="{$URL_IMAGES}/largeicon/folders.png" border="0"/></a></div>
+</td>
+<td style="color:#990000;border-bottom:1px #CCCCCC solid;">
+<font style="font-size:24px;"><b>{if $_LANG_ID ne "vn"}{$clsDataGrid->getTitle()|upper}{else}{$clsDataGrid->getTitle()}{/if}</b></font><br />
+<font style="font-size:9px"><i>{if $_LANG_ID ne "vn"}{$clsDataGrid->getTitle()} {$core->getLang("Management")}{else}{$core->getLang("Management")} {$clsDataGrid->getTitle()}{/if}</i></font>
+</td>
+<td style="padding-right:10px; border-bottom:1px #CCCCCC solid;" align="right">
+<div>
+	<table cellpadding="2px" border="0">
+	<tr>
+		{$clsButtonNav->render()}		
+	</tr>
+	</table>
+</div>
+</td>
+</tr>
+</table>
+{literal}
+<script type="text/javascript">
+  $(document).ready(function(){
+		$("#dosearch").click(function(){			
+			$("#theForm")[0].submit();
+		});	
+  });  
+</script>
+{/literal}
+
+<table width="100%" border="0">
+<tr>
+<td style="padding-left:10px;padding-right:10px">
+	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td align="left">
+			<div style="padding-bottom:5px;font-size:14px">
+				<strong>{$core->getLang("ListOf")} {$clsDataGrid->getTitle()}</strong>
+			</div>
+			</td>
+			
+		</tr>
+	</table>	
+</td>
+</tr>
+<tr>
+	<td align="center">
+    <form name="theForm" id="theForm" action="" method="post">
+    	<table cellpadding="0" cellspacing="0" width="98%" style="font-family:Tahoma, Geneva, sans-serif; font-size:12px; color:#333; border: solid 1px #CCC; background-color:#F0F0F0 ">
+        	<tr>
+            	<td colspan="12" height="5"></td>
+            </tr>
+        	<tr>
+            	<td width="5"></td>
+            	<td>Ngành :</td>
+                <td><select name="nganh" id="nganh" style="width:150">
+                		<option value="">   Tất cả   </option>
+                        <option value="QTKD">Quản trị kinh doanh</option>
+                        <option value="KT">Kế toán</option>
+                        <option value="CNTT">Tin học</option>
+                        <option value="TCNH">Tài chính ngân hàng</option>
+                        <option value="chua_xac_dinh">Chưa xác định</option>
+                	</select>
+                </td>
+                <td width="5"></td>
+                <td>Lớp</td>
+                <td><input type="text" maxlength="255" name="lop" id="lop" style="width:150px"> 
+                </td>
+                <td width="5"></td>
+                <td>Chức vụ trong lớp</td>
+                <td><select name="chucvu" id="chucvu" style="width:150">
+                      <option value="">   Tất cả   </option>
+                      <option value="Lop_Truong">Lớp trưởng</option>
+                      <option value="Thanh_vien">Thành viên</option>
+                      <option value="Lop_pho">Lớp phó</option>
+                     </select>
+                </td>
+                <td width="5"></td>
+                <td>Nhóm</td>
+                <td><select name="nhom" id="nhom" style="width:150">
+                      <option value="">   Tất cả   </option>
+                      <option value="N1">1</option>
+                      <option value="N2">2</option>
+                      <option value="N3">3</option>
+                      <option value="N4">4</option>
+                      <option value="N5">5</option>
+                      <option value="chua_xac_dinh">Chưa phân nhóm</option>
+                   </select>
+                </td>
+            </tr>
+            <tr>
+            	<td colspan="12" height="5"></td>
+            </tr>
+            <tr>
+            	<td width="5"></td>
+            	<td>Chức danh :</td>
+                <td><select name="chucdanh" id="chucdanh" style="width:150">
+                      <option value="">   Tất cả   </option>
+                      <option value="Nhan_Vien">Nhân viên</option>
+                      <option value="Pho_Giam_Doc">Phó giám đốc</option>
+                      <option value="Truong_Phong">Trưởng phòng</option>
+                      <option value="Chua_di_lam">Chưa đi làm</option>
+                      <option value="Chuyen_Vien">Chuyên viên</option>
+                      <option value="Chuc_danh_khac">Chức danh khác</option>
+                   </select>
+                </td>
+                <td width="5"></td>
+                <td>Candidate</td>
+                <td>
+                   <select name=" candidate" id=" candidate" style="width:150">
+                      <option value="">   Tất cả   </option>
+                   </select>
+                </td>
+                <td width="5"></td>
+                <td>Trạng thái</td>
+                <td><select name="trangthai" id="trangthai" style="width:150">
+                  <option value="">   Tất cả   </option>
+                  <option value="Hang_Hai">Hăng hái</option>
+                  <option value="Binh_Thuong">Bình thường</option>
+                  <option value="Bao_Dong">Báo động</option>
+                  </select>
+                </td>
+                <td width="5"></td>
+                <td>Tìm kiếm</td>
+                <td><input type="text" maxlength="255" name="txtname" id="txtname" value="{$txtname}" style="width:150px">
+                </td>
+            </tr>
+            <tr>
+            	<td colspan="12" align="right" style="padding-right:10px">
+                <input type="button" name="btnSearch" id="dosearch" value=" Search " >
+                </td>
+            </tr>
+            <tr>
+            	<td colspan="12" height="5"></td>
+            </tr>
+        </table>
+        </form>
+    </td>
+</tr>
+<tr>
+<td style="padding-left:10px;padding-right:10px" width="100%" valign="top">
+	{$clsDataGrid->showDataGrid("theForm")}
+	
+</td>
+</tr>
+<tr>
+<td  style="padding-left:10px;padding-right:10px">
+	{$clsDataGrid->showPaging("theForm")}
+</td>
+</tr>
+</table>
+

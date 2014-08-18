@@ -1,0 +1,60 @@
+<Meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<span style="font-family:arial">Bảng điểm lớp <strong>{$lop}</strong></span>
+<table cellspacing="0" border="1" cellpadding="5" width="100%" style="border: solid 1px #CCC; font-family:Tahoma, Geneva, sans-serif; font-size:12px; " align="center">
+	
+	<tr style="background:#f0f0f0; font-weight:bold">
+	<th>Mã HV</th>
+	<th>Họ</th>
+	<th>Tên</th>
+	<th>Điểm đánh giá (10%)</th>
+	<th>Điểm BTVN1</th>
+		<th>Điểm BTVN2</th>
+		<th>Điểm BT nhóm/ Kỹ năng</th>
+	</tr>
+    {section name=sv loop=$arrUser}
+	{if $smarty.section.sv.index%2 eq '0'}
+                <tr  height="25">
+	{elseif $smarty.section.sv.index%2 eq '1'}
+                <tr  height="25" bgcolor="#ededfe">			
+	{/if}	
+	<td align="center">
+	{$arrUser[sv].topica_msv}
+	</td>
+	<td>
+	{$arrUser[sv].lastname}
+	</td>
+	<td>
+	{$arrUser[sv].firstname}
+	</td>
+	<td align="center">
+	{section name=calendar loop=$arrSettingCalendar}
+	  {if $arrSettingCalendar[calendar].week_name eq 'Tổng' }
+	  {assign var=count_post2 value=$clsSettingCalendar->getRelationCalendarAndLipesettingVBB($arrUser[sv].username,$arrSettingCalendar[calendar].id,$c_id)}
+	  {assign var=h2472 value=$clsSettingCalendar->countPostInWeekH2472($c_id,$arrSettingCalendar[calendar].start_date,$arrSettingCalendar[calendar].end_date,$arrUser[sv].id)}
+	  {assign var=count_practice value=$clsSettingCalendar->CountPractice($arrUser[sv].id,$c_id,$arrSettingCalendar[calendar].start_date,$arrSettingCalendar[calendar].end_date)}				
+	 {/if}
+	
+	{/section}
+	
+	
+	{assign var=offline value=$clsOffline->getOffline($arrUser[sv].id,$c_id)}
+	{assign var=diemcc value=$clsOffline->getCc($offline,$count_post2,$h2472,$count_practice,$mode)}
+	 {assign var=chitietdiemcc value=$clsOffline->showGetCc($offline,$count_post2,$h2472,$count_practice)}
+	{$diemcc}</td>
+	
+	<td align="center">{assign var=btvn1 value=$clsSettingCalendar->getbtvn($arrUser[sv].id,$c_id,1) } {$btvn1}</td>
+		<td align="center">
+		
+		{assign var=btvn2 value=$clsSettingCalendar->getbtvn($arrUser[sv].id,$c_id,2) } {$btvn2}
+		</td>
+		 
+		<td align="center">{assign var=btvn value=$clsOffline->getBt($arrUser[sv].id,$c_id) } {$btvn}</td>
+	</tr>
+	
+	
+			
+	
+	{/section}
+
+	</table>	

@@ -1,0 +1,610 @@
+[2007-05-16 Wed 13:51:04] [error] [c:\wamp\www\WWW8\nvcms\includes\common\clsCore.php (Line 14)] ModuleFile is not found! 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 13 
+	---- -> Core->Core() @ c:\wamp\www\WWW8\nvcms\www\root\index.php line 16 
+	------ -> trigger_error() @ c:\wamp\www\WWW8\nvcms\includes\common\clsCore.php line 14 
+	-------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\common\clsCore.php line 14 
+	---------- -> VnLogging->Error() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 41 
+	------------ -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 82
+[2007-05-16 Wed 14:18:56] [error] [c:\wamp\www\WWW8\nvcms\includes\common\clsCore.php (Line 14)] ModuleFile is not found! 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Core->Core() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 16 
+	------ -> trigger_error() @ c:\wamp\www\WWW8\nvcms\includes\common\clsCore.php line 14 
+	-------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\common\clsCore.php line 14 
+	---------- -> VnLogging->Error() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 41 
+	------------ -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 82
+[2007-05-16 Wed 14:18:57] [error] [c:\wamp\www\WWW8\nvcms\includes\common\clsCore.php (Line 14)] ModuleFile is not found! 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Core->Core() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 16 
+	------ -> trigger_error() @ c:\wamp\www\WWW8\nvcms\includes\common\clsCore.php line 14 
+	-------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\common\clsCore.php line 14 
+	---------- -> VnLogging->Error() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 41 
+	------------ -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 82
+[2007-05-16 Wed 14:18:59] [error] [c:\wamp\www\WWW8\nvcms\includes\common\clsCore.php (Line 14)] ModuleFile is not found! 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Core->Core() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 16 
+	------ -> trigger_error() @ c:\wamp\www\WWW8\nvcms\includes\common\clsCore.php line 14 
+	-------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\common\clsCore.php line 14 
+	---------- -> VnLogging->Error() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 41 
+	------------ -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 82
+[2007-05-16 Wed 14:19:20] [warning] [c:\wamp\www\WWW8\nvcms\www\admin\index.php (Line 23)] main(_header.php) [<a href='function.main'>function.main</a>]: failed to open stream: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> require_once() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 23 
+	------ -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 23 
+	-------- -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	---------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:19:21] [warning] [c:\wamp\www\WWW8\nvcms\www\admin\index.php (Line 23)] main(_header.php) [<a href='function.main'>function.main</a>]: failed to open stream: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> require_once() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 23 
+	------ -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 23 
+	-------- -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	---------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:19:22] [warning] [c:\wamp\www\WWW8\nvcms\www\admin\index.php (Line 23)] main(_header.php) [<a href='function.main'>function.main</a>]: failed to open stream: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> require_once() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 23 
+	------ -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 23 
+	-------- -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	---------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:19:48] [warning] [c:\wamp\www\WWW8\nvcms\www\admin\index.php (Line 26)] main(c:/wamp/www/WWW8/nvcms/www/admin/modules/default/index.php) [<a href='function.main'>function.main</a>]: failed to open stream: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> require_once() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 26 
+	------ -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 26 
+	-------- -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	---------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:19:49] [warning] [c:\wamp\www\WWW8\nvcms\www\admin\index.php (Line 26)] main(c:/wamp/www/WWW8/nvcms/www/admin/modules/default/index.php) [<a href='function.main'>function.main</a>]: failed to open stream: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> require_once() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 26 
+	------ -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 26 
+	-------- -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	---------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:19:49] [warning] [c:\wamp\www\WWW8\nvcms\www\admin\index.php (Line 26)] main(c:/wamp/www/WWW8/nvcms/www/admin/modules/default/index.php) [<a href='function.main'>function.main</a>]: failed to open stream: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> require_once() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 26 
+	------ -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 26 
+	-------- -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	---------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:19:50] [warning] [c:\wamp\www\WWW8\nvcms\www\admin\index.php (Line 26)] main(c:/wamp/www/WWW8/nvcms/www/admin/modules/default/index.php) [<a href='function.main'>function.main</a>]: failed to open stream: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> require_once() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 26 
+	------ -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 26 
+	-------- -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	---------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:19:51] [warning] [c:\wamp\www\WWW8\nvcms\www\admin\index.php (Line 26)] main(c:/wamp/www/WWW8/nvcms/www/admin/modules/default/index.php) [<a href='function.main'>function.main</a>]: failed to open stream: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> require_once() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 26 
+	------ -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 26 
+	-------- -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	---------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:19:52] [warning] [c:\wamp\www\WWW8\nvcms\www\admin\index.php (Line 26)] main(c:/wamp/www/WWW8/nvcms/www/admin/modules/default/index.php) [<a href='function.main'>function.main</a>]: failed to open stream: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> require_once() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 26 
+	------ -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 26 
+	-------- -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	---------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:20:14] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:20:15] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:20:46] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:20:48] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:20:50] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:21:39] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:23:15] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:23:55] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:25:46] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:25:59] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:28:05] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:28:14] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:28:16] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:28:16] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:28:22] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:28:23] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:29:01] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:29:16] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:29:17] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:29:24] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:30:05] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:30:13] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:30:36] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:30:37] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:30:57] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:31:10] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:31:17] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/root\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:31:24] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/root\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 13 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\root\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:31:52] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/root\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 13 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\root\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:32:17] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/root\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 13 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\root\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:34:59] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 44)] unlink(c:/wamp/www/WWW8/nvcms/www_c/root\%%77^774^774BE9C9%%index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 13 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\root\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> unlink() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 44 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:43:30] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11C0.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:43:31] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11C1.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:46:20] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11D9.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:46:22] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11DA.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:46:23] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11DB.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:46:24] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11DC.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:46:25] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11DD.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:47:02] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11DF.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:47:03] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11E0.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:47:05] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11E1.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:47:06] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11E2.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:47:07] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11E3.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:47:50] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11E6.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:47:52] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11E7.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:47:59] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 41)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11E8.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: No such file or directory 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 41 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 41 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:48:12] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11EA.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89
+[2007-05-16 Wed 14:48:31] [warning] [c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php (Line 40)] rename(c:/wamp/www/WWW8/nvcms/www_c/admin\wrt11ED.tmp,c:/wamp/www/WWW8/nvcms/www_c/admin\%%77^774^774BE9C9%%index.html.php) [<a href='function.rename'>function.rename</a>]: File exists 
+	-- -> require_once() @ c:\wamp\www\WWW8\nvcms\index.php line 8 
+	---- -> Smarty->display() @ c:\wamp\www\WWW8\nvcms\www\admin\index.php line 38 
+	------ -> Smarty->fetch() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1108 
+	-------- -> Smarty->_compile_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1256 
+	---------- -> smarty_core_write_compiled_resource() @ c:\wamp\www\WWW8\nvcms\includes\smarty\Smarty.class.php line 1433 
+	------------ -> smarty_core_write_file() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_compiled_resource.php line 29 
+	-------------- -> rename() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	---------------- -> vnErrorHandler() @ c:\wamp\www\WWW8\nvcms\includes\smarty\internals\core.write_file.php line 40 
+	------------------ -> VnLogging->Warning() @ c:\wamp\www\WWW8\nvcms\includes\common\vnErrorHandler.php line 50 
+	-------------------- -> VnLogging->_doWrite() @ c:\wamp\www\WWW8\nvcms\includes\common\clsLogging.php line 89

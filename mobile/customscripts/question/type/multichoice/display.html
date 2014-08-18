@@ -1,0 +1,16 @@
+<?php 
+
+echo '"'.$questiontext.'"<br><br>'; 
+
+/*if ($image) { ?>
+  <img class="qimage" src="<?php echo $q->imageurl; ?>" alt="" />
+<?php } */
+echo $answerprompt.':&nbsp;&nbsp;<br>';
+$row = 1;
+foreach ($anss as $answer) { 
+    echo $answer->control;
+    echo $answer->text.'<br>';
+    echo $answer->feedback.'<br><br>';
+}
+//$this->print_question_submit_buttons($question, $state, $cmoptions, $options); 
+?>

@@ -1,0 +1,50 @@
+<!-- Section Profile -->
+<section id="profiles">
+    <div><img class="img-profile" height="40px" width="40px" src="http://el.dtu.topica.edu.vn/user/pix.php?file=/{$userid}/f1.jpg" alt="Profile Images"/><p>{$OneMember.firstname} {$OneMember.lastname}</p><a href="{$NVCMS_URL}/logout.html">logout</a></div>        
+</section>
+
+<!-- Notification -->
+<section>
+<div>
+<h2>Notifications</h2>
+<nav>
+    <ul>
+        <!-- Use <span> in order to display a count -->
+        <li><a href="{$NVCMS_URL}/lttn.html" title="LTTN">Multiple choice practice<span>{$number_lttn}</span></a></li>
+        <li><a href="{$NVCMS_URL}/btvn.html" title="BTVN">Homework<span>{$number_btvn}</span></a></li>
+        <!--<li><a href="notification.html" title="Bản tin lớp">Bản tin lớp <span>3</span></a></li>-->
+    </ul>
+</nav>
+</div>
+</section>
+
+<!-- Course -->
+<section>
+<div>
+<h2>Courses</h2>
+<nav>
+    <ul>
+    	{section name=id loop=$listCourse}
+        <li><a href="{$NVCMS_URL}/course-{$listCourse[id].id}.html" title="{$listCourse[id].fullname}">{$listCourse[id].fullname}</a></li>
+        {/section}
+    </ul>
+</nav>
+</div>
+</section>
+    
+<!-- Main Navigation -->
+<section id="navigator">
+<div>
+<h2>Menu</h2>
+<nav>
+    <ul>
+        <li class="active"><a href="index.html" title="Home">Home</a></li>
+        <!-- Use <span> in order to display a count -->
+        <li><a href="lipe.html" title="LIPE">Lipe</a></li>
+        <!--<li><a href="list-course.html" title="Các khóa học">Các khóa học</a></li>-->
+        <!--<li><a href="notification.html" title="Bản tin lớp">Bản tin lớp</a></li>-->
+        <!--<li><a href="profile.html" title="Thông tin cá nhân">Thông tin cá nhân</a></li>-->
+    </ul>
+</nav>
+</div>
+</section>

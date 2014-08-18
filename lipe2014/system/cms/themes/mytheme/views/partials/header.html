@@ -1,0 +1,10 @@
+<?php
+if(strpos($_SERVER['REQUEST_URI'],'report_personal')===false){
+$user_data=$this->session->userdata('user_data');
+if(isset($user_data)&&$user_data&&$user_data['user_role_id']!=5){
+	echo '<div class="welcome">Chào bạn: '.$user_data['fullname'].'</div>';
+?>
+<div class="header">
+	<a class="logo" href="/lipe2014">Lipe Topica</a>
+</div>
+<?php } }?>

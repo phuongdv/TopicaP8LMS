@@ -1,0 +1,43 @@
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<tr style="background:#FBFBFB">
+<td width="55px" style="border-bottom:1px #CCCCCC solid;">
+<div style="padding:3px"><a href="?{$_SITE_ROOT}&mod={$mod}"><img src="{$URL_IMAGES}/largeicon/folders.png" border="0"/></a></div>
+</td>
+<td style="color:#990000;border-bottom:1px #CCCCCC solid;">
+<font style="font-size:24px;"><b>{if $_LANG_ID ne "vn"}{$clsDataGrid->getTitle()|upper}{else}{$clsDataGrid->getTitle()}{/if}</b></font><br />
+<font style="font-size:9px"><i>{if $_LANG_ID ne "vn"}{$clsDataGrid->getTitle()} {$core->getLang("Management")}{else}{$core->getLang("Management")} {$clsDataGrid->getTitle()}{/if}</i></font>
+</td>
+<td style="padding-right:10px; border-bottom:1px #CCCCCC solid;" align="right">
+<div>
+	<table cellpadding="2px" border="0">
+	<tr>
+		{$clsButtonNav->render()}		
+	</tr>
+	</table>
+</div>
+</td>
+</tr>
+</table>
+<form name="theForm" action="" method="post">
+<table width="100%" border="0">
+<tr>
+<td style="padding-left:10px;padding-right:10px">
+	<div style="padding-bottom:5px;font-size:14px">
+	<strong>{$core->getLang("ListOf")} {$clsDataGrid->getTitle()}</strong>
+	</div>
+</td>
+</tr>
+<tr>
+<td style="padding-left:10px;padding-right:10px" width="100%" valign="top">
+	{$clsDataGrid->showDataGrid("theForm")}
+
+	
+</td>
+</tr>
+<tr>
+<td  style="padding-left:10px;padding-right:10px">
+	{$clsDataGrid->showPaging("theForm")}
+</td>
+</tr>
+</table>
+</form>

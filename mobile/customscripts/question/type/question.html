@@ -1,0 +1,12 @@
+<?php
+/* This template determines the overall layout of a question. It is included by the 
+ * print_question() method.
+ */
+?>
+<?php echo $number; ?>
+<?php if ($grade) { ?>
+    <?php echo '&nbsp;('.mfm_get_string('marks', 'quiz').': '.$grade.')'.'<br>'; ?>
+<?php } ?>
+<?php $questiontypeobj->print_question_formulation_and_controls($question, $state, $cmoptions, $options); ?>
+<?php $questiontypeobj->print_question_grading_details($question, $state, $cmoptions, $options); ?>
+<br>

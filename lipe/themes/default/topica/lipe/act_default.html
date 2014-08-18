@@ -1,0 +1,154 @@
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<tr style="background:#FBFBFB">
+<td width="55px" style="border-bottom:1px #CCCCCC solid;">
+<div style="padding:3px"><a href="?{$_SITE_ROOT}&mod={$mod}"><img src="{$URL_IMAGES}/largeicon/n-UserGroup-Quan-ly-nhom-nguoi-dung.gif" border="0"/></a></div>
+</td>
+<td style="color:#990000;border-bottom:1px #CCCCCC solid;">
+<font style="font-size:24px;"><b>F100 – Quản lý lớp môn
+</b></font><br />
+<font style="font-size:9px"><i></i></font>
+</td>
+<td style="padding-right:10px; border-bottom:1px #CCCCCC solid;" align="right">
+<div>
+	<table cellpadding="2px" border="0">
+	<tr>
+		{$clsButtonNav->render()}		
+	</tr>
+	</table>
+</div>
+</td>
+</tr>
+</table>
+
+<table width="100%" border="0">
+<tr>
+<td style="padding-left:10px;padding-right:10px">
+	<div style="padding-bottom:5px;font-size:14px">
+	
+	</div>
+</td>
+</tr>
+<tr>
+<td style="padding-left:10px;padding-right:10px" width="100%" valign="top">
+</td>
+</tr>
+<tr>
+<td  style="padding-left:10px;padding-right:10px">
+	
+</td>
+</tr>
+</table>
+
+<p>{literal}
+  <script language="javascript">
+	function searchDetail(field,e) {
+	var frm = document.frmSearchDetail;
+	if (window.event) keycode = window.event.keyCode;
+	else if (e) keycode = e.which;
+	else return true;
+	
+	if (keycode == 13) {
+		if(frm.keyword.value == "") {
+			alert("Xin vui lòng nhập vào từ khóa tìm kiếm !");
+			frm.keyword.focus();
+			return false;
+		}
+		
+		frm.action = '?topica&mod=lipe&act=search&keyword='+frm.keyword.value;
+		frm.submit();
+		return true;
+	}
+}
+
+function checkSearchDetail() {
+	var frm = document.frmSearchDetail;
+	
+	if(frm.keyword.value == "") {
+		alert("Xin vui lòng nhập vào từ khóa tìm kiếm !");
+		frm.keyword.focus();
+		retval = false;
+		return false;
+	}
+	
+	
+	window.location.href = '?topica&mod=lipe&act=search&keyword='+frm.keyword.value;		
+	return true;
+}
+  </script>
+{/literal}</p>
+<div align="left" style="padding-left:20px; font-family:Arial, Helvetica, sans-serif; font-size:9pt">
+11-04-2012 : Thông báo<br>
+- Thêm chức năng add mode cho lớp môn.<br>
+- TẤT CẢ CÁC LỚP MÔN POVH ĐỀU PHẢI THIẾT LẬP MODE.<br>
+- Nếu lớp môn nào chưa thiết lập mode đề nghị gửi phản hồi ngay cho Việt Hà qua email hatvv@topica.edu.vn hoặc điện thoại 0983.061.583.<br>
+- Các phần Settting Calendar và Setting Lipe không có gì thay đổi.<br>
+Ghi chú:<br>
+- M_CoOffline: là mode 1 trước đây<br>
+- M_KoOffline_CoDienDan: là mode 2 trước đây<br>
+- M_KoOffline_KoDienDan: là mode 3 trước đây<br>
+</div>
+<p>&nbsp;</p>
+<form name="frmSearchDetail" id="frmSearchDetail" method="post" action="">
+<table width="80%" height="40" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr>
+    	<td >
+        	<input type="text" name="keyword" id="keyword" onkeypress="javascript:return searchDetail(this,event);" style="width:240px; border:1px solid #F00;" value="{$keyword}"/> <!--<input name="" type="submit" value="Search"   />--><a href="#" onclick="return checkSearchDetail();" class="find_sim">
+                    <img src="{$URL_IMAGES}/b-search.jpg" border="0" align="absmiddle" />
+                    </a>
+        </td>
+    </tr>
+</table>
+</form>
+
+<table cellpadding="0" cellspacing="0" border="0" width="80%" style="border: solid 1px #CCC; font-family:Tahoma, Geneva, sans-serif; font-size:12px;" align="center">
+	<tr height="25" bgcolor="#f0f0f0">
+    	<td width="30" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center">ID</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center">Tên lớp</td>
+                <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" width="150">Chế độ xem</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" width="150">Calendar</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" width="150">Lipe</td>
+        <td style=" border-bottom:dashed 1px #CCC; " align="center" width="150">View Report</td>
+         <td style=" border-bottom:dashed 1px #CCC; " align="center" width="150">Số buổi đi 0ffline</td>
+		 <td style=" border-bottom:dashed 1px #CCC; " align="center" width="50">Dịch vụ SMS</td>
+    </tr>
+    {section name=id loop=$arrCourse}
+    {assign var=mode value=$clsMode->getMode($arrCourse[id].id)}
+    {if $smarty.section.id.index%2 eq '0'}
+    <tr height="25" >
+    	<td width="30" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center">{$arrCourse[id].id}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center">	{$arrCourse[id].fullname|html_entity_decode|strip_tags}</td>
+         <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" width="150"><a href="javascript:void(0)"
+onclick="window.open('?topica&mod=settingmode&c_id={$arrCourse[id].id}',
+'Setting Mode ','width=800,height=400,menubar=yes,status=yes')"  style="text-decoration:none" >{$mode}</a></td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" width="150"><a href="?topica&mod=settingcalendar&c_id={$arrCourse[id].id}" style="text-decoration:none" >Calendar</a></td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" width="150"><a href="?topica&mod=settinglipe&c_id={$arrCourse[id].id}" style="text-decoration:none">Lipe</a></td>
+        <td style=" border-bottom:dashed 1px #CCC; " align="center" width="150"><a href="?topica&mod=lipe&act=report&c_id={$arrCourse[id].id}" style="text-decoration:none">Xem báo cáo</a></td>
+         <td style=" border-bottom:dashed 1px #CCC; " align="center" width="150"><a href="?topica&mod=offline&act=add&c_id={$arrCourse[id].id}" style="text-decoration:none" target="_blank">0ffline</a></td>
+         <td style=" border-bottom:dashed 1px #CCC; " align="center" width="150"><a href="?topica&mod=sms&act=default&c_id={$arrCourse[id].id}" style="text-decoration:none" >SMS</a></td>
+   
+   </tr>
+    {elseif $smarty.section.id.index%2 eq '1'}
+    <tr height="25" bgcolor="#d2d2fb" >
+    	<td width="30" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center">{$arrCourse[id].id}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center">	{$arrCourse[id].fullname|html_entity_decode|strip_tags}</td>
+         <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" width="150"><a href="javascript:void(0)"
+onclick="window.open('?topica&mod=settingmode&c_id={$arrCourse[id].id}',
+'Setting Mode ','width=800,height=400,menubar=yes,status=yes')"  style="text-decoration:none" >{$mode}</a></td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" width="150"><a href="?topica&mod=settingcalendar&c_id={$arrCourse[id].id}" style="text-decoration:none">Calendar</a></td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" width="150"><a href="?topica&mod=settinglipe&c_id={$arrCourse[id].id}" style="text-decoration:none">Lipe</a></td>
+        <td style=" border-bottom:dashed 1px #CCC; " align="center" width="150"><a href="?topica&mod=lipe&act=report&c_id={$arrCourse[id].id}" style="text-decoration:none">Xem báo cáo</a></td>
+        <td style=" border-bottom:dashed 1px #CCC; " align="center" width="150"><a href="?topica&mod=offline&act=add&c_id={$arrCourse[id].id}" style="text-decoration:none" target="_blank">0ffline</a></td>
+     <td style=" border-bottom:dashed 1px #CCC; " align="center" width="150"><a href="?topica&mod=sms&act=default&c_id={$arrCourse[id].id}" style="text-decoration:none" >SMS</a></td>
+
+	</tr>
+    {/if}
+    {/section}
+    <tr>
+    	<td colspan="5" height="20"></td>
+    </tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+    	<td height="20"></td>
+    </tr>
+</table>

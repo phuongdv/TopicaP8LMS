@@ -1,0 +1,42 @@
+     <p align="center">
+<?php
+    if ($course->password != '' and !(isguestuser() and !empty($USER->enrolkey[$course->id]))) {   // password
+        $this->print_enrolmentkeyfrom( $course );    
+    }
+?>
+      </p>
+
+      <p align="center"><?php if (! empty($this->errormsg)) {formerr($this->errormsg);} ?></p>
+
+
+      <form name="form" method="post" action="enrol.php">
+              <?php mfm_print_string("enrolmentkey") ?>:
+              <input type="text" istyle="3" name="password" size="20" value="<?php p($password) ?>"  />
+              <input type="hidden" name="id" value="<?php p($course->id) ?>"  />
+              <input type="hidden" name="enrol" value="manual" />
+              <input type="submit" value="<?php mfm_print_string("enrolme") ?>" />
+
+      </form>
+      <br />
+
+      <p align="center">
+      <form action="<?php p($CFG->wwwroot)?>/index.php" method="post">
+      <input type="submit" value="<?php mfm_print_string("cancel") ?>" />
+      </form>
+      </p>
+
+<?php 
+
+
+    if (isguestuser()) {
+        if (empty($CFG->loginhttps)) {
+            $loginurl = $CFG->wwwroot .'/login/index.php';
+        } else {
+            $wwwroot = str_replace('http:','https:', $CFG->wwwroot);
+            $loginurl = $wwwroot .'/login/index.php';
+        }
+        echo '<p align="center">';
+        mfm_print_single_button($loginurl, null, get_string('login'));
+        echo '</p>';
+    }
+?>

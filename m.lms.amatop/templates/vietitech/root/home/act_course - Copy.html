@@ -1,0 +1,126 @@
+<!-- Sidebar Toggle & Tabbed Navigation -->
+<header>
+    <div class="controls">
+        <a title="Toggle Sidebar"><img src="{$URL_IMAGES}/icon-toggle.png" alt="Toggle Sidebar"></a>
+    </div>
+    <div id="textLogo">
+    <a href="{$NVCMS_URL}/index.html" title="Quay lại trang chủ">MLA</a>
+    </div>
+</header>
+
+<!-- Breadcrumb -->
+<section id="breadcrumb">
+<a href="index.html">Mobile Learning Assitant</a>
+› 
+<a href="#">{$NameCourse}</a>
+</section>
+
+
+	{if $checkHocLieu eq '1'}
+    	<section id="main">
+			<div class="course_calendar">
+                	<img class="calendar" alt="Lịch tuần" src="http://elearning.hou.topica.vn/lich/calendar2.php?f={$C_start}&amp;l={$C_end}">
+            </div>
+            
+				<!-- Repeat this Area for Multiple Boxes -->
+				<div class="module">
+					<h4>{$arrCalendarTop[0].week_name} ({$arrCalendarTop[0].start_date|date_format:'%d/%m/%Y'}-{$arrCalendarTop[0].end_date|date_format:'%d/%m/%Y'})</h4>
+					<div>
+                    <img class="imgpe" src="{$URL_IMAGES}/lecture.gif" alt="Lecture"> 
+                    {section name=j loop=$TuanHienTai}
+                    {if $TuanHienTai[j].lession ne ''}
+	                	<h5 class="center-text">{$TuanHienTai[j].lession}</h5>
+                        <div class="container" style="overflow: hidden">
+                            {if  $TuanHienTai[j].pdf ne ''}
+                          <div class="column-two-one">
+                            <em class="center-text"><a href="{$NVCMS_URL}/pdf-{$c_id}/url={$NameCourseS}/{$TuanHienTai[j].pdf}"><img width="50" alt="img" class="replace-2x" src="{$URL_IMAGES}/pdf.jpg"></a></em>
+                          </div>
+                            {/if}
+                            {if  $TuanHienTai[j].mp3 ne ''}
+                          <div class="column-two-one">
+                            <em class="center-text"><a href="{$NVCMS_URL}/mp3-{$c_id}/url={$NameCourseS}/{$TuanHienTai[j].mp3}"><img width="50" alt="img" class="replace-2x" src="{$URL_IMAGES}/mp3.jpg"></a></em>
+                          </div>
+                            {/if}
+                            {if  $TuanHienTai[j].slide ne ''}
+                          <!--<div class="column-two-one">
+                            <em class="center-text"><a href="{$NVCMS_URL}/slide-{$c_id}/url={$NameCourseS}/{$TuanHienTai[0].slide}"><img width="50" alt="img" class="replace-2x" src="{$URL_IMAGES}/slide.png"></a></em>
+                          </div>-->
+                          <div class="column-two-one">
+                            <em class="center-text"><a href="http://115.146.127.234/mdata/{$NameCourseS}/{$TuanHienTai[j].slide}"><img width="50" alt="img" class="replace-2x" src="{$URL_IMAGES}/slide.png"></a></em>
+                          </div>
+                            {/if}
+                          
+                        </div>
+                    {/if}
+                    {/section}
+                    {assign var=PTuanHienTai value=$core->getPractive($c_id,$arrCalendarTop[0].id)}
+                    {if $PTuanHienTai ne '0'}
+                    {assign var=NameQuiz value=$clsQuiz->getName($PTuanHienTai)}
+	                	<img src="{$URL_IMAGES}/practice.gif" alt="Practice"> 
+                    	<br/>
+                    	<span class="pe">
+                    		<img src="{$URL_IMAGES}/pe.gif"/><a href="http://el.dtu.topica.edu.vn/vietth/q169/review_pr_mobile.php?q={$PTuanHienTai}&u={$userid}&c={$c_id}&s={$secret|md5}">{$NameQuiz}</a> 
+                    	</span>
+                    {/if}
+                    <br/>
+                   <a href="/h2472-{$c_id}.html"><img src="{$URL_IMAGES}/h2472.gif" alt="H2472" style="border:0;"></a> 
+      				</div>
+				</div>
+                
+				{section name=id loop=$listTuan}
+                {assign var=OneCalendar value=$core->getCalendar($listTuan[id].week,$c_id)}
+                {assign var=InfoWeek value=$core->getInfoWeek($table_name,$listTuan[id].week)}
+				<div class="module">
+					<h4>{$OneCalendar[0].week_name} ({$OneCalendar[0].start_date|date_format:'%d/%m/%Y'}-{$OneCalendar[0].end_date|date_format:'%d/%m/%Y'})</h4>
+					<div>
+                   <img class="imgpe" src="{$URL_IMAGES}/lecture.gif" alt="Lecture"> 
+                    {section name=k loop=$InfoWeek}
+                    	{if $InfoWeek[k].lession ne ''}
+                            
+                            <h5 class="center-text">{$InfoWeek[k].lession}</h5>
+                            <div class="container" style="overflow: hidden">
+                                {if  $InfoWeek[k].pdf ne ''}
+                              <div class="column-two-one">
+                                <em class="center-text"><a href="{$NVCMS_URL}/pdf-{$c_id}/url={$NameCourseS}/{$InfoWeek[k].pdf}"><img width="50" alt="img" class="replace-2x" src="{$URL_IMAGES}/pdf.jpg"></a></em>
+                              </div>
+                                {/if}
+                                {if  $InfoWeek[k].mp3 ne ''}
+                              <div class="column-two-one">
+                                <em class="center-text"><a href="{$NVCMS_URL}/mp3-{$c_id}/url={$NameCourseS}/{$InfoWeek[k].mp3}"><img width="50" alt="img" class="replace-2x" src="{$URL_IMAGES}/mp3.jpg"></a></em>
+                              </div>
+                                {/if}
+                                {if  $InfoWeek[k].slide ne ''}
+                              <!--<div class="column-two-one">
+                                <em class="center-text"><a href="{$NVCMS_URL}/slide-{$c_id}/url={$NameCourseS}/{$listTuan[id].slide}"><img width="50" alt="img" class="replace-2x" src="{$URL_IMAGES}/slide.png"></a></em>
+                              </div>-->
+                              <div class="column-two-one">
+                                <em class="center-text"><a href="http://115.146.127.234/mdata/{$NameCourseS}/{$InfoWeek[k].slide}"><img width="50" alt="img" class="replace-2x" src="{$URL_IMAGES}/slide.png"></a></em>
+                              </div>
+                                {/if}
+                              
+                            </div>
+                    	{/if}
+                    {/section}
+                    
+                    
+                    {assign var=PlistTuan value=$core->getPractive($c_id,$OneCalendar[0].id)}
+                    
+                    {if $PlistTuan ne '0'}
+                    {assign var=NameQuiz value=$clsQuiz->getName($PlistTuan)}
+	                	<img src="{$URL_IMAGES}/practice.gif" alt="Practice"> 
+                    	<br/>
+                    	<span class="pe">
+                    		<img src="{$URL_IMAGES}/pe.gif"/><a href="http://el.dtu.topica.edu.vn/vietth/q169/review_pr_mobile.php?q={$PlistTuan}&u={$userid}&c={$c_id}&s={$secret|md5}">{$NameQuiz}</a> 
+                    	</span>
+                    {/if}
+                    <br/>
+                    <a href="/h2472-{$c_id}.html"><img src="{$URL_IMAGES}/h2472.gif" alt="H2472" style="border:0;"></a>
+      				</div>
+				</div>
+				{/section}
+				
+			</section>
+    
+    {else}
+    	Học liệu chưa được cập nhật. Xin vui lòng quay lại sau!
+    {/if}

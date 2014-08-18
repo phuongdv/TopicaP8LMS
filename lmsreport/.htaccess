@@ -1,0 +1,5 @@
+RewriteEngine On
+Options +FollowSymLinks
+RewriteRule ^LMS240-H2472$		index3.php [L]
+RewriteRule ^LMS250-quiz$ 		baocaolamquiz.php
+	

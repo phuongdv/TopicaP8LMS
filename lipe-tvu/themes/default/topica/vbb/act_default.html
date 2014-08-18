@@ -1,0 +1,106 @@
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<tr style="background:#FBFBFB">
+<td width="55px" style="border-bottom:1px #CCCCCC solid;">
+<div style="padding:3px"><a href="?{$_SITE_ROOT}&mod={$mod}"><img src="{$URL_IMAGES}/largeicon/n-UserGroup-Quan-ly-nhom-nguoi-dung.gif" border="0"/></a></div>
+</td>
+<td style="color:#990000;border-bottom:1px #CCCCCC solid;">
+<font style="font-size:24px;"><b></b></font><br />
+<font style="font-size:9px"><i></i></font>
+</td>
+<td style="padding-right:10px; border-bottom:1px #CCCCCC solid;" align="right">
+
+</td>
+</tr>
+</table>
+
+<table width="100%" border="0">
+<tr>
+<td style="padding-left:10px;padding-right:10px">
+	<div style="padding-bottom:5px;font-size:14px">
+	<strong>Danh sách học viên tích cực diễn đàn</strong>: <strong><a href="?topica&mod=vbb&start=0&end=50" style="text-decoration:underline; font-family:Arial, Helvetica, sans-serif;">Top 50</a></strong>&nbsp;&nbsp;<strong><a href="?topica&mod=vbb&start=50&end=50" style="text-decoration:underline; font-family:Arial, Helvetica, sans-serif;">50 - 100</a></strong>&nbsp;&nbsp;<strong><a href="?topica&mod=vbb&start=100&end=50" style="text-decoration:underline; font-family:Arial, Helvetica, sans-serif;">100 - 150</a></strong>&nbsp;&nbsp;<strong><a href="?topica&mod=vbb&start=150&end=50" style="text-decoration:underline; font-family:Arial, Helvetica, sans-serif;">150 - 200</a></strong>
+	</div><div style="float:left;"><a href="{$NVCMS_URL}/?topica&mod=vbb&act=export&start={$start}&end={$end}" style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; font-weight: bold; text-decoration: none; color: rgb(51, 51, 51);"><img src="{$URL_IMAGES}/export.jpg" align="absmiddle" border="0">XUẤT RA EXCEL</a></div>
+</td>
+</tr>
+<tr>
+<td style="padding-left:10px;padding-right:10px" width="100%" valign="top">
+	
+	
+</td>
+</tr>
+<tr>
+<td  style="padding-left:10px;padding-right:10px">
+	
+</td>
+</tr>
+</table>
+
+
+
+<table cellpadding="0" cellspacing="0" border="0" width="80%" style="border: solid 1px #CCC; font-family:Tahoma, Geneva, sans-serif; font-size:12px;" align="center">
+	<tr height="25" bgcolor="#f0f0f0">
+    	<td width="30" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center">STT</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="left">Họ và tên</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >Lớp</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >Nhóm</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >Thành phố</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >Account (đăng nhập lớp học)</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >Tổng số chung</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >Diễn đàn học tập</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >Diễn đàn giao lưu</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >Hoạt động ngoại khóa</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >Hỗ trợ kỹ thuật</td>
+        <td style=" border-bottom:dashed 1px #CCC; " align="center" >Hội Trường</td>
+    </tr>
+    {section name=id loop=$arrUser}
+    {if $smarty.section.id.index%2 eq '0'}
+    	{assign var=Tong value=$arrUser[id].posts}
+    	{assign var=GiaoLuu value=$clsVbbUser->countPostGiaoLuu($arrUser[id].topica_lop,$arrUser[id].username)}
+        {assign var=NgoaiKhoa value=$clsVbbUser->countPostNgoaiKhoa($arrUser[id].username)}
+        {assign var=KyThuat value=$clsVbbUser->countPostHTKyThuat($arrUser[id].username)}
+        {assign var=HoiTruong value=$clsVbbUser->countPostHoiTruong($arrUser[id].username)}
+        
+    <tr height="25" >
+    	<td width="30" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center">{$smarty.section.id.index+1}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="left"><a href="http://www.topica.vn/elearning/user/view.php?id={$arrUser[id].id}" target="_blank" style="text-decoration:none;">{$arrUser[id].lastname}&nbsp;{$arrUser[id].firstname}</a></td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$arrUser[id].topica_lop}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$arrUser[id].topica_nhom}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$arrUser[id].city}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$arrUser[id].username}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" ><b>{$arrUser[id].posts}</b></td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$Tong-$GiaoLuu-$NgoaiKhoa-$KyThuat-$HoiTruong}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$GiaoLuu}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$NgoaiKhoa}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$KyThuat}</td>
+        <td style=" border-bottom:dashed 1px #CCC; " align="center" >{$HoiTruong}</td>
+    </tr>
+    {elseif $smarty.section.id.index%2 eq '1'}
+    	{assign var=Tong value=$arrUser[id].posts}
+    	{assign var=GiaoLuu value=$clsVbbUser->countPostGiaoLuu($arrUser[id].topica_lop,$arrUser[id].username)}
+        {assign var=NgoaiKhoa value=$clsVbbUser->countPostNgoaiKhoa($arrUser[id].username)}
+        {assign var=KyThuat value=$clsVbbUser->countPostHTKyThuat($arrUser[id].username)}
+        {assign var=HoiTruong value=$clsVbbUser->countPostHoiTruong($arrUser[id].username)}
+    <tr height="25" bgcolor="#d2d2fb" >
+    	<td width="30" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center">{$smarty.section.id.index+1}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="left"><a href="http://www.topica.vn/elearning/user/view.php?id={$arrUser[id].id}" target="_blank" style="text-decoration:none;">{$arrUser[id].lastname}&nbsp;{$arrUser[id].firstname}</a></td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$arrUser[id].topica_lop}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$arrUser[id].topica_nhom}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$arrUser[id].city}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$arrUser[id].username}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" ><b>{$arrUser[id].posts}</b></td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$Tong-$GiaoLuu-$NgoaiKhoa-$KyThuat-$HoiTruong}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$GiaoLuu}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$NgoaiKhoa}</td>
+        <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$KyThuat}</td>
+        <td style=" border-bottom:dashed 1px #CCC; " align="center" >{$HoiTruong}</td>
+    </tr>
+    {/if}
+    {/section}
+    <tr>
+    	<td colspan="5" height="20"></td>
+    </tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+    	<td height="20"></td>
+    </tr>
+</table>

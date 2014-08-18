@@ -1,0 +1,64 @@
+<div align="center">
+<div align="left" style="padding-left:109px">
+  <table width="548" border="0">
+    <tr>
+    {assign var=arrUser value=$clsLipecanhan->getUserinfo($userid)}
+      <td width="112" class="title_col">Họ tên học viên: &nbsp;&nbsp;</td>
+      <td width="155" class="title_col">{$arrUser[0].lastname} {$arrUser[0].firstname}</td>
+      <td class="title_col">&nbsp;</td>
+      <td class="title_col">&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="title_col">Lớp: &nbsp;&nbsp;</td>
+      <td class="title_col">  {$arrUser[0].topica_lop}</td>
+      <td width="73" class="title_col">Ngày sinh:</td>
+      <td width="190" class="title_col">{$arrUser[0].topica_namsinh}</td>
+    </tr>
+
+    <tr>
+      <td colspan="2">&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div align="center">
+  <table width="80%" border="0">
+    <tr >
+      <td width="106" class="title_col">Số login</td>
+      <td class="title_col" width="185">Số post</td>
+      <td colspan="3" class="title_col"><div align="center">
+      
+      Exam</div></td>
+      </tr>
+   
+{assign var=arrCourse value=$clsLipecanhan->getCourse($userid)}
+      {section name=c loop=$arrCourse}
+       <tr>
+      <td colspan="2" class="content_col">{$arrCourse[c].fullname}</td>
+      <td width="106" class="content_col2">&nbsp;</td>
+      <td width="90" class="content_col2">&nbsp;</td>
+      <td width="108" class="content_col2">&nbsp;</td>
+      </tr>
+      
+    <tr>
+      {assign var=login value=$clsLipecanhan->getLogin($arrCourse[c].id,$userid)}
+        <td class="content_col2">{$login[0].count}</td>
+      <td class="content_col2">&nbsp;</td>
+      {assign var=arrExamGrades value=$clsLipecanhan->getExamGrades($arrCourse[c].id)}
+        {section name=eg loop=$arrExamGrades}
+                    {assign var=arrGrades value=$clsLipecanhan->getGrades($arrExamGrades[eg].id,$userid)} 
+                        
+                        {section name=g loop=$arrGrades}
+                       <td class="content_col2">{$arrGrades[g].sumgrades}</td>
+                        {/section}
+                       
+     
+      {/section}
+    </tr>
+         
+    {/section}
+  </table>
+ 
+</div>
+</div>
+

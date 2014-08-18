@@ -1,0 +1,67 @@
+<!-- Sidebar Toggle & Tabbed Navigation -->
+<header>
+    <div class="controls">
+        <a title="Toggle Sidebar"><img src="{$URL_IMAGES}/icon-toggle.png" alt="Toggle Sidebar"></a>
+    </div>
+    <div id="textLogo">
+    <a href="{$NVCMS_URL}/index.html" title="Quay lại trang chủ">Topica Mobile Learning</a>
+    </div>
+</header>
+
+<!-- Breadcrumb -->
+<section id="breadcrumb">
+<a href="{$NVCMS_URL}/index.html">Topica Mobile Learning</a>
+› 
+<a href="{$NVCMS_URL}/course-{$c_id}.html">{$NameCourse}</a>
+</section>
+
+
+<section id="main">
+<div class="module">
+	<div class="container" style="overflow: hidden">
+    <h5 class="center-text">{$arrListVideo[0].lession}</h5>
+   
+
+    	{if $arrListVideo[0].video_1 ne ''}
+    	<div class="column-two-one-video">
+        	<em class="center-text">Video 1<a href="{$arrListVideo[0].video_1}"><img width="60" alt="img" class="replace-2x" src="{$URL_IMAGES}/video-logo.jpg"></a>
+            </em>
+        </div>
+		{/if}
+        {if $arrListVideo[0].video_2 ne ''}
+    	<div class="column-two-one-video">
+        	<em class="center-text">Video 2<a href="{$arrListVideo[0].video_2}"><img width="60" alt="img" class="replace-2x" src="{$URL_IMAGES}/video-logo.jpg"></a>
+            </em>
+        </div>
+		{/if}
+        {if $arrListVideo[0].video_3 ne ''}
+    	<div class="column-two-one-video">
+        	<em class="center-text">Video 3<a href="{$arrListVideo[0].video_3}"><img width="60" alt="img" class="replace-2x" src="{$URL_IMAGES}/video-logo.jpg"></a>
+            </em>
+        </div>
+		{/if}
+        {if $arrListVideo[0].video_4 ne ''}
+    	<div class="column-two-one-video">
+        	<em class="center-text">Video 4<a href="{$arrListVideo[0].video_4}"><img width="60" alt="img" class="replace-2x" src="{$URL_IMAGES}/video-logo.jpg"></a>
+            </em>
+        </div>
+		{/if}
+        {if $arrListVideo[0].video_5 ne ''}
+    	<div class="column-two-one-video">
+        	<em class="center-text">Video 5<a href="{$arrListVideo[0].video_5}"><img width="60" alt="img" class="replace-2x" src="{$URL_IMAGES}/video-logo.jpg"></a>
+            </em>
+        </div>
+		{/if}
+        {if $arrListVideo[0].video_6 ne ''}
+    	<div class="column-two-one-video">
+        	<em class="center-text">Video 6<a href="{$arrListVideo[0].video_6}"><img width="60" alt="img" class="replace-2x" src="{$URL_IMAGES}/video-logo.jpg"></a>
+            </em>
+        </div>
+		{/if}
+    	
+        
+    
+   </div>
+ </div>  
+
+</section>

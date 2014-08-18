@@ -1,0 +1,323 @@
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<tr style="background:#FBFBFB">
+<td width="55px" style="border-bottom:1px #CCCCCC solid;">
+<div style="padding:3px"><a href="?{$_SITE_ROOT}&mod={$mod}"><img src="{$URL_IMAGES}/largeicon/n-UserGroup-Quan-ly-nhom-nguoi-dung.gif" border="0"/></a></div>
+</td>
+<td style="color:#990000;border-bottom:1px #CCCCCC solid;">
+<font style="font-size:24px;"><b></b></font><br />
+<font style="font-size:9px"><i>{if $_LANG_ID ne "vn"}{$clsDataGrid->getTitle()} {$core->getLang("Management")}{else}{$core->getLang("Management")} {$clsDataGrid->getTitle()}{/if}</i></font>
+</td>
+<td style="padding-right:10px; border-bottom:1px #CCCCCC solid;" align="right">
+<div>
+	<table cellpadding="2px" border="0">
+	<tr>
+		
+	</tr>
+	</table>
+</div>
+</td>
+</tr>
+</table>
+<form name="theForm" action="" method="post">
+<table width="100%" border="0">
+<tr>
+<td style="padding-left:10px;padding-right:10px">
+	<div style="padding-bottom:5px;font-size:14px">
+	<strong>Danh s&aacute;ch kh&oacute;a h&#7885;c : <a href="http://www.topica.vn/elearning/course/view.php?id={$c_id}" target="_blank" style="text-decoration:none;color:#00F;">{$arrOneCourse.fullname}</a></strong> I:Số bài post trong forum | P(x):Số bài luyện tập Học viên đã làm,x:số bài luyện tập của tuần E:Số điểm bài kiểm tra hoặc BTVN CC:Điểm chuyên cần BT:Điểm bài tập offline<br />
+	Chế độ xem : <span style="color:red">mode {$mode}</span><br>VUI LÒNG CHỌN LỚP ĐỂ XEM KẾT QUẢ</div>
+</td>
+</tr>
+<tr>
+    <td style="padding-left:10px;padding-right:10px" width="100%" valign="top">   
+    </td>
+</tr>
+<tr>
+    <td  style="padding-left:10px;padding-right:10px">  
+    </td>
+</tr>
+<tr>
+	<td>
+    	<table cellpadding="0" cellspacing="0" border="0" width="1357" align="center" >
+        	<tr>
+            	<td width="155" style="font-family:Tahoma, Geneva, sans-serif; font-size:12px;"><strong></strong></td>
+            	<td width="208">
+				<!--
+                	<select name="select" style="border: 1px solid  #999; width: 200px; " onchange="javascript:window.open(this.options[this.selectedIndex].value,'_self')">
+		 				<option value="#">Tài chính kế toán</option>
+                        {section name=l loop=$arrCourseFI}
+                        {if $arrCourseFI[l].id eq $c_id}
+						<option selected="selected" value="?topica&mod=lipe&act=report&c_id={$arrCourseFI[l].id}&mode={$mode}">-------{$arrCourseFI[l].fullname}</option>
+                        {else}
+                        <option value="?topica&mod=lipe&act=report&c_id={$arrCourseFI[l].id}">-------{$arrCourseFI[l].fullname}</option>
+                        {/if}
+                        {/section}
+                        <option value="#">Quản trị kinh doanh</option>
+                        {section name=l loop=$arrCourseBA}
+                        {if $arrCourseBA[l].id eq $c_id}
+						<option selected="selected" value="?topica&mod=lipe&act=report&c_id={$arrCourseBA[l].id}&mode={$mode}">-------{$arrCourseBA[l].fullname}</option>
+                        {else}
+                        <option value="?topica&mod=lipe&act=report&c_id={$arrCourseBA[l].id}&mode={$mode}">-------{$arrCourseBA[l].fullname}</option>
+                        {/if}
+                        {/section}
+                        <option value="#">Tin học ứng dụng</option>
+                        {section name=l loop=$arrCourseIT}
+                        {if $arrCourseIT[l].id eq $c_id}
+						<option  selected="selected" value="?topica&mod=lipe&act=report&c_id={$arrCourseIT[l].id}&mode={$mode}">-------{$arrCourseIT[l].fullname}</option>
+                        {else}
+                        <option value="?topica&mod=lipe&act=report&c_id={$arrCourseIT[l].id}&mode={$mode}">-------{$arrCourseIT[l].fullname}</option>
+                        {/if}
+                        {/section}
+                        <option value="#">---Các khóa học khác---</option>
+                        {section name=l loop=$arrCourseOther}
+                        {if $arrCourseOther[l].id eq $c_id}
+						<option  selected="selected" value="?topica&mod=lipe&act=report&c_id={$arrCourseOther[l].id}&mode={$mode}">-------{$arrCourseOther[l].fullname}</option>
+                        {else}
+                        <option value="?topica&mod=lipe&act=report&c_id={$arrCourseOther[l].id}&mode={$mode}">-------{$arrCourseOther[l].fullname}</option>
+                        {/if}
+                        {/section}
+                        
+                    </select>  -->  			</td>
+                <td width="35" style="font-family:Tahoma, Geneva, sans-serif; font-size:12px;"><strong>  Lớp:</strong></td>
+                <td width="1000" align="center">
+             
+               <select name="select2" style="border: 1px solid  #999; width: 200px;"onchange="javascript:window.open(this.options[this.selectedIndex].value,'_self')">
+                 
+                 <option value="?topica&mod=lipe&act=report&c_id={$c_id}">Tất cả</option>
+                {assign var=arrClass value=$clsSettingCalendar->GetClass($c_id)}
+                 {section name=cl loop=$arrClass}
+                  {if $arrClass[cl].topica_lop eq $lop}
+                  <option value="?topica&mod=lipe&act=report&c_id={$c_id}&cls={$arrClass[cl].topica_lop}&mode={$mode}" selected="selected">{$arrClass[cl].topica_lop}</option>
+                  {else}
+                   <option value="?topica&mod=lipe&act=report&c_id={$c_id}&cls={$arrClass[cl].topica_lop}&mode={$mode}">{$arrClass[cl].topica_lop}</option>
+                   {/if}
+                  {/section}
+                  </select>   <strong>hoặc nhập tên lớp :</strong> <input type="text" name="txttenlop" id="txttenlop" onblur="javascript:window.open('?topica&mod=lipe&act=report&c_id={$c_id}&cls={$arrClass[cl].topica_lop}&mode={$mode}&sft='+this.value,'_self')" value="{$sft}"  />               </td>
+                
+            <td width="123" align="center"><a href="?topica&mod=settingcalendar&c_id={$c_id}" style="font-family:Tahoma, Geneva, sans-serif; font-size:12px; text-decoration:underline; color:#00F;font-weight:bold" >Edit Calendar<img  src="{$URL_IMAGES}/admin/blog-32.png" border="0" align="absmiddle" /></a></td>
+                <td width="53"></td>
+                <td width="112"><a href="?topica&mod=settinglipe&c_id={$c_id}" style="font-family:Tahoma, Geneva, sans-serif; font-size:12px; text-decoration:underline; color:#00F; font-weight:bold" >Edit Lipe<img  src="{$URL_IMAGES}/admin/blog-32.png" border="0" align="absmiddle" /></a></td>
+                <td width="112"> <a href="?topica&amp;mod=offline&amp;act=add&amp;c_id={$c_id}">Edit Offline</a></td>
+                <td width="314"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr>
+          <td align="right" style="padding-right:20px;"><a href="{$NVCMS_URL}/sub_excell.php?c_id={$c_id}&cls={$lop}&sft={$sft}&mode={$mode}" style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; font-weight: bold; text-decoration: none; color: rgb(51, 51, 51);"><img src="{$URL_IMAGES}/export.jpg" align="absmiddle" border="0">XU&#7844;T RA EXCEL</a></td>
+     </tr>
+</table></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+</table>
+</form>
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="border: solid 1px #CCC; font-family:Tahoma, Geneva, sans-serif; font-size:12px; padding-left:10px;" align="center">
+	<tr  >
+    	<td>
+        	<table cellpadding="0" cellspacing="0" border="0"  style="font-family:Tahoma, Geneva, sans-serif; font-size:12px;">
+            	<tr bgcolor="#f0f0f0" height="25">
+                	
+                    <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center"  colspan="6">&nbsp;</td>
+                    
+                     {section name=k loop=$arrSettingCalendar}
+                     {assign var=end_date_v value=$clsSettingCalendar->ConvertDateGMT($arrSettingCalendar[k].end_date)}
+                     {if $arrSettingCalendar[k].week_name ne 'Tổng' }
+                     <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center"colspan="4">{$arrSettingCalendar[k].week_name}<br />
+                       ({$arrSettingCalendar[k].start_date|date_format:"%d/%m/%Y"} -> {$arrSettingCalendar[k].end_date|date_format:"%d/%m/%Y"})</td>
+                      {else}
+                       <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center"colspan="6">&nbsp;&nbsp;&nbsp;&nbsp;{$arrSettingCalendar[k].week_name}&nbsp;kết&nbsp;&nbsp;&nbsp;<br />
+                  ({$arrSettingCalendar[k].start_date|date_format:"%d/%m/%Y"} -> {$arrSettingCalendar[k].end_date|date_format:"%d/%m/%Y"})</td>
+                  {/if}
+                      {/section}
+                        <!--<td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center"  colspan="3" >Tá»•ng káº¿t</td>-->
+                </tr>
+                <tr bgcolor="#f0f0f0" height="25">
+                	<td width="160" rowspan="2" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC">STT</td>
+                    <td width="129" rowspan="2" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC">H&#7885;</td>
+                    <td width="131" rowspan="2" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC">T&ecirc;n</td>
+                    <td width="201" rowspan="2" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC">Nh&oacute;m/Lớp</td>
+                    <td width="202" rowspan="2" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC">Ngày sinh</td>
+                    <td width="202" rowspan="2" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC">Mã sinh viên</td>
+                     {section name=k loop=$arrSettingCalendar}
+                     {if $arrSettingCalendar[k].week_name ne 'Tổng' }
+                     {assign var=count_quizweek value=$clsSettingCalendar->QuizPerWeek($c_id,$arrSettingCalendar[k].id) }
+                     <td rowspan="2" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC"  >I</td>
+                      <td rowspan="2" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC"  >P({$count_quizweek})</td>
+                       <td rowspan="2" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC"  >E</td>
+                       <td rowspan="2" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC"  >H</td>
+                       {else}
+                        <td rowspan="2" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC"  >Forum Post</td>
+                        <td rowspan="2" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC"  >H2472</td>
+                      <td colspan="2" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC"  ><p>S&#7889; b&agrave;i &#273;&atilde; l&agrave;m</p></td>
+                       
+                       <td colspan="2" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC"  >Điểm</td>
+                       {/if}
+                      {/section}
+                     <!-- <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center"  >I</td>
+                      <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center"  >P</td>
+                       <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center"  >E</td>-->
+                </tr>
+                <tr bgcolor="#f0f0f0" height="25">
+                  <td width="217" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC"  >P</td>
+                  <td width="212" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC"  >E</td>
+                  <td width="106" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC"  >CC</td>
+                  <td width="106" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC"  >BT</td>
+                </tr>
+{section name=id loop=$arrUser}
+                  {assign var=off value=$clsOffline->getOffline($arrUser[id].id,$c_id)}
+               
+                 {if $smarty.section.id.index%2 eq '0'}
+                <tr  height="25">
+                	<td width="160" height="62" align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC">{$smarty.section.id.index+1}<!--{$arrUser[id].id}--></td>
+                  <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$arrUser[id].lastname}</td>
+                    <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" ><a href="http://elearning.hou.topica.vn/course/user.php?id={$c_id}&user={$arrUser[id].id}&mode=outline" target="_blank">{$arrUser[id].firstname}</td>
+                    <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{if  $arrUser[id].topica_nhom ne ''}{$arrUser[id].topica_nhom}/{$arrUser[id].topica_lop}{else} None/{$arrUser[id].topica_lop} {/if}</td>
+                    
+                  <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center">{$arrUser[id].ngaysinh}&nbsp </td>
+              	<td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center">{$arrUser[id].topica_msv}&nbsp </td>
+                  {section name=e loop=$arrSettingCalendar}
+                   {section name=li loop=$arrSettingLipe }
+                   {if $arrSettingLipe[li].lipe_type eq 'V' }
+                    {assign var=count_post2 value=$clsSettingCalendar->getRelationCalendarAndLipesettingVBB($arrUser[id].username,$arrSettingCalendar[e].id,$c_id)}
+                    
+                   {else}
+                   {assign var=count_post value=$clsSettingCalendar->getRelationCalendarAndLipesetting($arrUser[id].id,$arrSettingCalendar[e].id,$c_id)}
+                   {/if}
+                   {/section}
+                   {assign var=activeID value=$clsSettingCalendar->GetActiveID($c_id)}
+                     {assign var=GradeA value=$clsSettingCalendar->GetGradeFromAssignment($arrUser[id].id,$arrSettingCalendar[e].id,$activeID)}
+                   {assign var=grades value=$clsSettingCalendar->getRelationCalendarAndLipesettingGrades($arrUser[id].id,$arrSettingCalendar[e].id,$c_id)}
+                   {assign var=count_practice value=$clsSettingCalendar->CountPractice($arrUser[id].id,$c_id,$arrSettingCalendar[e].start_date,$arrSettingCalendar[e].end_date)}
+			
+                   {assign var=count_practiceCc value=$clsSettingCalendar->CountPracticeCC2($arrUser[id].id,$c_id,$arrSettingCalendar[e].start_date,$arrSettingCalendar[e].end_date)}
+                    {assign var=count_practice_week value=$clsSettingCalendar->CountPractice($arrUser[id].id,$c_id,$arrSettingCalendar[e].start_date,$arrSettingCalendar[e].end_date)}
+                    {assign var=count_h2472 value=$clsSettingCalendar->get2472($arrUser[id].id,$c_id,$arrSettingCalendar[e].start_date,$arrSettingCalendar[e].end_date)}
+                    
+                    
+                    
+                    {if $arrSettingCalendar[e].week_name ne 'Tổng' }
+                    
+                  <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "  width="139" align="center">&nbsp;<font style="color:#00F; font-weight:bold;">{if $count_post2 ne 0}{$count_post2}{/if}{if $count_post ne 0}{$count_post}{/if}</font></td>
+                  <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "  width="155" align="center"><font style="color:#000; font-weight:bold;">{if $count_practice_week ne 0}{ $count_practice_week}{/if}</font></td>
+                   <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "  width="70" align="center">&nbsp;{if $grades ne 0 }<span style="color:#F00; font-weight:bold">{$grades}</span> {else}  {/if}</td>
+                   <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "  width="70" align="center">{$clsSettingCalendar->countPostInWeekH2472($c_id,$arrSettingCalendar[e].start_date,$arrSettingCalendar[e].end_date,$arrUser[id].id)}&nbsp;&nbsp;</td>
+                 {else}
+                  {assign var=count_exam value=$clsSettingCalendar->CountExam($arrUser[id].id,$c_id)}
+                  	<td  style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; " width="139" align="center">&nbsp;<font style="color:#00F; font-weight:bold;">{if $count_post2 ne 0}{$count_post2}{/if}{if $count_post ne 0}{$count_post}{/if}</font></td>
+                    <td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; ">{$clsSettingCalendar->countPostInWeekH2472($c_id,$arrSettingCalendar[e].start_date,$arrSettingCalendar[e].end_date,$arrUser[id].id)}&nbsp;</td>
+                    <td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; ">&nbsp;<span style="color:#F00; font-weight:bold">{$count_practice}</span></td>
+                    <td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "><span style="color:#F00; font-weight:bold">{$count_exam}</span></td>
+                  
+                    <td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; ">
+                     {assign var=offline value=$clsOffline->getOffline($arrUser[id].id,$c_id)}
+					 {assign var=h2472 value=$clsSettingCalendar->countPostInWeekH2472($c_id,$arrSettingCalendar[e].start_date,$arrSettingCalendar[e].end_date,$arrUser[id].id)}
+                     {assign var=diemcc value=$clsOffline->getCc($offline,$count_post2,$h2472,$count_practice,$mode)}
+                      {assign var=chitietdiemcc value=$clsOffline->showGetCc($offline,$count_post2,$h2472,$count_practice)}
+                      <label title="{$chitietdiemcc}">{$diemcc}</label> 
+                     </td>
+                    <td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; ">{assign var=btvn value=$clsOffline->getBt($arrUser[id].id,$c_id) } {$btvn}</td>
+                  {/if}
+               {/section}
+              <!-- <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "  width="80">
+                   </td>
+                   <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "  width="80">
+                   </td>
+                   <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "  width="80">
+                   </td>-->
+                </tr>
+                {elseif $smarty.section.id.index%2 eq '1'}
+                <tr  height="25" bgcolor="#ededfe">
+                	<td width="160" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center">{$smarty.section.id.index+1}<!--{$arrUser[id].id}--></td>
+                    <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" >{$arrUser[id].lastname}</td>
+                    <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" ><a href="http://elearning.hou.topica.vn/course/user.php?id={$c_id}&user={$arrUser[id].id}&mode=outline" target="_blank">{$arrUser[id].firstname}</td>
+                    <td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC">{if  $arrUser[id].topica_nhom ne ''}{$arrUser[id].topica_nhom}/{$arrUser[id].topica_lop}{else} None/{$arrUser[id].topica_lop} {/if}</td>
+                  <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center">{$arrUser[id].ngaysinh}&nbsp </td>
+                  <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center">{$arrUser[id].topica_msv}&nbsp </td>
+                  {section name=e loop=$arrSettingCalendar}
+                   {section name=li loop=$arrSettingLipe }
+                   {if $arrSettingLipe[li].lipe_type eq 'V' }
+                    {assign var=count_post2 value=$clsSettingCalendar->getRelationCalendarAndLipesettingVBB($arrUser[id].username,$arrSettingCalendar[e].id,$c_id)}
+                    
+                   {else}
+                   {assign var=count_post value=$clsSettingCalendar->getRelationCalendarAndLipesetting($arrUser[id].id,$arrSettingCalendar[e].id,$c_id)}
+                   {/if}
+                   {/section}
+                   {assign var=activeID value=$clsSettingCalendar->GetActiveID($c_id)}
+                     {assign var=GradeA value=$clsSettingCalendar->GetGradeFromAssignment($arrUser[id].id,$arrSettingCalendar[e].id,$activeID)}
+                   {assign var=grades value=$clsSettingCalendar->getRelationCalendarAndLipesettingGrades($arrUser[id].id,$arrSettingCalendar[e].id,$c_id)}
+                    {assign var=count_practice value=$clsSettingCalendar->CountPractice($arrUser[id].id,$c_id,$arrSettingCalendar[e].start_date,$arrSettingCalendar[e].end_date)}
+                    {assign var=count_practiceCc value=$clsSettingCalendar->CountPracticeCC2($arrUser[id].id,$c_id,$arrSettingCalendar[e].start_date,$arrSettingCalendar[e].end_date)}
+                    {assign var=count_practice_week value=$clsSettingCalendar->CountPractice($arrUser[id].id,$c_id,$arrSettingCalendar[e].start_date,$arrSettingCalendar[e].end_date)}
+                    {if $arrSettingCalendar[e].week_name ne 'Tổng' }
+                  <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC;"  width="139" align="center">&nbsp;<font style="color:#00F; font-weight:bold;">{if $count_post2 ne 0}{$count_post2}{/if}{if $count_post ne 0}{$count_post}{/if}</font></td>
+                  <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "  width="155" align="center"><font style="color:#000; font-weight:bold;">{if $count_practice_week ne 0}{ $count_practice_week}{/if}</font></td>
+                   <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "  width="70" align="center">&nbsp;{if $grades ne 0 }<span style="color:#F00; font-weight:bold">{$grades}</span> {else}  {/if}</td>
+                   <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "  width="70" align="center">{$clsSettingCalendar->countPostInWeekH2472($c_id,$arrSettingCalendar[e].start_date,$arrSettingCalendar[e].end_date,$arrUser[id].id)}&nbsp;</td>
+                  	{else}
+                     {assign var=count_exam value=$clsSettingCalendar->CountExam($arrUser[id].id,$c_id)}
+                  	<td  style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; " width="139" align="center"><font style="color:#00F; font-weight:bold;">{if $count_post2 ne 0}{$count_post2}{/if}{if $count_post ne 0}{$count_post}{/if}</font></td>
+                  <td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; ">{$clsSettingCalendar->countPostInWeekH2472($c_id,$arrSettingCalendar[e].start_date,$arrSettingCalendar[e].end_date,$arrUser[id].id)}&nbsp;</td>
+                    <td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; ">&nbsp;<span style="color:#F00; font-weight:bold">{$count_practice}</span></td>
+                    <td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "><span style="color:#F00; font-weight:bold">{$count_exam}</span></td>
+                  
+                    <td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; ">{assign var=offline value=$clsOffline->getOffline($arrUser[id].id,$c_id)}
+                     {assign var=h2472 value=$clsSettingCalendar->countPostInWeekH2472($c_id,$arrSettingCalendar[e].start_date,$arrSettingCalendar[e].end_date,$arrUser[id].id)}
+					 {assign var=diemcc value=$clsOffline->getCc($offline,$count_post2,$h2472,$count_practice,$mode)}
+					 
+                        {assign var=chitietdiemcc value=$clsOffline->showGetCc($offline,$count_post2,$h2472,$count_practice)}
+                        <label title="{$chitietdiemcc}">{$diemcc}</label></td>
+                  <td align="center" style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; ">{assign var=btvn value=$clsOffline->getBt($arrUser[id].id,$c_id) } {$btvn}</td>
+                  {/if}
+               {/section} 
+                <!--<td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "  width="80">
+                   </td>
+                   <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "  width="80">
+                   </td>
+                   <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC; "  width="80">
+                   </td>-->
+                </tr>
+                {/if}
+  {/section}
+            </table>
+   </td>
+       
+       <!-- <td>
+        	<table cellpadding="0" cellspacing="0" border="0"  style="font-family:Tahoma, Geneva, sans-serif; font-size:12px;">
+            	<tr bgcolor="#f0f0f0" height="25">
+                    
+                   
+                </tr>
+                {section name=id loop=$arrUser}
+                 {if $smarty.section.id.index%2 eq '0'}
+                <tr  height="25">
+                	<td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" width="150">Há»?</td>
+                    <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" width="150">TÃªn</td>
+                </tr>
+                {elseif $smarty.section.id.index%2 eq '1'}
+                <tr  height="25" bgcolor="#d2d2fb">
+                	<td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" width="150">Há»?</td>
+                    <td style=" border-bottom:dashed 1px #CCC; border-right:dashed 1px #CCC" align="center" width="150">TÃªn</td>
+                </tr>
+                {/if}
+                {/section}
+            </table>
+        </td>-->
+       
+    </tr>
+   	
+    <tr>
+    	<td colspan="5" height="20"></td>
+    </tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr>
+          <td align="right" style="padding-right:20px;"><a href="{$NVCMS_URL}/sub_excell.php?c_id={$c_id}&cls={$lop}&sft={$sft}&mode={$mode}" style="font-size: 12px; font-family: Arial,Helvetica,sans-serif; font-weight: bold; text-decoration: none; color: rgb(51, 51, 51);"><img src="{$URL_IMAGES}/export.jpg" align="absmiddle" border="0">XU&#7844;T RA EXCEL</a></td>
+     </tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+    	<td height="20"></td>
+    </tr>
+</table>
+<!--
+
+{if $GradeA ne -1 && $GradeA ne 0}{$GradeA}{else}{/if}
+-->

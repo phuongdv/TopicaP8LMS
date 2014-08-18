@@ -1,0 +1,115 @@
+#page-content > header {
+  background: #fffad4; /* Old browsers */
+	background: -moz-linear-gradient(top, #fffad4 0%, #fffad4 85%, #ede9c7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fffad4), color-stop(85%,#fffad4), color-stop(100%,#ede9c7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fffad4 0%,#fffad4 85%,#ede9c7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fffad4 0%,#fffad4 85%,#ede9c7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fffad4 0%,#fffad4 85%,#ede9c7 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #fffad4 0%,#fffad4 85%,#ede9c7 100%); /* W3C */
+	border-top: 5px solid #d3ceaa;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+	position: relative;
+	z-index: 10;
+}
+hgroup #logo {
+  float: left;
+	width: 31%;
+}
+/*language*/
+#language {
+  float: right;
+	position: relative;
+	background-color: #f3e6bd;
+	padding: 7px 10px 7px 74px;
+	-moz-border-radius: 0 0 3px 3px;
+	-webkit-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+}
+#language figcaption {
+  position: absolute;
+	left: 10px;
+	top: 9px;
+	color: #bda96d;
+}
+#language ul.flag li a, header .social ul.social-inner li a  {
+  background-image: url("../images/root/sprites.png");
+	background-repeat: no-repeat;
+  display: block;
+	text-indent: -9999em;
+}
+#language ul.flag li a {
+	width: 22px;
+	height: 16px;
+}
+#language ul.flag li#en a {
+  background-position: -37px top;
+}
+#language ul.flag li#en.active a {
+  background-position: -37px -21px;
+}
+#language ul.flag li#fr a {
+  background-position: -37px -47px;
+}
+#language ul.flag li#fr a:hover {
+  background-position: -37px -73px;
+}
+#language ul.flag li#it a {
+  background-position: -37px -99px;
+}
+#language ul.flag li#it a:hover {
+  background-position: -37px -125px;
+}
+#language ul.flag li, header .social ul.social-inner li {
+  margin-right: 10px;
+}
+#language ul.flag li#it {
+  margin-right: 0;
+}
+
+#language ul.flag li, header .social ul.social-inner li{
+  float: left;
+	list-style: none;
+}
+/* social */
+header .social {
+  float: right;
+	margin-top: 3px;
+}
+
+header .social ul.social-inner li a  {
+  width: 28px;
+	height: 28px;
+}
+header .social ul.social-inner li.fb a:hover {
+  background-position: left -31px;
+} 
+header .social ul.social-inner li.tw a {
+  background-position: left -61px;
+}
+header .social ul.social-inner li.tw a:hover {
+  background-position: left -92px;
+}
+header .social ul.social-inner li.youtube a {
+  background-position: left -124px;
+}
+header .social ul.social-inner li.youtube a:hover {
+  background-position: left -155px;
+}
+/*weather*/
+#weather {
+  clear: both;
+	float: right;
+}
+/* Form search */
+header nav {
+  position: relative;
+}
+
+
+
+
+
+
+
+
+

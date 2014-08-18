@@ -1,0 +1,125 @@
+<div align="center">
+
+<form name="theForm" action="?topica&mod=offline&act=insert&c_id={$c_id}" method="post">
+<table width="83%" border="0" cellpadding="0" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif; font-size:9pt">
+  <tr align="center">
+    <td colspan="2" rowspan="2" bgcolor="#CCCCCC">H&#7885; v&agrave; t&ecirc;n {$lop}</td>
+    <td width="18%" rowspan="2" bgcolor="#CCCCCC"> M&atilde; h&#7885;c vi&ecirc;n </td>
+    <td width="18%" bgcolor="#CCCCCC">L&#7899;p</td>
+    <td width="31%" rowspan="2" bgcolor="#CCCCCC">Nh&oacute;m</td>
+    <td width="8%" rowspan="2" bgcolor="#CCCCCC">S&#7889; bu&#7893;i &#273;i Offline</td>
+    <td width="5%" rowspan="2" bgcolor="#CCCCCC">&#272;i&#7875;m b&agrave;i t&#7853;p k&#7929; n&#259;ng ho&#7863;c b&agrave;i t&#7853;p nh&oacute;m</td>
+  </tr>
+  <tr align="center">
+    <td bgcolor="#CCCCCC"><label>
+    <select name="select2" style="border: 1px solid  #999; width: 200px;"onchange="javascript:window.open(this.options[this.selectedIndex].value,'_self')">
+      <option value="?topica&amp;mod=offline&amp;act=add&amp;c_id={$c_id}">-- T&#7845;t c&#7843; --</option>
+      
+      
+      
+                 {assign var=arrClass value=$clsOffline->GetClass($c_id)}
+                  
+                 {section name=cl loop=$arrClass}
+                 {if $arrClass[cl].topica_lop eq $lop}
+                  <option selected="selected" value="?topica&mod=offline&act=add&c_id={$c_id}&cls={$arrClass[cl].topica_lop}">{$arrClass[cl].topica_lop}</option>
+                  {else}
+                   <option value="?topica&mod=offline&act=add&c_id={$c_id}&cls={$arrClass[cl].topica_lop}">{$arrClass[cl].topica_lop}</option>
+      
+      
+                   {/if}
+                  {/section}
+                  
+    
+    
+    
+    </select>
+    </label></td>    
+  </tr>
+   {section name=u loop=$arrUser}
+    {if $smarty.section.u.index%2 eq '0'}
+  <tr>
+    {assign var=offline value=$clsOffline->getOffline($arrUser[u].id,$c_id) }
+    {assign var=btvn value=$clsOffline->getBt($arrUser[u].id,$c_id) }
+    <td width="19%">{$arrUser[u].lastname}</td>
+    <td width="10%"> {$arrUser[u].firstname}</td>
+    <td align="center">{$arrUser[u].username}</td>
+    <td align="center">{$arrUser[u].topica_lop}</td>
+    <td align="center">{$arrUser[u].topica_nhom} </td>
+    <td align="center"><label>
+      
+      <select name="lstOff{$smarty.section.u.index}" id="lstOff{$smarty.section.u.index}">
+      
+        <option selected="selected" value="0">0</option>
+        {section name=foo loop=5}
+        {if $smarty.section.foo.iteration ne "$offline"}
+    <option value="{$smarty.section.foo.iteration}">{$smarty.section.foo.iteration}</option>
+    	{else}
+        	<option value="{$smarty.section.foo.iteration}" selected="selected">{$smarty.section.foo.iteration}</option>
+        {/if}
+       {/section}
+       
+            </select>
+      <input type="hidden" name="userId{$smarty.section.u.index}" id="userId{$smarty.section.u.index}" value="{$arrUser[u].id}" />
+    </label></td>
+    <td align="center"><label>
+        <select name="lstBt{$smarty.section.u.index}" id="lstBt{$smarty.section.u.index}">
+       <option selected="selected" value="0">0</option>
+        {section name=foo loop=10}
+        {if $smarty.section.foo.iteration ne "$btvn"}
+    <option value="{$smarty.section.foo.iteration}">{$smarty.section.foo.iteration}</option>
+    	{else}
+        	<option value="{$smarty.section.foo.iteration}" selected="selected">{$smarty.section.foo.iteration}</option>
+        {/if}
+       {/section}
+       
+      </select>
+    </label></td>
+  </tr>
+  {else}
+     <tr>
+    {assign var=offline value=$clsOffline->getOffline($arrUser[u].id,$c_id) }
+    {assign var=btvn value=$clsOffline->getBt($arrUser[u].id,$c_id) }
+    <td width="19%" bgcolor="#99CCCC">{$arrUser[u].lastname}</td>
+    <td width="10%" bgcolor="#99CCCC"> {$arrUser[u].firstname}</td>
+    <td align="center" bgcolor="#99CCCC">{$arrUser[u].username}</td>
+    <td align="center" bgcolor="#99CCCC">{$arrUser[u].topica_lop}</td>
+    <td align="center" bgcolor="#99CCCC">{$arrUser[u].topica_nhom} </td>
+    <td align="center" bgcolor="#99CCCC"><label>
+      
+      <select name="lstOff{$smarty.section.u.index}" id="lstOff{$smarty.section.u.index}">
+      
+        <option selected="selected" value="0">0</option>
+        {section name=foo loop=5}
+        {if $smarty.section.foo.iteration ne "$offline"}
+    <option value="{$smarty.section.foo.iteration}">{$smarty.section.foo.iteration}</option>
+    	{else}
+        	<option value="{$smarty.section.foo.iteration}" selected="selected">{$smarty.section.foo.iteration}</option>
+        {/if}
+       {/section}
+       
+            </select>
+      <input type="hidden" name="userId{$smarty.section.u.index}" id="userId{$smarty.section.u.index}" value="{$arrUser[u].id}" />
+    </label></td>
+    <td align="center" bgcolor="#99CCCC"><label>
+        <select name="lstBt{$smarty.section.u.index}" id="lstBt{$smarty.section.u.index}">
+       <option selected="selected" value="0">0</option>
+        {section name=foo loop=10}
+        {if $smarty.section.foo.iteration ne "$btvn"}
+    <option value="{$smarty.section.foo.iteration}">{$smarty.section.foo.iteration}</option>
+    	{else}
+        	<option value="{$smarty.section.foo.iteration}" selected="selected">{$smarty.section.foo.iteration}</option>
+        {/if}
+       {/section}
+       
+      </select>
+    </label></td>
+  </tr>
+  {/if}
+  {/section}
+</table>
+<div align="right">
+  <label>
+  <input type="submit" name="vvv" id="vvv" value="     Save    " />
+  </label>
+  </form>
+</div>

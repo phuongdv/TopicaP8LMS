@@ -1,0 +1,253 @@
+<?
+//this is b e t a version !
+class Setting_Calendar extends DbBasic{
+	
+	function Setting_Calendar(){
+		$this->pkey = "id";
+		$this->tbl = "huy_setting_calendar";	
+	}		
+	
+	function getRelationCalendarAndLipesetting($u_id,$id,$c_id) {
+		global $dbconn;
+		
+		$sql2 = "select c.id,c.start_date,c.end_date,l.lipe_type,l.active_id from huy_setting_calendar c, huy_setting_lipe l where c.id = l.calendar_id and c.c_id= $c_id and c.id= $id;";
+		
+		/*select c.week_number,c.start_date,c.end_date,l.lipe_type,l.active_id from huy_setting_calendar c, huy_setting_lipe l where c.id = l.calendar_id and c.c_id = $c_id and c.week_number = $w_n;";*/
+	//	echo $sql2.'<br>';
+		//die($sql);
+		$res = $dbconn->GetAll($sql2);
+		if(is_array($res)) {
+			$variable = ($res[0]["lipe_type"]=='I')? $this->countPostInWeek($u_id, date('Y-m-d',$res[0]["start_date"]), date('Y-m-d',$res[0]["end_date"]), $res[0]["active_id"]) : 0;
+		}
+		
+		return $variable;
+	}
+	
+	function countPostInWeek($u_id,$start,$end,$active_id) {
+		global $dbconn;
+		
+		$sql = "select count(id) from mdl_forum_posts where created BETWEEN UNIX_TIMESTAMP('$start') and UNIX_TIMESTAMP('$end') and discussion in (select id from mdl_forum_discussions where forum = $active_id) and userid = $u_id";
+		
+		
+		/*new
+		$sql="Select count(frp.id) from mdl_forum_posts frp
+where frp.userid = $u_id
+and
+frp.created BETWEEN
+ UNIX_TIMESTAMP('$start') and UNIX_TIMESTAMP('$end')";
+	*/
+		$res = $dbconn->GetAll($sql);
+		
+		$result_count = is_array($res)? $res[0]["count(id)"] : 0;
+		
+		return $result_count;
+		
+		
+	}
+	
+	//Dien dan VBB
+	# Creat by : TrungVQ
+	# Time : 31/01/2010
+	
+	function getRelationCalendarAndLipesettingVBB($username,$id,$c_id) {
+		global $dbconn;
+		
+		$sql2 = "select c.id,c.start_date,c.end_date,l.lipe_type,l.active_id from huy_setting_calendar c, huy_setting_lipe l where c.id = l.calendar_id and c.c_id= $c_id and c.id= $id;";
+		
+
+		$res = $dbconn->GetAll($sql2);
+		if(is_array($res)) {
+			$variable = ($res[0]["lipe_type"]=='V')? $this->countPostInWeekVBB($username, date('Y-m-d',$res[0]["start_date"]), date('Y-m-d',$res[0]["end_date"]), $res[0]["active_id"]) : 0;
+		}
+		
+		return $variable;
+	}
+	
+	function countPostInWeekVBB($username,$start,$end,$active_id) {
+		global $dbconn;
+		
+		$sql = "select count(postid) from vbb_post where dateline BETWEEN UNIX_TIMESTAMP('$start') and UNIX_TIMESTAMP('$end') and threadid in (select threadid from vbb_thread where forumid = $active_id) and username = '".$username."'";
+		//print_r($sql); die();
+		
+		
+		$res = $dbconn->GetAll($sql);
+		
+		$result_count = is_array($res)? $res[0]["count(postid)"] : 0;
+		
+		return $result_count;
+		
+		
+	}
+	
+	//End dien dan VBB
+	
+	function getRelationCalendarAndLipesettingGrades($u_id,$id,$c_id) {
+		global $dbconn;
+		
+		$sql3 = "select c.id,c.start_date,c.end_date,l.lipe_type,l.active_id from huy_setting_calendar c, huy_setting_lipe l where c.id = l.calendar_id and c.c_id= $c_id and c.id= $id and l.lipe_type = 'E' ";
+		
+			
+		/*
+		select c.week_number,c.start_date,c.end_date,l.lipe_type,l.active_id from huy_setting_calendar c, huy_setting_lipe l where c.week_number = l.week_number and c.c_id = $c_id and c.week_number = $w_n;*/
+		//die($sql3);
+		$res = $dbconn->GetAll($sql3);
+		if(is_array($res)) {
+		$variable = $this->GradesInWeek($u_id,$res[0]["active_id"]);
+		}
+		//print_r($res);die();
+		return $variable;
+	}
+	function GradesInWeek($u_id,$active_id) {
+		global $dbconn;
+		
+		//$sql4 = "select grade from mdl_quiz_grades where quiz = $active_id and userid = $u_id";
+		//die($sql4);
+		//$res = $dbconn->GetOne($sq4);
+		$clsQuizGrades = new QuizGrades();		
+		$res = $clsQuizGrades->getAll("quiz = $active_id and userid = $u_id");
+		//print_r($res);die();
+		return $res[0]['grade'];
+		//  return $active_id;
+		
+		//return $res["name"];
+		//$result_grades = $res["grade"];
+		
+		//return $result_grades;
+	}
+	function GetActiveID($c_id) {
+		global $dbconn; 
+		$clsSettingLipe = new Setting_Lipe();		
+		$res = $clsSettingLipe->getAll("c_id= $c_id and lipe_type = 'P'");
+		//die($res);
+		return $res[0]['active_id'];
+		
+	}
+	function GetGradeFromAssignment ($u_id,$activeID){
+		global $dbconn;
+			$sql5 = "select * from mdl_assignment_submissions where assignment= $activeID and userid = $u_id";
+			//die($sql5);
+		$res = $dbconn->GetAll($sql5);
+		return $res[0]['grade'];
+	}
+	// dang dung
+	function CountPractice2($c_id,$id,$u_id)
+	{
+	
+	 global $dbconn;	
+		$sqlPractice="Select count(grade) count
+		from mdl_quiz_grades
+		where
+		quiz in (select active_id from huy_setting_lipe where lipe_type='P' and c_id =$c_id and calendar_id=$id)
+		and userid=$u_id";
+	 $res = $dbconn->GetAll($sqlPractice);
+		
+		$result_count = is_array($res)? $res[0]["count"] : 0;
+		//return $sqlPractice;
+		return $result_count;
+	}
+	
+	function CountPractice ($u_id,$c_id) {
+		global $dbconn;
+		
+		$sql6 = "select count(*) 
+from mdl_quiz_grades q
+where
+ q.quiz in (select active_id from huy_setting_lipe where lipe_type='P' and calendar_id in(select id from huy_setting_calendar where c_id= $c_id))
+and userid=$u_id";
+		
+		$res = $dbconn->GetAll($sql6);
+		
+		$result_count = is_array($res)? $res[0]["count(*)"] : 0;
+		
+		return $result_count;
+		
+	}
+
+	function CountPracticeWeek($u_id,$c_id,$start_date,$end_date)
+	{
+		global $dbconn;
+		$sql7="select count(*) 
+		       from mdl_quiz_grades 
+		       where userid = $u_id
+			   and quiz in 
+		       (select id from mdl_quiz where course= $c_id and name LIKE '%luyện tập%' and timemodified BETWEEN $start_date and $end_date)";
+		       
+		$res = $dbconn->GetAll($sql7);
+		
+		$result_count = is_array($res)? $res[0]["count(*)"] : 0;
+		
+		return $result_count;
+        //return $sql7;
+		
+		
+	}
+	// get lop tren giay to - create by vietth
+    function GetClass($c_id)
+	{
+    global $dbconn;
+	$sqlClass="select distinct u.topica_lop
+				from
+				mdl_user u,
+				mdl_course_display c
+				where
+				c.course= $c_id
+				and
+				c.userid=u.id
+				and u.id not in (select userid from mdl_role_assignments where roleid in (1,2,3,4,8) )";
+	$res = $dbconn->GetAll($sqlClass);
+     return $res;
+	}
+	//dem so bai kiem tra da lam-create by vietth
+	function CountExam($u_id,$c_id)
+	{
+	global $dbconn;
+	$sqlEx="select count(*) 
+from mdl_quiz_grades q
+where
+ q.quiz in (select active_id from huy_setting_lipe where lipe_type='E' and calendar_id in(select id from huy_setting_calendar where c_id= $c_id))
+and userid=$u_id";
+		$res = $dbconn->GetAll($sqlEx);
+		
+		$result_count = is_array($res)? $res[0]["count(*)"] : 0;
+		
+		return $result_count;
+
+		}
+	function QuizPerWeek($c_id,$id)
+	{
+		global $dbconn;
+		$sqlqpw="Select count(id) count
+from mdl_quiz
+where
+id in (select active_id from huy_setting_lipe where lipe_type='P' and c_id =$c_id and calendar_id=$id)
+";
+		$res = $dbconn->GetAll($sqlqpw);
+		
+		$result_count = is_array($res)? $res[0]["count"] : 0;
+		//return $sqlqpw;
+		return $result_count;
+		
+		
+		
+	}
+	function QuizPerWeek2($c_id,$start_date,$end_date)
+	{
+		global $dbconn;
+		$sqlqpw="select count(*) 
+                from mdl_quiz
+                where
+                course=$c_id
+				and name LIKE '%luyện tập%'
+				and timemodified between $start_date and $end_date";
+		$res = $dbconn->GetAll($sqlqpw);
+		
+		$result_count = is_array($res)? $res[0]["count(*)"] : 0;
+		//return $sqlqpw;
+		return $result_count;
+		
+		
+		
+	}
+ 
+} 
+?>

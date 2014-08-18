@@ -1,0 +1,33 @@
+
+<!-- Sidebar Toggle & Tabbed Navigation -->
+<header>
+    <div class="controls">
+        <a title="Toggle Sidebar"><img src="{$URL_IMAGES}/icon-toggle.png" alt="Toggle Sidebar"></a>
+    </div>
+    <div id="textLogo">
+    <a href="{$NVCMS_URL}/index.htm" title="Quay lại trang chủ">MLA</a>
+    </div>
+</header>
+
+<!-- Breadcrumb -->
+<section id="breadcrumb">
+<a href="/index.html">Mobile Learning Assitant</a>
+› 
+<a href="#">{$NameCourse}</a>
+</section>
+
+
+
+
+<section id="main">
+{if $deviceview eq 'android'}
+<audio id="player2" src="{$link}" type="audio/mp3" controls="controls">		
+</audio>	
+<script>
+$('audio,video').mediaelementplayer();
+</script>
+{else}
+<audio src="{$link}" preload="auto"  class="audio_player"/>
+{/if}
+
+</section>

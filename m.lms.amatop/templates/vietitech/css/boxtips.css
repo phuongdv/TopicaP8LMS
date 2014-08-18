@@ -1,0 +1,2 @@
+.box_tip_header { font-family: Arial; width:468px; background:#D5EBF9; border:1px solid #C4D5E3; font-weight:bold; padding-left:7px; padding-top:3px; padding-bottom:3px; padding-right:7px; font-size:12px; color:#4B7A98; opacity: 0.85; filter: alpha(opacity = 85);}         
+.box_tip_body { width:468px; background:#FFF; border-left:1px solid #C4D5E3; border-right:1px solid #C4D5E3; border-bottom:1px solid #C4D5E3; padding:7px; font-family:Arial; font-size:11px; opacity: 0.85; filter: alpha(opacity = 85);}

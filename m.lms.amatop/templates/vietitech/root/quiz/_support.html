@@ -1,0 +1,30 @@
+<div id="ww_suport_online">
+    <div class="group">
+       {section name=id loop=$arrListAllSupport}
+		<div class="ww_block_sp{$smarty.section.id.index} ww_block_sp">
+            <ul class="ww_list_item">
+				<li class="yahoo">
+					<a href="ymsgr:sendim?{if $arrListAllSupport[id].yahoo ne ''}{$arrListAllSupport[id].yahoo}{else}pt.soleil{/if}">
+						<img src="http://opi.yahoo.com/online?u={if $arrListAllSupport[id].yahoo ne ''}{$arrListAllSupport[id].yahoo}{else}pt.soleil{/if}&m=g&t=5" />
+					</a>
+					<span>{if $arrListAllSupport[id].name ne''}{$arrListAllSupport[id].name}{else}NickYahoo{/if}</span>
+				</li>
+				<li class="phone">
+					<a href="javascript:void(0)">phone</a>
+					<span>{if $arrListAllSupport[id].mobile ne ''}{$arrListAllSupport[id].mobile}{else}0913.922.986{/if}</span>
+				</li>
+			  
+			    <li class="skype">
+					<a href="skype:{if $arrListAllSupport[id].value ne ''}{$arrListAllSupport[id].value}{else}pt.soleil{/if}?call">
+					<img src="http://mystatus.skype.com/smallicon/{if $arrListAllSupport[id].skype ne ''}{$arrListAllSupport[id].skype}{else}pt.soleil{/if}" style="border: none;" width="16" height="16" alt="My status" /></a>
+					<span>{if $arrListAllSupport[id].skype ne ''}{$arrListAllSupport[id].skype}{else}Skyper{/if}</span>
+				</li>
+				<li class="mail">
+					<a href="mailto:{if $arrListAllSupport[id].email ne ''}{$arrListAllSupport[id].email}{else}pt.soleil@gmail.com{/if}">Mail</a>
+					<span>{if $arrListAllSupport[id].email ne ''}{$arrListAllSupport[id].email}{else}pt.soleil@gmail.com{/if}</span>
+				</li>
+            </ul>
+        </div>
+		{/section}
+    </div>
+</div>

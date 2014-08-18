@@ -1,0 +1,109 @@
+.paging_wrapper{width:100%;float:left;margin-top: 15px;padding-bottom:10px;}
+#paging_box{width:100%;margin:0px;float:left;}
+.pagination{display:block; padding:0;float: left;}
+.pagination div{}
+.pagination div.limit {float: left;height: 22px;line-height: 22px;margin: 0 10px;}
+.button2-left,
+.button2-right,
+.button2-left div,
+.button2-right div {float: left;}
+.button2-left a,
+.button2-right a{width: 100%;text-decoration: none;padding:5px;color: #000;font-weight: bold;}
+.button2-left span,
+.button2-right span {float: left;line-height: 22px;font-size: 11px;color: #000;cursor: pointer;text-decoration: none;padding:0px;}
+.button2-left span,
+.button2-right span {margin-right: 5px;background: #0E99EC;border: 1px solid #c6c6c6;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
+.button2-left .page span,
+.button2-right .page span,
+.button2-left .blank,
+.button2-right .blank,
+.button2-left .blank span,
+.button2-right .blank span {margin-right: 5px;background:#0E99EC;border: 1px solid #c6c6c6;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
+.page span,
+.blank span {color: #000;}
+.button2-left a:hover,
+.button2-right a:hover {color: #fff;}
+.button2-left span { }
+.button2-right span {}
+.button2-left {}
+.button2-right {}
+.button2-right .prev { border: 1px solid #c6c6c6;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
+.button2-right .prev:hover {background:#F7F7F7!important;}
+.button2-right.off .prev {border: 1px solid #c6c6c6;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;display: none;}
+.button2-right.off .prev:hover {background:#F7F7F7;display: none;}
+.button2-right .start {border: 1px solid #c6c6c6;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
+.button2-right .start:hover{background:#F7F7F7;}
+.button2-right.off .start {border: 1px solid #c6c6c6;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;display: none;}
+.button2-left .page,
+.button2-left .blank { }
+.button2-left .next { border: 1px solid #c6c6c6;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
+.button2-left.off .next {border: 1px solid #c6c6c6;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;display: none;}
+.button2-left .end {border: 1px solid #c6c6c6;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
+.button2-left.off .end {border: 1px solid #c6c6c6;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;display: none;}
+.button2-left .image{}
+.button2-left .readmore{ }
+.button2-left .pagebreak{ }
+.button2-left .blank{ }
+.button3-left,
+.button3-right,
+.button3-left div,
+.button3-right div {float: left;}
+.button3-left a,
+.button3-right a,
+.button3-left span,
+.button3-right span { float: left;line-height: 22px;font-size: 11px;color: #000;cursor: pointer;text-decoration: none;}
+.button3-left span a,
+.button3-right span a{padding: 0px 5px;}
+.button3-left span,
+.button3-right span { border: 1px solid #C9C9C9;margin-right: 5px;background: #0E99EC;}
+.button3-left span:hover{background:#0F8568!important;color:#fff;}
+.button3-right span:hover{background:#0F8568!important;color:#fff;}
+.button3-left span:hover a{color:#fff;background: #0F8568;}
+.button3-right span:hover a{color:#fff;background: #000;}
+.button2-left span:hover{background:#0F8568;color:#0F8568;}
+.button2-right span:hover{background:#0F8568;color:#fff;}
+.button2-left span:hover a{color:#fff;background: #0F8568;}
+.button2-right span:hover a{color:#fff;background: #0F8568;}
+.button3-left .page a,
+.button3-right .page a,
+.button3-left .page span,
+.button3-right .page span,
+.button3-left .blank a,
+.button3-right .blank a,
+.button3-left .blank span,
+.button3-right .blank span { padding: 0 6px; }
+.page span,
+.blank span {color: #000;}
+.button3-left a:hover{}
+.button3-left a:active{color: #000;}
+.button3-right a:hover { text-decoration: none; color: #000; }
+.button3-left span {}
+.button3-right span {}
+.button3-left { }
+.button3-right { }
+.button3-right .prev {}
+.button3-right.off .prev {}
+.button3-right .start { }
+.button3-right.off .start {}
+.button3-left .page,
+.button3-left .blank { }
+.button3-left .next { padding:0; border: 1px solid #C9C9C9;margin-right: 5px;background: #0E99EC;}
+.button3-left.off .next {border: 1px solid #c6c6c6;padding: 0px 5px;display: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;}
+.button3-left .end {border: 1px solid #c6c6c6;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px; }
+.button3-left.off .end {border: 1px solid #c6c6c6;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
+.button3-left .image { }
+.button3-left .readmore {}
+.button3-left .pagebreak { }
+.button3-left .blank{}
+.page_location{margin-left:10px;float:left;}
+.paginate{margin: 0 auto;}
+.paginate #limit_box {float: left;}
+.listTable tfoot {background-color: #DFE2E5;text-align: center;}
+.listTable .page_location {float: left;margin-left: 10px;}
+.page .current{background:#0F8568!important;color: #fff;padding: 0px 10px;}
+.page span:hover{background:#0F8568;color: #fff;}
+.pagination ul{float:left;margin: 0px;padding: 0px;}
+
